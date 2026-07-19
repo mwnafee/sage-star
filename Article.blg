@@ -1,0 +1,51 @@
+This is BibTeX, Version 0.99e
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: Article.aux
+Reallocating 'name_of_file' (item size: 1) to 6 items.
+The style file: SageV.bst
+Reallocating 'name_of_file' (item size: 1) to 23 items.
+Database file #1: zHenriquesLab-Mendeley.bib
+Warning--empty pages in shao2026deblooming
+Warning--empty pages in wang2025pathologyinformedlatentdiffusionmodel
+You've used 36 entries,
+            2484 wiz_defined-function locations,
+            802 strings with 14686 characters,
+and the built_in function-call counts, 37760 in all, are:
+= -- 4301
+> -- 532
+< -- 6
++ -- 265
+- -- 133
+* -- 2375
+:= -- 3494
+add.period$ -- 163
+call.type$ -- 36
+change.case$ -- 49
+chr.to.int$ -- 0
+cite$ -- 38
+duplicate$ -- 4623
+empty$ -- 3172
+format.name$ -- 170
+if$ -- 8239
+int.to.chr$ -- 0
+int.to.str$ -- 36
+missing$ -- 342
+newline$ -- 238
+num.names$ -- 38
+pop$ -- 2213
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 412
+stack$ -- 0
+substring$ -- 5286
+swap$ -- 848
+text.length$ -- 6
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 2
+while$ -- 217
+width$ -- 38
+write$ -- 487
+(There were 2 warnings)

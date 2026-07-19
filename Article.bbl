@@ -1,0 +1,287 @@
+\begin{thebibliography}{10}
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\urlprefix}{URL }
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{DOI:\discretionary{}{}{}#1}\else
+  \providecommand{\doi}{DOI:\discretionary{}{}{}\begingroup
+  \urlstyle{rm}\Url}\fi
+\providecommand{\eprint}[2][]{\url{#2}}
+
+\bibitem{pack_blooming}
+Pack JD, Xu M, Wang G et~al.
+\newblock Cardiac ct blooming artifacts: clinical significance, root causes and
+  potential solutions.
+\newblock \emph{Visual Computing for Industry, Biomedicine, and Art} 2022; 5:
+  29.
+\newblock \doi{10.1186/s42492-022-00125-0}.
+
+\bibitem{shao2026deblooming}
+Shao M, Wiedeman C, Fu L et~al.
+\newblock Deep learning deblooming in coronary ct angiography with catsim
+  training data.
+\newblock In \emph{9th International Conference on Image Formation in X-Ray
+  Computed Tomography}. Salt Lake City, USA.
+\newblock Accepted for presentation.
+
+\bibitem{ronneberger2015unetconvolutionalnetworksbiomedical}
+Ronneberger O, Fischer P and Brox T.
+\newblock U-net: Convolutional networks for biomedical image segmentation,
+  2015.
+\newblock \urlprefix\url{https://arxiv.org/abs/1505.04597}.
+\newblock \eprint{1505.04597}.
+
+\bibitem{zhou2018unetnestedunetarchitecture}
+Zhou Z, Siddiquee MMR, Tajbakhsh N et~al.
+\newblock Unet++: Redesigning skip connections to exploit multiscale features
+  in image segmentation.
+\newblock \emph{IEEE Transactions on Medical Imaging} 2019; .
+
+\bibitem{goodfellow2014generativeadversarialnetworks}
+Goodfellow IJ, Pouget-Abadie J, Mirza M et~al.
+\newblock Generative adversarial networks, 2014.
+\newblock \urlprefix\url{https://arxiv.org/abs/1406.2661}.
+\newblock \eprint{1406.2661}.
+
+\bibitem{CT_SRGAN}
+Li Y, Chen L, Li B et~al.
+\newblock 4× super-resolution of unsupervised ct images based on gan.
+\newblock \emph{IET Image Processing} 2023; 17(8): 2362--2374.
+\newblock \doi{https://doi.org/10.1049/ipr2.12797}.
+\newblock
+  \urlprefix\url{https://ietresearch.onlinelibrary.wiley.com/doi/abs/10.1049/ipr2.12797}.
+\newblock
+  \eprint{https://ietresearch.onlinelibrary.wiley.com/doi/pdf/10.1049/ipr2.12797}.
+
+\bibitem{Zhang2021_CTSR}
+Zhang X, Feng C, Wang A et~al.
+\newblock Ct super-resolution using multiple dense residual block based gan.
+\newblock \emph{Signal, Image and Video Processing} 2021; 15(4): 725--733.
+\newblock \doi{10.1007/s11760-020-01790-5}.
+\newblock \urlprefix\url{https://doi.org/10.1007/s11760-020-01790-5}.
+
+\bibitem{Yang2018_wGAN}
+Yang Q, Yan P, Zhang Y et~al.
+\newblock Low-dose ct image denoising using a generative adversarial network
+  with wasserstein distance and perceptual loss.
+\newblock \emph{IEEE Transactions on Medical Imaging} 2018; 37(6): 1348--1357.
+\newblock \doi{10.1109/TMI.2018.2827462}.
+
+\bibitem{yi2018sharpness}
+Yi X and Babyn P.
+\newblock Sharpness-aware low-dose ct denoising using conditional generative
+  adversarial network.
+\newblock \emph{Journal of Digital Imaging} 2018; 31(5): 655--669.
+\newblock \doi{10.1007/s10278-018-0056-0}.
+
+\bibitem{DIRTGAN}
+Cheng L and Kersemans M.
+\newblock Dual-irt-gan: A defect-aware deep adversarial network to perform
+  super-resolution tasks in infrared thermographic inspection.
+\newblock \emph{Composites Part B: Engineering} 2022; 247: 110309.
+\newblock \doi{https://doi.org/10.1016/j.compositesb.2022.110309}.
+\newblock
+  \urlprefix\url{https://www.sciencedirect.com/science/article/pii/S1359836822006825}.
+
+\bibitem{zhang2022generalizedoneshotdomainadaptation}
+Zhang Z, Liu Y, Han C et~al.
+\newblock Generalized one-shot domain adaptation of generative adversarial
+  networks, 2022.
+\newblock \urlprefix\url{https://arxiv.org/abs/2209.03665}.
+\newblock \eprint{2209.03665}.
+
+\bibitem{ZHAO_sem}
+Zhao H, Zhu W, Jin L et~al.
+\newblock Calcium deblooming in coronary computed tomography angiography via
+  semantic-oriented generative adversarial network.
+\newblock \emph{Computerized Medical Imaging and Graphics} 2025; 122: 102515.
+\newblock \doi{https://doi.org/10.1016/j.compmedimag.2025.102515}.
+\newblock
+  \urlprefix\url{https://www.sciencedirect.com/science/article/pii/S0895611125000242}.
+
+\bibitem{xia2022lowdosectusingdenoising}
+Xia W, Lyu Q and Wang G.
+\newblock Low-dose ct using denoising diffusion probabilistic model for
+  20$\times$ speedup, 2022.
+\newblock \urlprefix\url{https://arxiv.org/abs/2209.15136}.
+\newblock \eprint{2209.15136}.
+
+\bibitem{liuZeroShotdenoising}
+Liu X, Xie Y, Liu C et~al.
+\newblock Diffusion probabilistic priors for zero-shot low-dose ct image
+  denoising.
+\newblock \emph{Medical Physics} 2025; 52(1): 329--345.
+\newblock \doi{https://doi.org/10.1002/mp.17431}.
+\newblock
+  \urlprefix\url{https://aapm.onlinelibrary.wiley.com/doi/abs/10.1002/mp.17431}.
+\newblock
+  \eprint{https://aapm.onlinelibrary.wiley.com/doi/pdf/10.1002/mp.17431}.
+
+\bibitem{Peng2024}
+Peng J, Qiu RLJ, Wynne JF et~al.
+\newblock Cbct-based synthetic ct image generation using conditional denoising
+  diffusion probabilistic model.
+\newblock \emph{Medical Physics} 2024; 51(3): 1847--1859.
+\newblock \doi{10.1002/mp.16704}.
+\newblock \urlprefix\url{https://doi.org/10.1002/mp.16704}.
+
+\bibitem{niu20243dphotoncountingct}
+Niu C, Wiedeman C, Li M et~al.
+\newblock 3d photon counting ct image super-resolution using conditional
+  diffusion model, 2024.
+\newblock \urlprefix\url{https://arxiv.org/abs/2408.15283}.
+\newblock \eprint{2408.15283}.
+
+\bibitem{wiedeman2024photoncountingctusingconditional}
+Wiedeman C, Niu C, Li M et~al.
+\newblock Photon-counting ct using a conditional diffusion model for
+  super-resolution and texture-preservation, 2024.
+\newblock \urlprefix\url{https://arxiv.org/abs/2402.16212}.
+\newblock \eprint{2402.16212}.
+
+\bibitem{Graf2023}
+Graf R, Schmitt J, Schlaeger S et~al.
+\newblock Denoising diffusion-based mri to ct image translation enables
+  automated spinal segmentation.
+\newblock \emph{European Radiology Experimental} 2023; 7(1): 70.
+\newblock \doi{10.1186/s41747-023-00385-2}.
+\newblock \urlprefix\url{https://doi.org/10.1186/s41747-023-00385-2}.
+
+\bibitem{hidiff}
+Chen T, Wang C, Chen Z et~al.
+\newblock Hidiff: Hybrid diffusion framework for medical image segmentation.
+\newblock \emph{IEEE Transactions on Medical Imaging} 2024; 43(10): 3570--3583.
+\newblock \doi{10.1109/TMI.2024.3424471}.
+
+\bibitem{LatentPaint}
+Corneanu C, Gadde R and Martinez AM.
+\newblock Latentpaint: Image inpainting in latent space with diffusion models.
+\newblock In \emph{2024 IEEE/CVF Winter Conference on Applications of Computer
+  Vision (WACV)}. pp. 4322--4331.
+\newblock \doi{10.1109/WACV57701.2024.00428}.
+
+\bibitem{liu2025erasediffusionempoweringobject}
+Liu Y, Zhou H, Shang W et~al.
+\newblock Erase diffusion: Empowering object removal through calibrating
+  diffusion pathways, 2025.
+\newblock \urlprefix\url{https://arxiv.org/abs/2503.07026}.
+\newblock \eprint{2503.07026}.
+
+\bibitem{ShiPrivacy}
+Shi Y, Xia W, Niu C et~al.
+\newblock Privacy-preserving latent diffusion-based synthetic medical image
+  generation.
+\newblock \emph{IEEE Transactions on Medical Imaging} 2026; 45(3): 1140--1151.
+\newblock \doi{10.1109/TMI.2025.3618511}.
+
+\bibitem{wang2025pathologyinformedlatentdiffusionmodel}
+Wang J, Byeon K, Song J et~al.
+\newblock { Pathology-Informed Latent Diffusion Model for Anomaly Detection in
+  Lymph Node Metastasis }.
+\newblock In \emph{proceedings of Medical Image Computing and Computer Assisted
+  Intervention -- MICCAI 2025}, volume LNCS 15961. Springer Nature Switzerland.
+
+\bibitem{WODZINSKI2024109129}
+Wodzinski M, Kwarciak K, Daniol M et~al.
+\newblock Improving deep learning-based automatic cranial defect reconstruction
+  by heavy data augmentation: From image registration to latent diffusion
+  models.
+\newblock \emph{Computers in Biology and Medicine} 2024; 182: 109129.
+\newblock \doi{https://doi.org/10.1016/j.compbiomed.2024.109129}.
+\newblock
+  \urlprefix\url{https://www.sciencedirect.com/science/article/pii/S0010482524012149}.
+
+\bibitem{resshift}
+Yue Z, Wang J and Loy CC.
+\newblock Efficient diffusion model for image restoration by residual shifting.
+\newblock \emph{IEEE Transactions on Pattern Analysis and Machine Intelligence}
+  2025; 47(1): 116--130.
+\newblock \doi{10.1109/TPAMI.2024.3461721}.
+
+\bibitem{spie_conv}
+Castillo-Amor AM, Navarro-Navia CA, Cadena-Bonfanti AJ et~al.
+\newblock {Reduction of blooming artifacts in cardiac CT images by blind
+  deconvolution and anisotropic diffusion filtering}.
+\newblock In Romero E, Lepore N, Garc{\'i}a-Arteaga JD et~al. (eds.) \emph{11th
+  International Symposium on Medical Information Processing and Analysis},
+  volume 9681. International Society for Optics and Photonics, SPIE, p. 96810P.
+\newblock \doi{10.1117/12.2209217}.
+\newblock \urlprefix\url{https://doi.org/10.1117/12.2209217}.
+
+\bibitem{smooth_sharp}
+Steckmann S and Kachelrieß M.
+\newblock Blooming artifact reduction for cardiac ct.
+\newblock In \emph{IEEE Nuclear Science Symposium \& Medical Imaging
+  Conference}. pp. 2030--2035.
+\newblock \doi{10.1109/NSSMIC.2010.5874133}.
+
+\bibitem{pp_subtraction}
+Kim JH, Park JE and Lee JM.
+\newblock Post-processing calcium subtraction method to minimize
+  stenosis-overestimation by blooming artifact.
+\newblock \emph{Technology and Health Care} 2022; 30: 1--8.
+\newblock \doi{10.3233/THC-228001}.
+
+\bibitem{wall_calc}
+van Straten M, Venema HW, Streekstra GJ et~al.
+\newblock Removal of arterial wall calcifications in ct angiography by local
+  subtraction.
+\newblock \emph{Medical Physics} 2003; 30(5): 761--770.
+\newblock \doi{https://doi.org/10.1118/1.1567271}.
+\newblock
+  \urlprefix\url{https://aapm.onlinelibrary.wiley.com/doi/abs/10.1118/1.1567271}.
+\newblock
+  \eprint{https://aapm.onlinelibrary.wiley.com/doi/pdf/10.1118/1.1567271}.
+
+\bibitem{mbai}
+Liang Z, Karl WC, Do S et~al.
+\newblock Analysis and mitigation of calcium artifacts in cardiac multidetector
+  ct.
+\newblock In \emph{2008 5th IEEE International Symposium on Biomedical Imaging:
+  From Nano to Macro}. pp. 1477--1480.
+\newblock \doi{10.1109/ISBI.2008.4541287}.
+
+\bibitem{sun_ng_2022}
+Sun Z and Ng CKC.
+\newblock Finetuned super-resolution generative adversarial network (artificial
+  intelligence) model for calcium deblooming in coronary computed tomography
+  angiography.
+\newblock \emph{Journal of Personalized Medicine} 2022; 12(9).
+\newblock \doi{10.3390/jpm12091354}.
+\newblock \urlprefix\url{https://www.mdpi.com/2075-4426/12/9/1354}.
+
+\bibitem{bioengineering12111243casc_seg}
+Alirr O and Khalifa T.
+\newblock Anatomically guided cascaded u-net ensemble for coronary artery
+  calcification segmentation in cardiac ct.
+\newblock \emph{Bioengineering} 2025; 12(11).
+\newblock \doi{10.3390/bioengineering12111243}.
+\newblock \urlprefix\url{https://www.mdpi.com/2306-5354/12/11/1243}.
+
+\bibitem{zhang2018unreasonableeffectivenessdeepfeatures}
+Zhang R, Isola P, Efros AA et~al.
+\newblock The unreasonable effectiveness of deep features as a perceptual
+  metric, 2018.
+\newblock \urlprefix\url{https://arxiv.org/abs/1801.03924}.
+\newblock \eprint{1801.03924}.
+
+\bibitem{rombach2022highresolution}
+Rombach R, Blattmann A, Lorenz D et~al.
+\newblock High-resolution image synthesis with latent diffusion models, 2022.
+\newblock \urlprefix\url{https://arxiv.org/abs/2112.10752}.
+\newblock \eprint{2112.10752}.
+
+\bibitem{ju2024brushnet}
+Ju X, Liu X, Wang X et~al.
+\newblock Brushnet: A plug-and-play image inpainting model with decomposed
+  dual-branch diffusion, 2024.
+\newblock \eprint{2403.06976}.
+
+\bibitem{biom11091307}
+Sun Z, Ng CKC, Wong YH et~al.
+\newblock 3d-printed coronary plaques to simulate high calcification in the
+  coronary arteries for investigation of blooming artifacts.
+\newblock \emph{Biomolecules} 2021; 11(9).
+\newblock \doi{10.3390/biom11091307}.
+\newblock \urlprefix\url{https://www.mdpi.com/2218-273X/11/9/1307}.
+
+\end{thebibliography}
