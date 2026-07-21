@@ -45,16 +45,16 @@ Compared with other CT enhancement tasks, such as denoising and super-resolution
 
     \begin{tabular}{@{}lcccc@{}}
         \shortstack[l]{\small\textbf{with}\\\small\textbf{blooming}\\\small\textbf{artifact}} &
-        \includegraphics[width=0.17\linewidth]{../tmbe_deblooming-short-traj-latex-main/images_1/03_ordinary_CaP_40_minus_artery_100mA_10_42_bloom.png} &
-        \includegraphics[width=0.17\linewidth]{../tmbe_deblooming-short-traj-latex-main/images_1/32_ordinary_CaP_50_minus_artery_300mA_12_37_bloom.png} &
-        \includegraphics[width=0.17\linewidth]{../tmbe_deblooming-short-traj-latex-main/images_1/35_ordinary_CaP_50_minus_artery_100mA_13_43_bloom.png} &
-        \includegraphics[width=0.17\linewidth]{../tmbe_deblooming-short-traj-latex-main/images_1/72_ordinary_CaP_40_minus_artery_50mA_5_29_bloom.png} \\[-2pt]
+        \includegraphics[width=0.17\linewidth]{images_1/03_ordinary_CaP_40_minus_artery_100mA_10_42_bloom.png} &
+        \includegraphics[width=0.17\linewidth]{images_1/32_ordinary_CaP_50_minus_artery_300mA_12_37_bloom.png} &
+        \includegraphics[width=0.17\linewidth]{images_1/35_ordinary_CaP_50_minus_artery_100mA_13_43_bloom.png} &
+        \includegraphics[width=0.17\linewidth]{images_1/72_ordinary_CaP_40_minus_artery_50mA_5_29_bloom.png} \\[-2pt]
 
         \shortstack[l]{\small\textbf{without}\\\small\textbf{blooming}\\\small\textbf{artifact}} &
-        \includegraphics[width=0.17\linewidth]{../tmbe_deblooming-short-traj-latex-main/images_1/03_ordinary_CaP_40_minus_artery_100mA_10_42_debloom.png} &
-        \includegraphics[width=0.17\linewidth]{../tmbe_deblooming-short-traj-latex-main/images_1/32_ordinary_CaP_50_minus_artery_300mA_12_37_debloom.png} &
-        \includegraphics[width=0.17\linewidth]{../tmbe_deblooming-short-traj-latex-main/images_1/35_ordinary_CaP_50_minus_artery_100mA_13_43_debloom.png} &
-        \includegraphics[width=0.17\linewidth]{../tmbe_deblooming-short-traj-latex-main/images_1/72_ordinary_CaP_40_minus_artery_50mA_5_29_debloom.png} \\[-3pt]
+        \includegraphics[width=0.17\linewidth]{images_1/03_ordinary_CaP_40_minus_artery_100mA_10_42_debloom.png} &
+        \includegraphics[width=0.17\linewidth]{images_1/32_ordinary_CaP_50_minus_artery_300mA_12_37_debloom.png} &
+        \includegraphics[width=0.17\linewidth]{images_1/35_ordinary_CaP_50_minus_artery_100mA_13_43_debloom.png} &
+        \includegraphics[width=0.17\linewidth]{images_1/72_ordinary_CaP_40_minus_artery_50mA_5_29_debloom.png} \\[-3pt]
     \end{tabular}
 
     \caption{Representative paired examples with and without calcium blooming artifact~\cite{shao2026deblooming}. Red circles highlight the calcified regions.}
@@ -84,7 +84,7 @@ Recent learning-based studies have begun to address calcium deblooming directly 
 
 \begin{figure}[t]
     \centering
-    \includegraphics[width=0.95\linewidth]{../tmbe_deblooming-short-traj-latex-main/images/Slide1.PNG}
+    \includegraphics[width=0.95\linewidth]{images/Slide1.PNG}
     \caption{Overview of STAR Diffusion for CCTA deblooming. The forward process shifts a debloomed target patch toward a blooming-corrupted input patch, and reverse inference progressively recovers the clean target. Refer to Sec.~\ref{sec:methods} for more details.}
     \label{fig:proposed_framework}
 \end{figure}
@@ -235,7 +235,7 @@ By learning this short, ROI-localized reverse chain with spatially guided and bo
 
 \begin{figure}[t]
     \centering
-    \includegraphics[width=0.95\linewidth]{../tmbe_deblooming-short-traj-latex-main/images/Slide2.PNG}
+    \includegraphics[width=0.95\linewidth]{images/Slide2.PNG}
     \caption{Illustration of the annular boundary-guided Swin attention mechanism used in SABA. The resized calcium spatial prior defines the core and annular boundary regions, and the annulus is used to penalize attention from calcium-core query tokens to annular-ring key tokens. Refer to Sec.~\ref{sec:saba} for more details.}
     \label{fig:saba_attention}
 \end{figure}
@@ -325,13 +325,13 @@ SABA is applied on the decoder side near the bottleneck, while the encoder keeps
         \textbf{SAGAN} &
         \textbf{SOGAN} \\
 
-        \includegraphics[width=0.12\linewidth]{../tmbe_deblooming-short-traj-latex-main/images_sim/03_CaP_50_minus_artery_100mA_2_slice32_input.png} &
-        \includegraphics[width=0.12\linewidth]{../tmbe_deblooming-short-traj-latex-main/images_sim/03_CaP_50_minus_artery_100mA_2_slice32_HU_Shrink.png} &
-        \includegraphics[width=0.12\linewidth]{../tmbe_deblooming-short-traj-latex-main/images_sim/03_CaP_50_minus_artery_100mA_2_slice32_Wiener.png} &
-        \includegraphics[width=0.12\linewidth]{../tmbe_deblooming-short-traj-latex-main/images_sim/03_CaP_50_minus_artery_100mA_2_slice32_pred_output_srgan.png} &
-        \includegraphics[width=0.12\linewidth]{../tmbe_deblooming-short-traj-latex-main/images_sim/03_CaP_50_minus_artery_100mA_2_slice32_pred_output_srgan-no_style.png} &
-        \includegraphics[width=0.12\linewidth]{../tmbe_deblooming-short-traj-latex-main/images_sim/03_CaP_50_minus_artery_100mA_2_slice32_pred_output_sagan.png} &
-        \includegraphics[width=0.12\linewidth]{../tmbe_deblooming-short-traj-latex-main/images_sim/03_CaP_50_minus_artery_100mA_2_slice32_pred_output_sogan.png} \\
+        \includegraphics[width=0.12\linewidth]{images_sim/03_CaP_50_minus_artery_100mA_2_slice32_input.png} &
+        \includegraphics[width=0.12\linewidth]{images_sim/03_CaP_50_minus_artery_100mA_2_slice32_HU_Shrink.png} &
+        \includegraphics[width=0.12\linewidth]{images_sim/03_CaP_50_minus_artery_100mA_2_slice32_Wiener.png} &
+        \includegraphics[width=0.12\linewidth]{images_sim/03_CaP_50_minus_artery_100mA_2_slice32_pred_output_srgan.png} &
+        \includegraphics[width=0.12\linewidth]{images_sim/03_CaP_50_minus_artery_100mA_2_slice32_pred_output_srgan-no_style.png} &
+        \includegraphics[width=0.12\linewidth]{images_sim/03_CaP_50_minus_artery_100mA_2_slice32_pred_output_sagan.png} &
+        \includegraphics[width=0.12\linewidth]{images_sim/03_CaP_50_minus_artery_100mA_2_slice32_pred_output_sogan.png} \\
 
         \textbf{Spatial Prior} &
         \textbf{U-Net++} &
@@ -341,13 +341,13 @@ SABA is applied on the decoder side near the bottleneck, while the encoder keeps
         \textbf{Proposed} &
         \textbf{GT} \\
 
-        \includegraphics[width=0.12\linewidth]{../tmbe_deblooming-short-traj-latex-main/images_sim/03_CaP_50_minus_artery_100mA_2_slice32_mask.png} &
-        \includegraphics[width=0.12\linewidth]{../tmbe_deblooming-short-traj-latex-main/images_sim/03_CaP_50_minus_artery_100mA_2_slice32_pred_output_unetpp_amp.png} &
-        \includegraphics[width=0.12\linewidth]{../tmbe_deblooming-short-traj-latex-main/images_sim/03_CaP_50_minus_artery_100mA_2_slice32_pred_output_unetpp_sharp_patient.png} &
-        \includegraphics[width=0.12\linewidth]{../tmbe_deblooming-short-traj-latex-main/images_sim/03_CaP_50_minus_artery_100mA_2_slice32_pred_ldm_output_resshift.png} &
-        \includegraphics[width=0.12\linewidth]{../tmbe_deblooming-short-traj-latex-main/images_sim/03_CaP_50_minus_artery_100mA_2_slice32_pred_ldm10_output_resshift.png} &
-        \includegraphics[width=0.12\linewidth]{../tmbe_deblooming-short-traj-latex-main/images_sim/03_CaP_50_minus_artery_100mA_2_slice32_pred_output_resshift.png} &
-        \includegraphics[width=0.12\linewidth]{../tmbe_deblooming-short-traj-latex-main/images_sim/03_CaP_50_minus_artery_100mA_2_slice32_gt.png}
+        \includegraphics[width=0.12\linewidth]{images_sim/03_CaP_50_minus_artery_100mA_2_slice32_mask.png} &
+        \includegraphics[width=0.12\linewidth]{images_sim/03_CaP_50_minus_artery_100mA_2_slice32_pred_output_unetpp_amp.png} &
+        \includegraphics[width=0.12\linewidth]{images_sim/03_CaP_50_minus_artery_100mA_2_slice32_pred_output_unetpp_sharp_patient.png} &
+        \includegraphics[width=0.12\linewidth]{images_sim/03_CaP_50_minus_artery_100mA_2_slice32_pred_ldm_output_resshift.png} &
+        \includegraphics[width=0.12\linewidth]{images_sim/03_CaP_50_minus_artery_100mA_2_slice32_pred_ldm10_output_resshift.png} &
+        \includegraphics[width=0.12\linewidth]{images_sim/03_CaP_50_minus_artery_100mA_2_slice32_pred_output_resshift.png} &
+        \includegraphics[width=0.12\linewidth]{images_sim/03_CaP_50_minus_artery_100mA_2_slice32_gt.png}
     \end{tabular}
 
     \vspace{0.8em}
@@ -362,13 +362,13 @@ SABA is applied on the decoder side near the bottleneck, while the encoder keeps
         \textbf{SAGAN} &
         \textbf{SOGAN} \\
 
-        \includegraphics[width=0.12\linewidth]{../tmbe_deblooming-short-traj-latex-main/images_sim/03_CaP_50_minus_artery_100mA_10_slice32_input.png} &
-        \includegraphics[width=0.12\linewidth]{../tmbe_deblooming-short-traj-latex-main/images_sim/03_CaP_50_minus_artery_100mA_10_slice32_HU_Shrink.png} &
-        \includegraphics[width=0.12\linewidth]{../tmbe_deblooming-short-traj-latex-main/images_sim/03_CaP_50_minus_artery_100mA_10_slice32_Wiener.png} &
-        \includegraphics[width=0.12\linewidth]{../tmbe_deblooming-short-traj-latex-main/images_sim/03_CaP_50_minus_artery_100mA_10_slice32_pred_output_srgan.png} &
-        \includegraphics[width=0.12\linewidth]{../tmbe_deblooming-short-traj-latex-main/images_sim/03_CaP_50_minus_artery_100mA_10_slice32_pred_output_srgan-no_style.png} &
-        \includegraphics[width=0.12\linewidth]{../tmbe_deblooming-short-traj-latex-main/images_sim/03_CaP_50_minus_artery_100mA_10_slice32_pred_output_sagan.png} &
-        \includegraphics[width=0.12\linewidth]{../tmbe_deblooming-short-traj-latex-main/images_sim/03_CaP_50_minus_artery_100mA_10_slice32_pred_output_sogan.png} \\
+        \includegraphics[width=0.12\linewidth]{images_sim/03_CaP_50_minus_artery_100mA_10_slice32_input.png} &
+        \includegraphics[width=0.12\linewidth]{images_sim/03_CaP_50_minus_artery_100mA_10_slice32_HU_Shrink.png} &
+        \includegraphics[width=0.12\linewidth]{images_sim/03_CaP_50_minus_artery_100mA_10_slice32_Wiener.png} &
+        \includegraphics[width=0.12\linewidth]{images_sim/03_CaP_50_minus_artery_100mA_10_slice32_pred_output_srgan.png} &
+        \includegraphics[width=0.12\linewidth]{images_sim/03_CaP_50_minus_artery_100mA_10_slice32_pred_output_srgan-no_style.png} &
+        \includegraphics[width=0.12\linewidth]{images_sim/03_CaP_50_minus_artery_100mA_10_slice32_pred_output_sagan.png} &
+        \includegraphics[width=0.12\linewidth]{images_sim/03_CaP_50_minus_artery_100mA_10_slice32_pred_output_sogan.png} \\
 
         \textbf{Spatial Prior} &
         \textbf{U-Net++} &
@@ -378,13 +378,13 @@ SABA is applied on the decoder side near the bottleneck, while the encoder keeps
         \textbf{Proposed} &
         \textbf{GT} \\
 
-        \includegraphics[width=0.12\linewidth]{../tmbe_deblooming-short-traj-latex-main/images_sim/03_CaP_50_minus_artery_100mA_10_slice32_mask.png} &
-        \includegraphics[width=0.12\linewidth]{../tmbe_deblooming-short-traj-latex-main/images_sim/03_CaP_50_minus_artery_100mA_10_slice32_pred_output_unetpp_amp.png} &
-        \includegraphics[width=0.12\linewidth]{../tmbe_deblooming-short-traj-latex-main/images_sim/03_CaP_50_minus_artery_100mA_10_slice32_pred_output_unetpp_sharp_patient.png} &
-        \includegraphics[width=0.12\linewidth]{../tmbe_deblooming-short-traj-latex-main/images_sim/03_CaP_50_minus_artery_100mA_10_slice32_pred_ldm_output_resshift.png} &
-        \includegraphics[width=0.12\linewidth]{../tmbe_deblooming-short-traj-latex-main/images_sim/03_CaP_50_minus_artery_100mA_10_slice32_pred_ldm10_output_resshift.png} &
-        \includegraphics[width=0.12\linewidth]{../tmbe_deblooming-short-traj-latex-main/images_sim/03_CaP_50_minus_artery_100mA_10_slice32_pred_output_resshift.png} &
-        \includegraphics[width=0.12\linewidth]{../tmbe_deblooming-short-traj-latex-main/images_sim/03_CaP_50_minus_artery_100mA_10_slice32_gt.png}
+        \includegraphics[width=0.12\linewidth]{images_sim/03_CaP_50_minus_artery_100mA_10_slice32_mask.png} &
+        \includegraphics[width=0.12\linewidth]{images_sim/03_CaP_50_minus_artery_100mA_10_slice32_pred_output_unetpp_amp.png} &
+        \includegraphics[width=0.12\linewidth]{images_sim/03_CaP_50_minus_artery_100mA_10_slice32_pred_output_unetpp_sharp_patient.png} &
+        \includegraphics[width=0.12\linewidth]{images_sim/03_CaP_50_minus_artery_100mA_10_slice32_pred_ldm_output_resshift.png} &
+        \includegraphics[width=0.12\linewidth]{images_sim/03_CaP_50_minus_artery_100mA_10_slice32_pred_ldm10_output_resshift.png} &
+        \includegraphics[width=0.12\linewidth]{images_sim/03_CaP_50_minus_artery_100mA_10_slice32_pred_output_resshift.png} &
+        \includegraphics[width=0.12\linewidth]{images_sim/03_CaP_50_minus_artery_100mA_10_slice32_gt.png}
     \end{tabular}
 
     \caption{Qualitative comparison on synthetic CCTA patches. The first row shows the input and baseline methods; the second row shows the spatial prior, latent diffusion baselines, the proposed method, and ground truth. All patches are displayed using WW/WL = 1300/400 HU.}
@@ -436,13 +436,13 @@ Proposed & $\textbf{0.9250} \pm 0.0781$ & $\underline{134.4998} \pm 32.2103$ & $
         \textbf{SAGAN} &
         \textbf{SOGAN} \\
 
-        \includegraphics[width=0.12\linewidth]{../tmbe_deblooming-short-traj-latex-main/images_real/e29056_187_region_1_input_raw_sagan.png} &
-        \includegraphics[width=0.12\linewidth]{../tmbe_deblooming-short-traj-latex-main/images_real/e29056_187_region_1_HU_Shrink.png} &
-        \includegraphics[width=0.12\linewidth]{../tmbe_deblooming-short-traj-latex-main/images_real/e29056_187_region_1_Wiener_Unsharp.png} &
-        \includegraphics[width=0.12\linewidth]{../tmbe_deblooming-short-traj-latex-main/images_real/e29056_187_region_1_output_raw_srgan.png} &
-        \includegraphics[width=0.12\linewidth]{../tmbe_deblooming-short-traj-latex-main/images_real/e29056_187_region_1_output_raw_srgan_no_style.png} &
-        \includegraphics[width=0.12\linewidth]{../tmbe_deblooming-short-traj-latex-main/images_real/e29056_187_region_1_output_raw_sagan.png} &
-        \includegraphics[width=0.12\linewidth]{../tmbe_deblooming-short-traj-latex-main/images_real/e29056_187_region_1_output_raw_sogan_mask_undilate.png} \\
+        \includegraphics[width=0.12\linewidth]{images_real/e29056_187_region_1_input_raw_sagan.png} &
+        \includegraphics[width=0.12\linewidth]{images_real/e29056_187_region_1_HU_Shrink.png} &
+        \includegraphics[width=0.12\linewidth]{images_real/e29056_187_region_1_Wiener_Unsharp.png} &
+        \includegraphics[width=0.12\linewidth]{images_real/e29056_187_region_1_output_raw_srgan.png} &
+        \includegraphics[width=0.12\linewidth]{images_real/e29056_187_region_1_output_raw_srgan_no_style.png} &
+        \includegraphics[width=0.12\linewidth]{images_real/e29056_187_region_1_output_raw_sagan.png} &
+        \includegraphics[width=0.12\linewidth]{images_real/e29056_187_region_1_output_raw_sogan_mask_undilate.png} \\
 
         \textbf{Spatial Prior} &
         \textbf{U-Net++} &
@@ -452,12 +452,12 @@ Proposed & $\textbf{0.9250} \pm 0.0781$ & $\underline{134.4998} \pm 32.2103$ & $
         \textbf{Proposed} &
         {} \\
 
-        \includegraphics[width=0.12\linewidth]{../tmbe_deblooming-short-traj-latex-main/images_real/e29056_187_region_1_mask_raw.png} &
-        \includegraphics[width=0.12\linewidth]{../tmbe_deblooming-short-traj-latex-main/images_real/e29056_187_region_1_output_unetpp_amp.png} &
-        \includegraphics[width=0.12\linewidth]{../tmbe_deblooming-short-traj-latex-main/images_real/e29056_187_region_1_output_unetpp_sharp_patient.png} &
-        \includegraphics[width=0.12\linewidth]{../tmbe_deblooming-short-traj-latex-main/images_real/e29056_187_region_1_pred_ldm_output_resshift.png} &
-        \includegraphics[width=0.12\linewidth]{../tmbe_deblooming-short-traj-latex-main/images_real/e29056_187_region_1_pred_ldm10_output_resshift.png} &
-        \includegraphics[width=0.12\linewidth]{../tmbe_deblooming-short-traj-latex-main/images_real/e29056_187_region_1_output_resshift.png} &
+        \includegraphics[width=0.12\linewidth]{images_real/e29056_187_region_1_mask_raw.png} &
+        \includegraphics[width=0.12\linewidth]{images_real/e29056_187_region_1_output_unetpp_amp.png} &
+        \includegraphics[width=0.12\linewidth]{images_real/e29056_187_region_1_output_unetpp_sharp_patient.png} &
+        \includegraphics[width=0.12\linewidth]{images_real/e29056_187_region_1_pred_ldm_output_resshift.png} &
+        \includegraphics[width=0.12\linewidth]{images_real/e29056_187_region_1_pred_ldm10_output_resshift.png} &
+        \includegraphics[width=0.12\linewidth]{images_real/e29056_187_region_1_output_resshift.png} &
         {}
     \end{tabular}
 
@@ -473,13 +473,13 @@ Proposed & $\textbf{0.9250} \pm 0.0781$ & $\underline{134.4998} \pm 32.2103$ & $
         \textbf{SAGAN} &
         \textbf{SOGAN} \\
 
-        \includegraphics[width=0.12\linewidth]{../tmbe_deblooming-short-traj-latex-main/images_real/e35127_147_region_1_input_raw_sagan.png} &
-        \includegraphics[width=0.12\linewidth]{../tmbe_deblooming-short-traj-latex-main/images_real/e35127_147_region_1_HU_Shrink.png} &
-        \includegraphics[width=0.12\linewidth]{../tmbe_deblooming-short-traj-latex-main/images_real/e35127_147_region_1_Wiener_Unsharp.png} &
-        \includegraphics[width=0.12\linewidth]{../tmbe_deblooming-short-traj-latex-main/images_real/e35127_147_region_1_output_raw_srgan.png} &
-        \includegraphics[width=0.12\linewidth]{../tmbe_deblooming-short-traj-latex-main/images_real/e35127_147_region_1_output_raw_srgan_no_style.png} &
-        \includegraphics[width=0.12\linewidth]{../tmbe_deblooming-short-traj-latex-main/images_real/e35127_147_region_1_output_raw_sagan.png} &
-        \includegraphics[width=0.12\linewidth]{../tmbe_deblooming-short-traj-latex-main/images_real/e35127_147_region_1_output_sogan_mask_undilate.png} \\
+        \includegraphics[width=0.12\linewidth]{images_real/e35127_147_region_1_input_raw_sagan.png} &
+        \includegraphics[width=0.12\linewidth]{images_real/e35127_147_region_1_HU_Shrink.png} &
+        \includegraphics[width=0.12\linewidth]{images_real/e35127_147_region_1_Wiener_Unsharp.png} &
+        \includegraphics[width=0.12\linewidth]{images_real/e35127_147_region_1_output_raw_srgan.png} &
+        \includegraphics[width=0.12\linewidth]{images_real/e35127_147_region_1_output_raw_srgan_no_style.png} &
+        \includegraphics[width=0.12\linewidth]{images_real/e35127_147_region_1_output_raw_sagan.png} &
+        \includegraphics[width=0.12\linewidth]{images_real/e35127_147_region_1_output_sogan_mask_undilate.png} \\
 
         \textbf{Spatial Prior} &
         \textbf{U-Net++} &
@@ -489,12 +489,12 @@ Proposed & $\textbf{0.9250} \pm 0.0781$ & $\underline{134.4998} \pm 32.2103$ & $
         \textbf{Proposed} &
         {} \\
 
-        \includegraphics[width=0.12\linewidth]{../tmbe_deblooming-short-traj-latex-main/images_real/e35127_147_region_1_mask_raw.png} &
-        \includegraphics[width=0.12\linewidth]{../tmbe_deblooming-short-traj-latex-main/images_real/e35127_147_region_1_output_unetpp_amp.png} &
-        \includegraphics[width=0.12\linewidth]{../tmbe_deblooming-short-traj-latex-main/images_real/e35127_147_region_1_output_unetpp_sharp_patient.png} &
-        \includegraphics[width=0.12\linewidth]{../tmbe_deblooming-short-traj-latex-main/images_real/e35127_147_region_1_pred_ldm_output_resshift.png} &
-        \includegraphics[width=0.12\linewidth]{../tmbe_deblooming-short-traj-latex-main/images_real/e35127_147_region_1_pred_ldm10_output_resshift.png} &
-        \includegraphics[width=0.12\linewidth]{../tmbe_deblooming-short-traj-latex-main/images_real/e35127_147_region_1_output_resshift.png} &
+        \includegraphics[width=0.12\linewidth]{images_real/e35127_147_region_1_mask_raw.png} &
+        \includegraphics[width=0.12\linewidth]{images_real/e35127_147_region_1_output_unetpp_amp.png} &
+        \includegraphics[width=0.12\linewidth]{images_real/e35127_147_region_1_output_unetpp_sharp_patient.png} &
+        \includegraphics[width=0.12\linewidth]{images_real/e35127_147_region_1_pred_ldm_output_resshift.png} &
+        \includegraphics[width=0.12\linewidth]{images_real/e35127_147_region_1_pred_ldm10_output_resshift.png} &
+        \includegraphics[width=0.12\linewidth]{images_real/e35127_147_region_1_output_resshift.png} &
         {}
     \end{tabular}
 
@@ -551,11 +551,11 @@ For clinical CCTA patches, where paired ground truth is unavailable, Fig.~\ref{f
       {\scriptsize
       \setlength{\tabcolsep}{2pt}
       \begin{tabular}{ccccc}
-          \parbox[c]{0.18\linewidth}{\centering \textbf{Input}\\[2.0em]\includegraphics[width=\linewidth]{../tmbe_deblooming-short-traj-latex-main/images_mask/patient_24_100mA_2_slice_032_input_processed.png}} &
-          \parbox[c]{0.18\linewidth}{\centering \textbf{Spatial Prior}\\[2.0em]\includegraphics[width=\linewidth]{../tmbe_deblooming-short-traj-latex-main/images_mask/patient_24_100mA_2_slice_032_mask_dilate.png}} &
-          \parbox[c]{0.18\linewidth}{\centering \textbf{Ground Truth}\\[2.0em]\includegraphics[width=\linewidth]{../tmbe_deblooming-short-traj-latex-main/images_mask/patient_24_100mA_2_slice_032_gt.png}} &
-          \parbox[c]{0.18\linewidth}{\centering \textbf{With spatial prior}\\\includegraphics[width=\linewidth]{../tmbe_deblooming-short-traj-latex-main/images_mask/patient_24_100mA_2_slice_032_pred.png}} &
-          \parbox[c]{0.18\linewidth}{\centering \textbf{Without spatial prior}\\\includegraphics[width=\linewidth]{../tmbe_deblooming-short-traj-latex-main/images_mask/patient_24_100mA_2_slice_032_pred_no_mask.png}}
+          \parbox[c]{0.18\linewidth}{\centering \textbf{Input}\\[2.0em]\includegraphics[width=\linewidth]{images_mask/patient_24_100mA_2_slice_032_input_processed.png}} &
+          \parbox[c]{0.18\linewidth}{\centering \textbf{Spatial Prior}\\[2.0em]\includegraphics[width=\linewidth]{images_mask/patient_24_100mA_2_slice_032_mask_dilate.png}} &
+          \parbox[c]{0.18\linewidth}{\centering \textbf{Ground Truth}\\[2.0em]\includegraphics[width=\linewidth]{images_mask/patient_24_100mA_2_slice_032_gt.png}} &
+          \parbox[c]{0.18\linewidth}{\centering \textbf{With spatial prior}\\\includegraphics[width=\linewidth]{images_mask/patient_24_100mA_2_slice_032_pred.png}} &
+          \parbox[c]{0.18\linewidth}{\centering \textbf{Without spatial prior}\\\includegraphics[width=\linewidth]{images_mask/patient_24_100mA_2_slice_032_pred_no_mask.png}}
       \end{tabular}}
 
     \caption{Spatial-prior ablation (displayed with WW/WL=1300/400)}
@@ -570,15 +570,15 @@ For clinical CCTA patches, where paired ground truth is unavailable, Fig.~\ref{f
         \textbf{Input} & \textbf{\shortstack{Proposed\\version}} & \textbf{\shortstack{Baseline version\\with Swin only}} & \textbf{\shortstack{Ground\\Truth}} \\
 
         % -------- Synthetic example --------
-        \includegraphics[width=0.10\linewidth]{../tmbe_deblooming-short-traj-latex-main/images_saba/03_CaP_50_minus_artery_100mA_10_slice32_input.png} &
-        \includegraphics[width=0.10\linewidth]{../tmbe_deblooming-short-traj-latex-main/images_saba/patient_03_100mA_10_slice_032_pred.png} &
-        \includegraphics[width=0.10\linewidth]{../tmbe_deblooming-short-traj-latex-main/images_saba/patient_03_100mA_10_slice_032_pred_swin.png} &
-        \includegraphics[width=0.10\linewidth]{../tmbe_deblooming-short-traj-latex-main/images_saba/03_CaP_50_minus_artery_100mA_10_slice32_gt.png} \\
+        \includegraphics[width=0.10\linewidth]{images_saba/03_CaP_50_minus_artery_100mA_10_slice32_input.png} &
+        \includegraphics[width=0.10\linewidth]{images_saba/patient_03_100mA_10_slice_032_pred.png} &
+        \includegraphics[width=0.10\linewidth]{images_saba/patient_03_100mA_10_slice_032_pred_swin.png} &
+        \includegraphics[width=0.10\linewidth]{images_saba/03_CaP_50_minus_artery_100mA_10_slice32_gt.png} \\
 
         % -------- Real example --------
-        \includegraphics[width=0.10\linewidth]{../tmbe_deblooming-short-traj-latex-main/images_saba/e29056_187_region_1_input_raw_sagan.png} &
-        \includegraphics[width=0.10\linewidth]{../tmbe_deblooming-short-traj-latex-main/images_saba/e29056_187_region_1_output_resshift.png} &
-        \includegraphics[width=0.10\linewidth]{../tmbe_deblooming-short-traj-latex-main/images_saba/e29056_187_region_1_pred_swin.png} &
+        \includegraphics[width=0.10\linewidth]{images_saba/e29056_187_region_1_input_raw_sagan.png} &
+        \includegraphics[width=0.10\linewidth]{images_saba/e29056_187_region_1_output_resshift.png} &
+        \includegraphics[width=0.10\linewidth]{images_saba/e29056_187_region_1_pred_swin.png} &
         {}
     \end{tabular}
 
@@ -624,14 +624,14 @@ We perform two ablation studies to test the main design choices in the proposed 
             \textbf{GT} &
             \textbf{Proposed} &
             \textbf{SOGAN} \\
-            \includegraphics[width=0.19\linewidth]{../tmbe_deblooming-short-traj-latex-main/images_red/patient_12_vol_10_input_resshift.png} &
-            \includegraphics[width=0.19\linewidth]{../tmbe_deblooming-short-traj-latex-main/images_red/patient_12_vol_10_gt_resshift.png} &
-            \includegraphics[width=0.19\linewidth]{../tmbe_deblooming-short-traj-latex-main/images_red/patient_12_vol_10_output_resshift.png} &
-            \includegraphics[width=0.19\linewidth]{../tmbe_deblooming-short-traj-latex-main/images_red/patient_12_vol_10_output_sogan.png} \\
+            \includegraphics[width=0.19\linewidth]{images_red/patient_12_vol_10_input_resshift.png} &
+            \includegraphics[width=0.19\linewidth]{images_red/patient_12_vol_10_gt_resshift.png} &
+            \includegraphics[width=0.19\linewidth]{images_red/patient_12_vol_10_output_resshift.png} &
+            \includegraphics[width=0.19\linewidth]{images_red/patient_12_vol_10_output_sogan.png} \\
             \multicolumn{2}{c}{\textbf{RED curve: Proposed}} &
             \multicolumn{2}{c}{\textbf{RED curve: SOGAN}} \\
-            \multicolumn{2}{c}{\includegraphics[width=0.34\linewidth]{../tmbe_deblooming-short-traj-latex-main/images_red/patient_12_vol_10_red_curve_resshift.png}} &
-            \multicolumn{2}{c}{\includegraphics[width=0.34\linewidth]{../tmbe_deblooming-short-traj-latex-main/images_red/patient_12_vol_10_red_curve_sogan.png}} \\
+            \multicolumn{2}{c}{\includegraphics[width=0.34\linewidth]{images_red/patient_12_vol_10_red_curve_resshift.png}} &
+            \multicolumn{2}{c}{\includegraphics[width=0.34\linewidth]{images_red/patient_12_vol_10_red_curve_sogan.png}} \\
         \end{tabular}
     \end{minipage}
     \hfill
@@ -643,14 +643,14 @@ We perform two ablation studies to test the main design choices in the proposed 
             \textbf{GT} &
             \textbf{Proposed} &
             \textbf{SOGAN} \\
-            \includegraphics[width=0.19\linewidth]{../tmbe_deblooming-short-traj-latex-main/images_red/patient_24_vol_2_input_resshift.png} &
-            \includegraphics[width=0.19\linewidth]{../tmbe_deblooming-short-traj-latex-main/images_red/patient_24_vol_2_gt_resshift.png} &
-            \includegraphics[width=0.19\linewidth]{../tmbe_deblooming-short-traj-latex-main/images_red/patient_24_vol_2_output_resshift.png} &
-            \includegraphics[width=0.19\linewidth]{../tmbe_deblooming-short-traj-latex-main/images_red/patient_24_vol_2_output_sogan.png} \\
+            \includegraphics[width=0.19\linewidth]{images_red/patient_24_vol_2_input_resshift.png} &
+            \includegraphics[width=0.19\linewidth]{images_red/patient_24_vol_2_gt_resshift.png} &
+            \includegraphics[width=0.19\linewidth]{images_red/patient_24_vol_2_output_resshift.png} &
+            \includegraphics[width=0.19\linewidth]{images_red/patient_24_vol_2_output_sogan.png} \\
             \multicolumn{2}{c}{\textbf{RED curve: Proposed}} &
             \multicolumn{2}{c}{\textbf{RED curve: SOGAN}} \\
-            \multicolumn{2}{c}{\includegraphics[width=0.34\linewidth]{../tmbe_deblooming-short-traj-latex-main/images_red/patient_24_vol_2_red_curve_resshift.png}} &
-            \multicolumn{2}{c}{\includegraphics[width=0.34\linewidth]{../tmbe_deblooming-short-traj-latex-main/images_red/patient_24_vol_2_red_curve_sogan.png}} \\
+            \multicolumn{2}{c}{\includegraphics[width=0.34\linewidth]{images_red/patient_24_vol_2_red_curve_resshift.png}} &
+            \multicolumn{2}{c}{\includegraphics[width=0.34\linewidth]{images_red/patient_24_vol_2_red_curve_sogan.png}} \\
         \end{tabular}
     \end{minipage}
 
