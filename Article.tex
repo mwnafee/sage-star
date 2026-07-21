@@ -21,11 +21,11 @@
 \email{wangg6@rpi.edu}
 
 \begin{abstract}
-\textit{Objective:} Calcium blooming in coronary CT angiography (CCTA) enlarges calcified plaques, obscures the coronary lumen, and complicates stenosis assessment. We aim to debloom CCTA while preserving the calcium core and recovering adjacent lumen structure.
-\textit{Methods:} We propose STAR Diffusion, a short-trajectory restoration framework that maps a blooming-corrupted patch toward a debloomed target. To better model the calcium-lumen interface, we introduce Soft Annular Boundary Attention (SABA), which reduces attention leakage from the blooming-prone annulus into the calcium core and supports boundary-consistent restoration.
-\textit{Results:} In 232 held-out synthetic test volumes, STAR Diffusion achieved a Dice score of 0.9250, Core RMSE of 134.50 HU, and Annulus RMSE of 90.24 HU, with significant gains in Dice and Annulus RMSE over classical, GAN-based, and latent diffusion baselines ($p<0.05$). Ablations showed complementary benefits from spatial prior conditioning and SABA, and the proposed method ran substantially faster than long-trajectory latent diffusion baselines.
-\textit{Conclusion:} Short-trajectory, spatially guided diffusion can debloom CCTA while preserving calcium morphology and adjacent lumen structure.
-\textit{Significance:} This approach may improve CCTA-based coronary stenosis assessment in time- and resource-constrained settings.
+\textbf{BACKGROUND:} Calcium blooming in coronary CT angiography (CCTA) enlarges calcified plaques, obscures the coronary lumen, and complicates stenosis assessment. Short-trajectory image restoration methods offer an efficient alternative to long-trajectory diffusion generation by progressively transforming a corrupted image toward a task-specific target.
+\textbf{OBJECTIVE:} To develop a short-trajectory image restoration method for CCTA calcium deblooming that suppresses blooming artifacts while preserving the calcium core and recovering adjacent lumen structure.
+\textbf{METHODS:} We propose Short-Trajectory Artifact-Reversal (STAR) Diffusion, which maps a blooming-corrupted patch toward a debloomed target through a localized short trajectory. We additionally introduce Soft Annular Boundary Attention (SABA) to reduce attention leakage from the blooming-prone annulus into the calcium core and support boundary-consistent restoration.
+\textbf{RESULTS:} In 232 held-out synthetic test volumes, STAR Diffusion achieved a Dice score of 0.9250, Core RMSE of 134.50 HU, and Annulus RMSE of 90.24 HU, with significant gains in Dice and Annulus RMSE over classical, GAN-based, and latent diffusion baselines ($p<0.05$). Ablations showed complementary benefits from spatial prior conditioning and SABA, and the proposed method ran substantially faster than long-trajectory latent diffusion baselines.
+\textbf{CONCLUSIONS:} Short-trajectory, spatially guided diffusion with boundary-aware attention can debloom CCTA while preserving calcium morphology and adjacent lumen structure, supporting improved coronary stenosis assessment in time- and resource-constrained settings.
 \end{abstract}
 
 \keywords{Diffusion models, coronary CT angiography, calcium blooming, image restoration, reconstruction artifacts}
@@ -68,9 +68,11 @@ More recently, diffusion models have become effective tools for medical image an
 An effective deblooming framework should satisfy three key requirements: it should progressively reduce the artifact through a structured restoration process rather than a single direct mapping, focus the correction on calcium-associated regions instead of unnecessarily modifying the entire image, and incorporate boundary-aware modeling to better separate true calcium from the adjacent annulus. Motivated by these requirements, we propose \textbf{Short-Trajectory Artifact-Reversal (STAR) Diffusion} for CCTA calcium deblooming. Here, artifact-reversal is used in the image domain: the model learns to reduce blooming-corrupted appearance in CCTA patches and recover a debloomed target image representation.
 The main contributions of this work are summarized as follows:
 \begin{itemize}
-    \item \textbf{ROI-guided short-trajectory artifact-reversal diffusion.} We propose STAR Diffusion, a ResShift-inspired framework that formulates calcium deblooming as a short artifact-reversal trajectory from blooming-corrupted CCTA images toward debloomed targets. Instead of applying a full-image or single-step correction, the degradation and reverse restoration processes are restricted to calcium-associated regions using the spatial prior, focusing model capacity on the localized blooming artifact and improving inference efficiency.
+    \item We formulate CCTA calcium deblooming as a short-trajectory image restoration problem and propose STAR Diffusion to progressively restore blooming-corrupted patches toward debloomed targets while preserving calcium morphology and adjacent lumen structure.
 
-    \item \textbf{Calcium-lumen boundary-aware attention.} We introduce \textbf{Soft Annular Boundary Attention (SABA)}, a Swin attention modification for the calcium-lumen interface. SABA applies a soft annular penalty around the calcium boundary to reduce attention from calcium-core tokens to the surrounding blooming annulus, helping distinguish true calcium from artifact-related expansion and supporting consistent lumen recovery.
+    \item We introduce an ROI-localized corruption and reverse-restoration process that uses the calcium spatial prior to restrict the trajectory to calcium-associated regions, focusing model capacity on the blooming artifact and improving inference efficiency.
+
+    \item We introduce Soft Annular Boundary Attention (SABA), a Swin attention modification that applies a directional soft penalty from calcium-core query tokens to annular-ring key tokens, reducing boundary leakage and improving separation of true calcium from the blooming annulus.
 \end{itemize}
 
 
