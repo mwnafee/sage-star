@@ -44,13 +44,9 @@
 \newlabel{sec:saba}{{3.2}{6}{}{subsection.3.2}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Qualitative comparison on synthetic CCTA patches. The first row shows the input and baseline methods; the second row shows the spatial prior, latent diffusion baselines, the proposed method, and ground truth. All patches are displayed using WW/WL = 1300/400 HU.}}{7}{}\protected@file@percent }
 \newlabel{fig:synthetic_qualitative}{{4}{7}{}{figure.4}{}}
-\citation{shao2026deblooming}
-\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Quantitative comparison of calcium deblooming performance. Dice is computed on the calcium core using $>850$ HU, and Core RMSE and Annulus RMSE are computed in the core and annulus, respectively.}}{8}{}\protected@file@percent }
-\newlabel{tab:deblooming_results}{{1}{8}{}{table.1}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Qualitative comparison on clinical CCTA patches. The first row shows the input and baseline methods; the second row shows the spatial prior, latent diffusion baselines, and the proposed method. All patches are displayed using WW/WL = 1300/400 HU.}}{8}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Qualitative comparison on four clinical CCTA patches. The first row shows the input and baseline methods; the second row shows the spatial prior, latent diffusion baselines, and the proposed method. All patches are displayed using WW/WL = 1300/400 HU.}}{8}{}\protected@file@percent }
 \newlabel{fig:real_patient_qualitative}{{5}{8}{}{figure.5}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {4}Experiments}{8}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Experimental Setup}{8}{}\protected@file@percent }
+\citation{shao2026deblooming}
 \citation{zhou2018unetnestedunetarchitecture}
 \citation{CT_SRGAN}
 \citation{yi2018sharpness}
@@ -60,29 +56,30 @@
 \citation{biom11091307}
 \citation{shao2026deblooming}
 \citation{CT_SRGAN,yi2018sharpness,ZHAO_sem,shao2026deblooming}
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Quantitative comparison of calcium deblooming performance. Dice is computed on the calcium core using $>850$ HU, and Core RMSE and Annulus RMSE are computed in the core and annulus, respectively.}}{9}{}\protected@file@percent }
+\newlabel{tab:deblooming_results}{{1}{9}{}{table.1}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Experiments}{9}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Experimental Setup}{9}{}\protected@file@percent }
 \citation{shao2026deblooming}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Results}{9}{}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Spatial-prior ablation (displayed with WW/WL=1300/400)}}{10}{}\protected@file@percent }
-\newlabel{fig:mask_ablation}{{6}{10}{}{figure.6}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces SABA ablation on synthetic (top) and clinical (bottom) examples.(displayed with WW/WL=1300/400)}}{10}{}\protected@file@percent }
-\newlabel{fig:saba_ablation}{{7}{10}{}{figure.7}{}}
 \@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Inference-time comparison of diffusion-based methods. Runtime is reported as average seconds per $128\times 128\times 64$ volume.}}{10}{}\protected@file@percent }
 \newlabel{tab:runtime_comparison}{{2}{10}{}{table.2}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Radial Energy Distribution (RED) analysis on two representative volumes. The images show the central slice of each 3D volume, and the RED curves are computed from the plaque support region.}}{11}{}\protected@file@percent }
-\newlabel{fig:red_analysis}{{8}{11}{}{figure.8}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Results}{10}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Spatial-prior ablation (displayed with WW/WL=1300/400)}}{11}{}\protected@file@percent }
+\newlabel{fig:mask_ablation}{{6}{11}{}{figure.6}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces SABA ablation on synthetic (top) and clinical (bottom) examples.(displayed with WW/WL=1300/400)}}{11}{}\protected@file@percent }
+\newlabel{fig:saba_ablation}{{7}{11}{}{figure.7}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Ablation Study}{11}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Radial Energy Distribution (RED) analysis on two representative volumes. The images show the central slice of each 3D volume, and the RED curves are computed from the plaque support region.}}{12}{}\protected@file@percent }
+\newlabel{fig:red_analysis}{{8}{12}{}{figure.8}{}}
 \@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Ablation study evaluating the effect of calcium spatial prior conditioning. Metrics are aggregated over 232 test volumes from two subjects using fixed HU thresholds: calcium core $>850$ HU and annulus $(550,850]$ HU.}}{12}{}\protected@file@percent }
 \newlabel{tab:spatial_prior_ablation}{{3}{12}{}{table.3}{}}
 \@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces Ablation study comparing the baseline version with Swin only and the proposed version. Metrics are aggregated over 232 test volumes from two subjects using fixed HU thresholds: calcium core $>850$ HU and annulus $(550,850]$ HU.}}{12}{}\protected@file@percent }
 \newlabel{tab:saba_ablation}{{4}{12}{}{table.4}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces Joint ablation of spatial prior and SABA for the proposed model. Metrics are aggregated over 232 test volumes from two subjects using fixed HU thresholds: calcium core $>850$ HU and annulus $(550,850]$ HU.}}{12}{}\protected@file@percent }
-\newlabel{tab:combined_ablation}{{5}{12}{}{table.5}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {6}{\ignorespaces $R_{80}$ and $R_{90}$ values for the two RED cases shown in Fig.~\ref {fig:red_analysis}. Smaller deviations from GT indicate a closer match to the reference radial distribution.}}{12}{}\protected@file@percent }
-\newlabel{tab:red_r80_r90}{{6}{12}{}{table.6}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces Joint ablation of spatial prior and SABA for the proposed model. Metrics are aggregated over 232 test volumes from two subjects using fixed HU thresholds: calcium core $>850$ HU and annulus $(550,850]$ HU.}}{13}{}\protected@file@percent }
+\newlabel{tab:combined_ablation}{{5}{13}{}{table.5}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {6}{\ignorespaces $R_{80}$ and $R_{90}$ values for the two RED cases shown in Fig.~\ref {fig:red_analysis}. Smaller deviations from GT indicate a closer match to the reference radial distribution.}}{13}{}\protected@file@percent }
+\newlabel{tab:red_r80_r90}{{6}{13}{}{table.6}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {5}Discussion}{13}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {6}Conclusion}{13}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {A}Reverse Sampling Details}{13}{}\protected@file@percent }
-\newlabel{supp:reverse_sampling}{{A}{13}{}{section.1}{}}
 \bibstyle{SageV}
 \bibdata{zHenriquesLab-Mendeley}
 \bibcite{pack_blooming}{1}
@@ -90,14 +87,17 @@
 \bibcite{ronneberger2015unetconvolutionalnetworksbiomedical}{3}
 \bibcite{zhou2018unetnestedunetarchitecture}{4}
 \bibcite{goodfellow2014generativeadversarialnetworks}{5}
+\@writefile{toc}{\contentsline {section}{\numberline {6}Conclusion}{14}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {A}Reverse Sampling Details}{14}{}\protected@file@percent }
+\newlabel{supp:reverse_sampling}{{A}{14}{}{section.1}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {B}Radial Energy Distribution}{14}{}\protected@file@percent }
+\newlabel{supp:evaluation_metrics}{{B}{14}{}{section.2}{}}
 \bibcite{CT_SRGAN}{6}
 \bibcite{Zhang2021_CTSR}{7}
 \bibcite{Yang2018_wGAN}{8}
 \bibcite{yi2018sharpness}{9}
 \bibcite{DIRTGAN}{10}
 \bibcite{zhang2022generalizedoneshotdomainadaptation}{11}
-\@writefile{toc}{\contentsline {section}{\numberline {B}Radial Energy Distribution}{14}{}\protected@file@percent }
-\newlabel{supp:evaluation_metrics}{{B}{14}{}{section.2}{}}
 \bibcite{ZHAO_sem}{12}
 \bibcite{xia2022lowdosectusingdenoising}{13}
 \bibcite{liuZeroShotdenoising}{14}
@@ -123,5 +123,5 @@
 \bibcite{rombach2022highresolution}{34}
 \bibcite{ju2024brushnet}{35}
 \bibcite{biom11091307}{36}
-\newlabel{LastPage}{{B}{16}{}{enumiv.36}{}}
-\gdef \@abspage@last{16}
+\newlabel{LastPage}{{B}{17}{}{enumiv.36}{}}
+\gdef \@abspage@last{17}

@@ -5,6 +5,7 @@
 \usepackage{amsmath,amssymb,amsfonts}
 \usepackage{cite}
 \usepackage{textcomp}
+\usepackage{float}
 
 % Match the compact page margins shown in the reference PDF.
 \geometry{left=0.75in,right=0.75in,top=0.75in,bottom=0.75in}
@@ -309,6 +310,8 @@ M_{ij}
 This penalty is directional: it suppresses calcium-core queries to annular-ring keys without blocking the reverse direction. Because the penalty is finite, SABA reduces artifact-contaminated links by a factor proportional to $\exp(-\lambda)$ while preserving useful context.
 
 SABA is applied on the decoder side near the bottleneck, while the encoder keeps standard Swin attention to preserve early feature extraction. In our architecture, it is used at the bottleneck and the adjacent decoder $8\times8$ and $16\times16$ stages, where boundary reconstruction is most sensitive to annulus-to-core leakage and therefore benefits most from the penalty.
+
+
 \begin{figure}[t]
     \centering
     \setlength{\tabcolsep}{1.2pt}
@@ -392,39 +395,14 @@ SABA is applied on the decoder side near the bottleneck, while the encoder keeps
 \end{figure}
 
 
-\begin{table}[t]
-\centering
-\caption{Quantitative comparison of calcium deblooming performance. Dice is computed on the calcium core using $>850$ HU, and Core RMSE and Annulus RMSE are computed in the core and annulus, respectively.}
-\label{tab:deblooming_results}
-\scriptsize
-\setlength{\tabcolsep}{8pt}
-\begin{tabular}{lccc}
-\hline
-\textbf{Method} &
-\textbf{Dice $\uparrow$} &
-\begin{tabular}[c]{@{}c@{}}\textbf{Core}\\\textbf{RMSE $\downarrow$}\end{tabular} &
-\begin{tabular}[c]{@{}c@{}}\textbf{Annulus}\\\textbf{RMSE $\downarrow$}\end{tabular} \\
-\hline
-Blooming-corrupted input & $0.3842 \pm 0.3366$ & $341.4590 \pm 34.8052$ & $176.1679 \pm 14.7582$ \\
-Morphological Shrinking & $0.3842 \pm 0.2590$ & $746.4000 \pm 103.8000$ & $508.0000 \pm 99.2000$ \\
-Wiener Deconvolution & $0.7082 \pm 0.1381$ & $225.5000 \pm 51.6000$ & $231.0000 \pm 60.2000$ \\
-SRGAN & $0.7405 \pm 0.1046$ & $215.3337 \pm 46.8714$ & $212.0082 \pm 41.3469$ \\
-SRGAN-no-style & $0.6766 \pm 0.1446$ & $245.6082 \pm 55.6651$ & $215.4069 \pm 45.3816$ \\
-SAGAN & $0.6792 \pm 0.1372$ & $249.6572 \pm 56.2867$ & $225.5519 \pm 45.2428$ \\
-SOGAN & $\underline{0.8922} \pm 0.0587$ & $\textbf{131.4178} \pm 19.5148$ & $155.5562 \pm 32.3092$ \\
-U-Net++ & $0.8870 \pm 0.0284$ & $187.1475 \pm 27.7500$ & $\underline{144.0696} \pm 23.3815$ \\
-U-Net++ Sharp & $0.8171 \pm 0.0412$ & $153.7231 \pm 17.5009$ & $235.9129 \pm 35.7622$ \\
-LDM-1000 & $0.7205 \pm 0.1807$ & $278.3594 \pm 33.2693$ & $168.9410 \pm 16.1816$ \\
-LDM-10 & $0.7071 \pm 0.1342$ & $311.0971 \pm 32.5633$ & $176.0186 \pm 22.4940$ \\
-Proposed & $\textbf{0.9250} \pm 0.0781$ & $\underline{134.4998} \pm 32.2103$ & $\textbf{90.2365} \pm 9.7464$ \\
-\hline
-\end{tabular}
-\end{table}
 
-\begin{figure}[t]
+
+\clearpage
+\begin{figure}[H]
     \centering
-    \setlength{\tabcolsep}{1.5pt}
+    \setlength{\tabcolsep}{1.2pt}
     \renewcommand{\arraystretch}{1.05}
+    \scriptsize
 
     % ---------------- Patient 1 ----------------
     \begin{tabular}{ccccccc}
@@ -498,9 +476,112 @@ Proposed & $\textbf{0.9250} \pm 0.0781$ & $\underline{134.4998} \pm 32.2103$ & $
         {}
     \end{tabular}
 
-    \caption{Qualitative comparison on clinical CCTA patches. The first row shows the input and baseline methods; the second row shows the spatial prior, latent diffusion baselines, and the proposed method. All patches are displayed using WW/WL = 1300/400 HU.}
+    \vspace{0.7em}
+
+    % ---------------- Patient 3 ----------------
+    \begin{tabular}{ccccccc}
+        \textbf{Input} &
+        \shortstack{\textbf{Morphological}\\\textbf{Shrinking}} &
+        \shortstack{\textbf{Wiener}\\\textbf{Deconvolution}} &
+        \textbf{SRGAN} &
+        \textbf{SRGAN-no-style} &
+        \textbf{SAGAN} &
+        \textbf{SOGAN} \\
+
+        \includegraphics[width=0.12\linewidth]{images_real/e29056_336_region_1_input.png} &
+        \includegraphics[width=0.12\linewidth]{images_real/e29056_336_region_1_HU_Shrink.png} &
+        \includegraphics[width=0.12\linewidth]{images_real/e29056_336_region_1_Wiener_Unsharp.png} &
+        \includegraphics[width=0.12\linewidth]{images_real/e29056_336_region_1_output_raw_srgan.png} &
+        \includegraphics[width=0.12\linewidth]{images_real/e29056_336_region_1_output_raw_srgan_no_style.png} &
+        \includegraphics[width=0.12\linewidth]{images_real/e29056_336_region_1_output_raw_sagan.png} &
+        \includegraphics[width=0.12\linewidth]{images_real/e29056_336_region_1_output_raw_sogan.png} \\
+
+        \textbf{Spatial Prior} &
+        \textbf{U-Net++} &
+        \textbf{U-Net++ Sharp} &
+        \textbf{LDM-1000} &
+        \textbf{LDM-10} &
+        \textbf{Proposed} &
+        {} \\
+
+        \includegraphics[width=0.12\linewidth]{images_real/e29056_336_region_1_mask_raw.png} &
+        \includegraphics[width=0.12\linewidth]{images_real/e29056_336_region_1_output_raw_unetpp.png} &
+        \includegraphics[width=0.12\linewidth]{images_real/e29056_336_region_1_output_raw_unetpp_sharp.png} &
+        \includegraphics[width=0.12\linewidth]{images_real/e29056_336_region_1_pred_ldm1000.png} &
+        \includegraphics[width=0.12\linewidth]{images_real/e29056_336_region_1_pred_ldm10.png} &
+        \includegraphics[width=0.12\linewidth]{images_real/e29056_336_region_1_pred_proposed.png} &
+        {}
+    \end{tabular}
+
+    \vspace{0.7em}
+
+    % ---------------- Patient 4 ----------------
+    \begin{tabular}{ccccccc}
+        \textbf{Input} &
+        \shortstack{\textbf{Morphological}\\\textbf{Shrinking}} &
+        \shortstack{\textbf{Wiener}\\\textbf{Deconvolution}} &
+        \textbf{SRGAN} &
+        \textbf{SRGAN-no-style} &
+        \textbf{SAGAN} &
+        \textbf{SOGAN} \\
+
+        \includegraphics[width=0.12\linewidth]{images_real/e29056_364_region_1_input.png} &
+        \includegraphics[width=0.12\linewidth]{images_real/e29056_364_region_1_HU_Shrink.png} &
+        \includegraphics[width=0.12\linewidth]{images_real/e29056_364_region_1_Wiener_Unsharp.png} &
+        \includegraphics[width=0.12\linewidth]{images_real/e29056_364_region_1_output_raw_srgan.png} &
+        \includegraphics[width=0.12\linewidth]{images_real/e29056_364_region_1_output_raw_srgan_no_style.png} &
+        \includegraphics[width=0.12\linewidth]{images_real/e29056_364_region_1_output_raw_sagan.png} &
+        \includegraphics[width=0.12\linewidth]{images_real/e29056_364_region_1_output_raw_sogan.png} \\
+
+        \textbf{Spatial Prior} &
+        \textbf{U-Net++} &
+        \textbf{U-Net++ Sharp} &
+        \textbf{LDM-1000} &
+        \textbf{LDM-10} &
+        \textbf{Proposed} &
+        {} \\
+
+        \includegraphics[width=0.12\linewidth]{images_real/e29056_364_region_1_mask_raw.png} &
+        \includegraphics[width=0.12\linewidth]{images_real/e29056_364_region_1_output_raw_unetpp.png} &
+        \includegraphics[width=0.12\linewidth]{images_real/e29056_364_region_1_output_raw_unetpp_sharp.png} &
+        \includegraphics[width=0.12\linewidth]{images_real/e29056_364_region_1_ldm1000.png} &
+        \includegraphics[width=0.12\linewidth]{images_real/e29056_364_region_1_pred_ldm10.png} &
+        \includegraphics[width=0.12\linewidth]{images_real/e29056_364_region_1_pred_proposed.png} &
+        {}
+    \end{tabular}
+
+    \caption{Qualitative comparison on four clinical CCTA patches. The first row shows the input and baseline methods; the second row shows the spatial prior, latent diffusion baselines, and the proposed method. All patches are displayed using WW/WL = 1300/400 HU.}
     \label{fig:real_patient_qualitative}
 \end{figure}
+
+\begin{table}[t]
+\centering
+\caption{Quantitative comparison of calcium deblooming performance. Dice is computed on the calcium core using $>850$ HU, and Core RMSE and Annulus RMSE are computed in the core and annulus, respectively.}
+\label{tab:deblooming_results}
+\scriptsize
+\setlength{\tabcolsep}{8pt}
+\begin{tabular}{lccc}
+\hline
+\textbf{Method} &
+\textbf{Dice $\uparrow$} &
+\begin{tabular}[c]{@{}c@{}}\textbf{Core}\\\textbf{RMSE $\downarrow$}\end{tabular} &
+\begin{tabular}[c]{@{}c@{}}\textbf{Annulus}\\\textbf{RMSE $\downarrow$}\end{tabular} \\
+\hline
+Blooming-corrupted input & $0.3842 \pm 0.3366$ & $341.4590 \pm 34.8052$ & $176.1679 \pm 14.7582$ \\
+Morphological Shrinking & $0.3842 \pm 0.2590$ & $746.4000 \pm 103.8000$ & $508.0000 \pm 99.2000$ \\
+Wiener Deconvolution & $0.7082 \pm 0.1381$ & $225.5000 \pm 51.6000$ & $231.0000 \pm 60.2000$ \\
+SRGAN & $0.7405 \pm 0.1046$ & $215.3337 \pm 46.8714$ & $212.0082 \pm 41.3469$ \\
+SRGAN-no-style & $0.6766 \pm 0.1446$ & $245.6082 \pm 55.6651$ & $215.4069 \pm 45.3816$ \\
+SAGAN & $0.6792 \pm 0.1372$ & $249.6572 \pm 56.2867$ & $225.5519 \pm 45.2428$ \\
+SOGAN & $\underline{0.8922} \pm 0.0587$ & $\textbf{131.4178} \pm 19.5148$ & $155.5562 \pm 32.3092$ \\
+U-Net++ & $0.8870 \pm 0.0284$ & $187.1475 \pm 27.7500$ & $\underline{144.0696} \pm 23.3815$ \\
+U-Net++ Sharp & $0.8171 \pm 0.0412$ & $153.7231 \pm 17.5009$ & $235.9129 \pm 35.7622$ \\
+LDM-1000 & $0.7205 \pm 0.1807$ & $278.3594 \pm 33.2693$ & $168.9410 \pm 16.1816$ \\
+LDM-10 & $0.7071 \pm 0.1342$ & $311.0971 \pm 32.5633$ & $176.0186 \pm 22.4940$ \\
+Proposed & $\textbf{0.9250} \pm 0.0781$ & $\underline{134.4998} \pm 32.2103$ & $\textbf{90.2365} \pm 9.7464$ \\
+\hline
+\end{tabular}
+\end{table}
 
 
 \section{Experiments}
