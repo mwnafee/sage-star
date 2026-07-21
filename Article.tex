@@ -588,23 +588,23 @@ Proposed & $\textbf{0.9250} \pm 0.0781$ & $\underline{134.4998} \pm 32.2103$ & $
 
 \subsection{Experimental Setup}
 
-\noindent\textbf{Datasets.}
+\subsubsection{Datasets}
 
 We evaluate the proposed method using the synthetic CCTA deblooming dataset from Shao et al.~\cite{shao2026deblooming}, which provides paired blooming-corrupted and debloomed $128 \times 128 \times 64$ CCTA volumes with calcium spatial priors. The dataset contains 3{,}463 MAT files from 12 source subjects, with multiple anatomical backgrounds, three calcium concentrations, and four exposure/noise levels. We use a subject-level split with no overlap between training, validation, and testing: 8 subjects for training, 2 for validation, and 2 for testing, corresponding to 2{,}402, 365, and 696 MAT files, respectively.
 The model is trained slice-wise using 20{,}000 random $128 \times 128$ patches from the training subjects and 2{,}500 patches from the validation subjects. For final testing, we perform volume-level evaluation on 232 held-out 3D cases selected from the 696 test volumes. Each selected case represents a distinct anatomical background, calcium concentration, and exposure/noise setting, avoiding repeated slices or duplicate test conditions. Inference is applied slice-by-slice and reassembled into 3D volumes for evaluation. Quantitative evaluation is performed only on synthetic data because paired references are available; clinical CCTA data from the same authors are used only for qualitative assessment.
 
-\noindent \textbf{Baselines.}
+\subsubsection{Baselines}
 We compare the proposed method with classical, single-step learning-based, and diffusion-based baselines. The classical baselines include morphological shrinking and Wiener deconvolution. The learning-based baselines include U-Net++~\cite{zhou2018unetnestedunetarchitecture}, U-Net++ Sharp, SRGAN~\cite{CT_SRGAN}, SRGAN-no-style, SAGAN~\cite{yi2018sharpness}, and SOGAN~\cite{ZHAO_sem}. SRGAN-no-style removes the VGG Gram-matrix style loss from SRGAN, while U-Net++ Sharp adds the Sobel edge-magnitude sharpness loss used in SAGAN.
 
 To compare against a long-trajectory diffusion baseline, we also evaluate a conditional latent diffusion model (LDM)~\cite{rombach2022highresolution}. The LDM generates debloomed images conditioned on the blooming-corrupted input and spatial prior. We use latent diffusion because it is more efficient than pixel-space diffusion and can reduce dense pixel-level learning burden for localized restoration~\cite{ju2024brushnet,LatentPaint}. We report two sampling variants from the same trained model: LDM-1000 with standard 1000-step DDPM sampling and LDM-10 with accelerated 10-step DDIM sampling.
 
-\noindent \textbf{Evaluation Metrics.}
+\subsubsection{Evaluation Metrics}
 
 The main goal of calcium deblooming is to recover calcified plaque morphology while improving coronary lumen visibility. We evaluate performance using three volumetric metrics: Dice for calcium-core agreement, Core RMSE for HU fidelity within the calcified plaque, and Annulus RMSE for residual blooming or overcorrection near the plaque-lumen interface. 
 Prior 3D-printed coronary plaque studies report calcified plaques around 800--850 HU with measured attenuation well above that level~\cite{biom11091307}, consistent with the dataset used by Shao et al.~\cite{shao2026deblooming}; we therefore define the calcium core using an $>850$ HU threshold, where blooming is most pronounced. The annular boundary region is defined as $550<\mathrm{HU}\leq850$. 
 For each method, metrics are computed once per selected 3D test volume after slice-wise inference and volumetric reassembly, yielding 232 volume-level values for statistical comparison.
 
-\noindent \textbf{Implementation Details.}
+\subsubsection{Implementation Details}
 For the GAN- and U-Net-based baselines~\cite{CT_SRGAN,yi2018sharpness,ZHAO_sem,shao2026deblooming}, we follow the original architectures and losses and retrain all models on the same subject-level split. Models are optimized with Adam using an initial learning rate of $10^{-5}$ and exponential decay of 0.99 per epoch. Training is run for 200 epochs, and the checkpoint with the best validation loss is reported. For spatial-prior-guided variants, the blooming-corrupted CCTA patch is concatenated with the calcium spatial prior. No additional geometric or intensity augmentation is used.
 
 For the proposed STAR Diffusion method, we use a pixel-space spatial-prior-conditioned Swin U-Net diffusion model. The blooming-corrupted CCTA patch and calcium spatial prior are provided as conditional inputs at each denoising step, and ROI-localized corruption restricts the diffusion process to calcium-centered blooming regions. The model is trained for 30{,}000 iterations with a 10-step diffusion trajectory, Adam optimization, initial learning rate $5\times10^{-5}$, cosine decay to $2\times10^{-5}$, 5{,}000 warm-up iterations, batch size 24, and EMA rate 0.999. The reported checkpoint is selected using the same held-out validation subjects.
@@ -613,13 +613,13 @@ For the LDM baseline, we train a conditional latent diffusion model to generate 
 
 \subsection{Results}
 
-\noindent\textbf{Quantitative Evaluation}
+\subsubsection{Quantitative Evaluation}
 For quantitative evaluation, we use the simulated subset of the dataset from Shao et al.~\cite{shao2026deblooming}, which provides paired blooming-corrupted inputs, ground-truth debloomed targets, and calcium-region annotations. All methods are evaluated against the same ground-truth target using Dice score for calcium-region agreement, Core RMSE within the calcium core, and Annulus RMSE within the surrounding annular region. The original blooming-corrupted input provides a baseline measure of artifact severity prior to correction, showing poor calcium-region agreement with a Dice score of 0.3842 and large intensity errors in both evaluated regions. The remaining rows in Table~\ref{tab:deblooming_results} compare the deblooming methods, including the proposed STAR Diffusion approach.
 
 At significance level 0.05, using an approximate Welch's two-sample $t$-test on the reported summary statistics, the proposed method was significantly better than SOGAN in Dice ($p=2.39\times10^{-7}$) and Annulus RMSE ($p=4.39\times10^{-87}$), while Core RMSE was not significantly different from SOGAN ($p\approx0.21$). 
 The main observations from Table~\ref{tab:deblooming_results} are as follows. i) The classical baselines are insufficient for this task: morphological shrinking substantially degrades both calcium morphology and HU fidelity, while Wiener deconvolution improves over simple shrinking but remains behind the learning-based methods. ii) Methods without spatial-prior guidance, including SRGAN, SRGAN-no-style, and SAGAN, show weaker deblooming performance; compared with the strongest method in this no-prior group, the proposed method improves Dice by at least 24.9\%, reduces Core RMSE by at least 37.5\%, and reduces Annulus RMSE by at least 57.4\%. iii) Adding spatial guidance improves performance, as seen from SOGAN and U-Net++, which are stronger than the unconstrained GAN baselines because they better preserve local calcium structure. iv) The LDM variants lag behind the leading spatially guided methods, suggesting that long-trajectory generation from noise is less effective for this localized restoration problem. Overall, the proposed method performs best because it combines spatial prior conditioning with a short-trajectory restoration process, allowing better calcium-core preservation and stronger suppression of the blooming halo.
 
-\noindent\textbf{Qualitative Evaluation}
+\subsubsection{Qualitative Evaluation}
 As shown in Fig.~\ref{fig:synthetic_qualitative}, the classical baselines are insufficient for calcium deblooming: morphological shrinking overcorrects the plaque and introduces discontinuities, while Wiener deconvolution leaves residual blooming. Among single-step learning baselines, spatial-prior-guided methods such as SOGAN and U-Net++ better preserve plaque shape, whereas SRGAN, SRGAN-no-style, and SAGAN mainly improve sharpness without reliably matching ground-truth morphology. The LDM variants are also unreliable for this localized restoration task; LDM-10 shows strong shape mismatch, and LDM-1000 improves over LDM-10 but still leaves the calcium region enlarged relative to the ground truth. Overall, the proposed method gives the closest synthetic result, preserving calcium volume and edge fidelity while reducing the surrounding blooming halo.
 
 For clinical CCTA patches, where paired ground truth is unavailable, Fig.~\ref{fig:real_patient_qualitative} shows a similar ranking under more realistic conditions, with the same failure modes becoming more pronounced. The classical and LDM baselines show visible overcorrection, residual blooming, or shape mismatch, consistent with the synthetic examples. Among spatial-prior-guided methods, U-Net++ and SOGAN remain more plausible than the non-prior GAN variants, but U-Net++ can undercorrect the blooming region and SOGAN may allow boundary bleeding near the calcium edge. In comparison, the proposed method provides the best qualitative balance, suppressing the blooming halo while avoiding excessive erosion or distortion of the calcium core.
@@ -632,9 +632,9 @@ For clinical CCTA patches, where paired ground truth is unavailable, Fig.~\ref{f
       {\scriptsize
       \setlength{\tabcolsep}{2pt}
       \begin{tabular}{ccccc}
-          \parbox[c]{0.18\linewidth}{\centering \textbf{Input}\\[2.0em]\includegraphics[width=\linewidth]{images_mask/patient_24_100mA_2_slice_032_input_processed.png}} &
-          \parbox[c]{0.18\linewidth}{\centering \textbf{Spatial Prior}\\[2.0em]\includegraphics[width=\linewidth]{images_mask/patient_24_100mA_2_slice_032_mask_dilate.png}} &
-          \parbox[c]{0.18\linewidth}{\centering \textbf{Ground Truth}\\[2.0em]\includegraphics[width=\linewidth]{images_mask/patient_24_100mA_2_slice_032_gt.png}} &
+          \parbox[c]{0.18\linewidth}{\centering \textbf{Input}\\\includegraphics[width=\linewidth]{images_mask/patient_24_100mA_2_slice_032_input_processed.png}} &
+          \parbox[c]{0.18\linewidth}{\centering \textbf{Spatial Prior}\\\includegraphics[width=\linewidth]{images_mask/patient_24_100mA_2_slice_032_mask_dilate.png}} &
+          \parbox[c]{0.18\linewidth}{\centering \textbf{Ground Truth}\\\includegraphics[width=\linewidth]{images_mask/patient_24_100mA_2_slice_032_gt.png}} &
           \parbox[c]{0.18\linewidth}{\centering \textbf{With spatial prior}\\\includegraphics[width=\linewidth]{images_mask/patient_24_100mA_2_slice_032_pred.png}} &
           \parbox[c]{0.18\linewidth}{\centering \textbf{Without spatial prior}\\\includegraphics[width=\linewidth]{images_mask/patient_24_100mA_2_slice_032_pred_no_mask.png}}
       \end{tabular}}
@@ -645,21 +645,22 @@ For clinical CCTA patches, where paired ground truth is unavailable, Fig.~\ref{f
 
 \begin{figure}[t]
     \centering
-    \setlength{\tabcolsep}{3pt}
+    \setlength{\tabcolsep}{1.2pt}
     \renewcommand{\arraystretch}{1.05}
+    \scriptsize
     \begin{tabular}{cccc}
         \textbf{Input} & \textbf{\shortstack{Proposed\\version}} & \textbf{\shortstack{Baseline version\\with Swin only}} & \textbf{\shortstack{Ground\\Truth}} \\
 
         % -------- Synthetic example --------
-        \includegraphics[width=0.10\linewidth]{images_saba/03_CaP_50_minus_artery_100mA_10_slice32_input.png} &
-        \includegraphics[width=0.10\linewidth]{images_saba/patient_03_100mA_10_slice_032_pred.png} &
-        \includegraphics[width=0.10\linewidth]{images_saba/patient_03_100mA_10_slice_032_pred_swin.png} &
-        \includegraphics[width=0.10\linewidth]{images_saba/03_CaP_50_minus_artery_100mA_10_slice32_gt.png} \\
+        \includegraphics[width=0.18\linewidth]{images_saba/03_CaP_50_minus_artery_100mA_10_slice32_input.png} &
+        \includegraphics[width=0.18\linewidth]{images_saba/patient_03_100mA_10_slice_032_pred.png} &
+        \includegraphics[width=0.18\linewidth]{images_saba/patient_03_100mA_10_slice_032_pred_swin.png} &
+        \includegraphics[width=0.18\linewidth]{images_saba/03_CaP_50_minus_artery_100mA_10_slice32_gt.png} \\
 
         % -------- Real example --------
-        \includegraphics[width=0.10\linewidth]{images_saba/e29056_187_region_1_input_raw_sagan.png} &
-        \includegraphics[width=0.10\linewidth]{images_saba/e29056_187_region_1_output_resshift.png} &
-        \includegraphics[width=0.10\linewidth]{images_saba/e29056_187_region_1_pred_swin.png} &
+        \includegraphics[width=0.18\linewidth]{images_saba/e29056_187_region_1_input_raw_sagan.png} &
+        \includegraphics[width=0.18\linewidth]{images_saba/e29056_187_region_1_output_resshift.png} &
+        \includegraphics[width=0.18\linewidth]{images_saba/e29056_187_region_1_pred_swin.png} &
         {}
     \end{tabular}
 
@@ -681,7 +682,7 @@ For clinical CCTA patches, where paired ground truth is unavailable, Fig.~\ref{f
 \end{tabular}
 \end{table}
 
-\noindent\textbf{Inference-Time Efficiency.}
+\subsubsection{Inference-Time Efficiency}
 
 We compare runtime against the latent diffusion baselines because the proposed method uses a short-trajectory diffusion process. Runtime is measured per reconstructed $128\times128\times64$ volume. The proposed method requires 18.55 s, compared with 30.09 s for LDM-10 and 2778.66 s for LDM-1000. Although LDM-10 also uses 10 sampling steps, it generates from noise in latent space, whereas the proposed method performs pixel-space restoration through a short Markov trajectory from the corrupted input. 
 As a result, the proposed method is approximately $1.6\times$ faster than LDM-10 and nearly $150\times$ faster than LDM-1000, while maintaining stronger deblooming performance. 
@@ -738,7 +739,7 @@ We perform two ablation studies to test the main design choices in the proposed 
     \caption{Radial Energy Distribution (RED) analysis on two representative volumes. The images show the central slice of each 3D volume, and the RED curves are computed from the plaque support region.}
     \label{fig:red_analysis}
 \end{figure}
-\noindent\textbf{Importance of Spatial Prior.}
+\subsubsection{Importance of Spatial Prior}
 
 The first ablation evaluates the role of spatial prior conditioning in the proposed deblooming framework. As shown in Table~\ref{tab:spatial_prior_ablation}, adding the spatial prior substantially improves restoration performance, confirming that localized guidance is important for focusing the model on the blooming-affected region. The qualitative example in Fig.~\ref{fig:mask_ablation} shows the same effect: with spatial prior conditioning, the restored calcium core is more localized and morphologically consistent, while removing the prior leads to errors in both core shape and extent. Notably, the proposed method degrades less sharply without the spatial prior than SOGAN and U-Net++, suggesting that the short-trajectory formulation provides some robustness to missing spatial guidance, although the prior remains important for the best performance.
 
@@ -772,7 +773,7 @@ Without spatial prior & $0.8052 \pm 0.2086$ & $236.5011 \pm 49.1845$ & $153.6387
 }
 \end{table}
 
-\noindent\textbf{Effect of Soft Annular Boundary Attention}
+\subsubsection{Effect of Soft Annular Boundary Attention}
 
 The second ablation evaluates the effect of Soft Annular Boundary Attention (SABA). We compare the localized ResShift baseline with standard Swin attention in all layers against the proposed version, which uses the same backbone but replaces selected deeper attention blocks with SABA. 
 This isolates the effect of the annular boundary penalty beyond the standard Swin-based inversion backbone.
@@ -799,7 +800,7 @@ Proposed version & $0.9250 \pm 0.0781$ & $134.4998 \pm 32.2103$ & $90.2365 \pm 9
 }
 \end{table}
 
-\noindent\textbf{Joint Ablation of Spatial Prior and SABA}
+\subsubsection{Joint Ablation of Spatial Prior and SABA}
 
 \begin{table}[t]
 \centering
@@ -824,7 +825,7 @@ Without spatial prior or SABA & $0.7951 \pm 0.2161$ & $255.2451 \pm 44.8662$ & $
 
 The joint ablation shows that both components matter: removing either spatial prior conditioning or SABA reduces performance, and removing both causes the largest drop. The full proposed model performs best, which suggests that the two design choices are complementary rather than redundant.
 
-\noindent\textbf{Radial Energy Distribution.}
+\subsubsection{Radial Energy Distribution}
 
 As a secondary case-based analysis, we examine \textbf{Radial Energy Distribution (RED)}, a metric closely related to the encircled-energy curve used in blur analysis. RED captures how high-intensity calcium signal accumulates with increasing distance from the lesion center in the 3D plaque volume. The full RED setup, including the 550 HU baseline, 850 HU center estimate, and summary radii such as $R_{80}$ and $R_{90}$, is described in Supplementary Sec.~\ref{supp:evaluation_metrics}.
 
