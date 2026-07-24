@@ -1,16 +1,16 @@
 # Fdb version 4
-["bibtex Article"] 1784750069.34443 "Article.aux" "Article.bbl" "Article" 1784750168.91092 0
+["bibtex Article"] 1784919154.25912 "Article.aux" "Article.bbl" "Article" 1784919158.16874 0
   "./SageV.bst" 1784584487 28465 85b45bca39b0a2f223956e4ccc2e96ec ""
   "./zHenriquesLab-Mendeley.bib" 1784584487 35920 309c86c6bda3afc10c70a21b5ac20171 ""
-  "Article.aux" 1784750168 11060 84f5db3cefb9d9ba14f4582a5f9fd168 "pdflatex"
+  "Article.aux" 1784919157 11471 e1a210442575afafc8ca7a34b91400c6 "pdflatex"
   (generated)
   "Article.bbl"
   "Article.blg"
   (rewritten before read)
-["pdflatex"] 1784750165.33891 "f:/writings/sage-star-git/Article.tex" "Article.pdf" "Article" 1784750168.9116 0
-  "Article.aux" 1784750168 11060 84f5db3cefb9d9ba14f4582a5f9fd168 "pdflatex"
-  "Article.bbl" 1784750069 12056 7ebe79d5b1264e39f17eaad75169d5a5 "bibtex Article"
-  "Article.tex" 1784750164 72152 34019e34c9accf00213a1b0e569bf46c ""
+["pdflatex"] 1784919154.52788 "f:/writings/sage-star-git/Article.tex" "Article.pdf" "Article" 1784919158.16933 0
+  "Article.aux" 1784919157 11471 e1a210442575afafc8ca7a34b91400c6 "pdflatex"
+  "Article.bbl" 1784919154 12056 7ebe79d5b1264e39f17eaad75169d5a5 "bibtex Article"
+  "Article.tex" 1784919150 73450 e0da0c66e4ca45ebac939195d84d7744 ""
   "C:/Users/nafeem/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1784667107 82507 a9eef8696c92627b87e9975edea03b2a ""
   "C:/Users/nafeem/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1779135666 13333440 fd2fdf56cca9d48d7eff13f404bf1578 ""
   "E:/MikTex/fonts/enc/dvips/base/8r.enc" 1458473887 4993 80dc9bab7f31fb78a000ccfed0e27cab ""
@@ -139,7 +139,7 @@
   "E:/MikTex/tex/latex/psnfss/ts1ptm.fd" 1585253778 653 96f56dc5d1ef1fe1121f1cfeec70ee0c ""
   "E:/MikTex/tex/latex/textcase/textcase.sty" 1740138976 3164 6b6fe33a41126007f2392b3b931bd33f ""
   "E:/MikTex/tex/latex/tools/calc.sty" 1761901070 10374 2ffd4f27c7f90b8a300608069537743c ""
-  "f:/writings/sage-star-git/Article.tex" 1784750164 72152 34019e34c9accf00213a1b0e569bf46c ""
+  "f:/writings/sage-star-git/Article.tex" 1784919150 73450 e0da0c66e4ca45ebac939195d84d7744 ""
   "generic.sty" 1784584487 243 13ad427f8e9330b8ab87b2e5490ba1f0 ""
   "images/Slide1.PNG" 1783525554 209576 0c37d07f010e33ab6ea854ff2a5d9a38 ""
   "images/Slide2.PNG" 1782769277 286814 1c0edccd0ea680f15ca0b71f3cba8629 ""

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.5.18)  22 JUL 2026 15:56
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.5.18)  24 JUL 2026 14:52
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -449,13 +449,10 @@ LaTeX Font Info:    Font shape `OT1/phv/m/n' will be
 (Font)              scaled to size 8.54997pt on input line 65.
 LaTeX Font Info:    Font shape `OT1/phv/b/n' will be
 (Font)              scaled to size 8.54997pt on input line 65.
-
-Overfull \vbox (1.61285pt too high) has occurred while \output is active []
-
 LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <7> not available
-(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 69.
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 67.
 LaTeX Font Info:    Font shape `OT1/phv/m/sl' will be
-(Font)              scaled to size 6.64998pt on input line 69.
+(Font)              scaled to size 6.64998pt on input line 67.
  [1
 
 
@@ -470,9 +467,9 @@ File: images/Slide1.PNG Graphic file (type png)
 Package pdftex.def Info: images/Slide1.PNG  used on input line 92.
 (pdftex.def)             Requested size: 480.59395pt x 360.45036pt.
 LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <11> not available
-(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 110.
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 105.
 LaTeX Font Info:    Font shape `OT1/phv/m/sl' will be
-(Font)              scaled to size 10.44997pt on input line 110.
+(Font)              scaled to size 10.44997pt on input line 105.
  [3] [4 <./images/Slide1.PNG>]
 LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <11> not available
 (Font)              size <10.95> substituted on input line 204.
@@ -892,33 +889,32 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [8
 
- <./images_real/e29056_187_region_1_input_raw_sagan.png (PNG copy)> <./images_real/e29056_187_region_1_HU_Shrink.png> <./images_real/e29056_187_region_1_Wiener_Unsharp.png> <./images_real/e29056_187_region_1_output_raw_srgan.png (PNG copy)> <./images_real/e29056_187_region_1_output_raw_srgan_no_style.png (PNG copy)> <./images_real/e29056_187_region_1_output_raw_sagan.png (PNG copy)> <./images_real/e29056_187_region_1_output_raw_sogan_mask_undilate.png (PNG copy)> <./images_real/e29056_187_region_1_mask_raw.png (PNG copy)> <./images_real/e29056_187_region_1_output_unetpp_amp.png (PNG copy)> <./images_real/e29056_187_region_1_output_unetpp_sharp_patient.png (PNG copy)> <./images_real/e29056_187_region_1_pred_ldm_output_resshift.png> <./images_real/e29056_187_region_1_pred_ldm10_output_resshift.png> <./images_real/e29056_187_region_1_output_resshift.png> <./images_real/e35127_147_region_1_input_raw_sagan.png (PNG copy)> <./images_real/e35127_147_region_1_HU_Shrink.png> <./images_real/e35127_147_region_1_Wiener_Unsharp.png> <./images_real/e35127_147_region_1_output_raw_srgan.png (PNG copy)> <./images_real/e35127_147_region_1_output_raw_srgan_no_style.png (PNG copy)> <./images_real/e35127_147_region_1_output_raw_sagan.png (PNG copy)> <./images_real/e35127_147_region_1_output_sogan_mask_undilate.png (PNG copy)> <./images_real/e35127_147_region_1_mask_raw.png (PNG copy)> <./images_real/e35127_147_region_1_output_unetpp_amp.png (PNG copy)> <./images_real/e35127_147_region_1_output_unetpp_sharp_patient.png (PNG copy)> <./images_real/e35127_147_region_1_pred_ldm_output_resshift.png> <./images_real/e35127_147_region_1_pred_ldm10_output_resshift.png> <./images_real/e35127_147_region_1_output_resshift.png> <./images_real/e29056_336_region_1_input.png (PNG copy)> <./images_real/e29056_336_region_1_HU_Shrink.png (PNG copy)> <./images_real/e29056_336_region_1_Wiener_Unsharp.png (PNG copy)> <./images_real/e29056_336_region_1_output_raw_srgan.png (PNG copy)> <./images_real/e29056_336_region_1_output_raw_srgan_no_style.png (PNG copy)> <./images_real/e29056_336_region_1_output_raw_sagan.png (PNG copy)> <./images_real/e29056_336_region_1_output_raw_sogan.png (PNG copy)> <./images_real/e29056_336_region_1_mask_raw.png (PNG copy)> <./images_real/e29056_336_region_1_output_raw_unetpp.png (PNG copy)> <./images_real/e29056_336_region_1_output_raw_unetpp_sharp.png (PNG copy)> <./images_real/e29056_336_region_1_pred_ldm1000.png (PNG copy)> <./images_real/e29056_336_region_1_pred_ldm10.png (PNG copy)> <./images_real/e29056_336_region_1_pred_proposed.png (PNG copy)> <./images_real/e29056_364_region_1_input.png (PNG copy)> <./images_real/e29056_364_region_1_HU_Shrink.png (PNG copy)> <./images_real/e29056_364_region_1_Wiener_Unsharp.png (PNG copy)> <./images_real/e29056_364_region_1_output_raw_srgan.png (PNG copy)> <./images_real/e29056_364_region_1_output_raw_srgan_no_style.png (PNG copy)> <./images_real/e29056_364_region_1_output_raw_sagan.png (PNG copy)> <./images_real/e29056_364_region_1_output_raw_sogan.png (PNG copy)> <./images_real/e29056_364_region_1_mask_raw.png (PNG copy)> <./images_real/e29056_364_region_1_output_raw_unetpp.png (PNG copy)> <./images_real/e29056_364_region_1_output_raw_unetpp_sharp.png (PNG copy)> <./images_real/e29056_364_region_1_ldm1000.png (PNG copy)> <./images_real/e29056_364_region_1_pred_ldm10.png (PNG copy)> <./images_real/e29056_364_region_1_pred_proposed.png (PNG copy)>] [9]
-<images_mask/patient_24_100mA_2_slice_032_input_processed.png, id=166, 289.08pt x 289.08pt>
+ <./images_real/e29056_187_region_1_input_raw_sagan.png (PNG copy)> <./images_real/e29056_187_region_1_HU_Shrink.png> <./images_real/e29056_187_region_1_Wiener_Unsharp.png> <./images_real/e29056_187_region_1_output_raw_srgan.png (PNG copy)> <./images_real/e29056_187_region_1_output_raw_srgan_no_style.png (PNG copy)> <./images_real/e29056_187_region_1_output_raw_sagan.png (PNG copy)> <./images_real/e29056_187_region_1_output_raw_sogan_mask_undilate.png (PNG copy)> <./images_real/e29056_187_region_1_mask_raw.png (PNG copy)> <./images_real/e29056_187_region_1_output_unetpp_amp.png (PNG copy)> <./images_real/e29056_187_region_1_output_unetpp_sharp_patient.png (PNG copy)> <./images_real/e29056_187_region_1_pred_ldm_output_resshift.png> <./images_real/e29056_187_region_1_pred_ldm10_output_resshift.png> <./images_real/e29056_187_region_1_output_resshift.png> <./images_real/e35127_147_region_1_input_raw_sagan.png (PNG copy)> <./images_real/e35127_147_region_1_HU_Shrink.png> <./images_real/e35127_147_region_1_Wiener_Unsharp.png> <./images_real/e35127_147_region_1_output_raw_srgan.png (PNG copy)> <./images_real/e35127_147_region_1_output_raw_srgan_no_style.png (PNG copy)> <./images_real/e35127_147_region_1_output_raw_sagan.png (PNG copy)> <./images_real/e35127_147_region_1_output_sogan_mask_undilate.png (PNG copy)> <./images_real/e35127_147_region_1_mask_raw.png (PNG copy)> <./images_real/e35127_147_region_1_output_unetpp_amp.png (PNG copy)> <./images_real/e35127_147_region_1_output_unetpp_sharp_patient.png (PNG copy)> <./images_real/e35127_147_region_1_pred_ldm_output_resshift.png> <./images_real/e35127_147_region_1_pred_ldm10_output_resshift.png> <./images_real/e35127_147_region_1_output_resshift.png> <./images_real/e29056_336_region_1_input.png (PNG copy)> <./images_real/e29056_336_region_1_HU_Shrink.png (PNG copy)> <./images_real/e29056_336_region_1_Wiener_Unsharp.png (PNG copy)> <./images_real/e29056_336_region_1_output_raw_srgan.png (PNG copy)> <./images_real/e29056_336_region_1_output_raw_srgan_no_style.png (PNG copy)> <./images_real/e29056_336_region_1_output_raw_sagan.png (PNG copy)> <./images_real/e29056_336_region_1_output_raw_sogan.png (PNG copy)> <./images_real/e29056_336_region_1_mask_raw.png (PNG copy)> <./images_real/e29056_336_region_1_output_raw_unetpp.png (PNG copy)> <./images_real/e29056_336_region_1_output_raw_unetpp_sharp.png (PNG copy)> <./images_real/e29056_336_region_1_pred_ldm1000.png (PNG copy)> <./images_real/e29056_336_region_1_pred_ldm10.png (PNG copy)> <./images_real/e29056_336_region_1_pred_proposed.png (PNG copy)> <./images_real/e29056_364_region_1_input.png (PNG copy)> <./images_real/e29056_364_region_1_HU_Shrink.png (PNG copy)> <./images_real/e29056_364_region_1_Wiener_Unsharp.png (PNG copy)> <./images_real/e29056_364_region_1_output_raw_srgan.png (PNG copy)> <./images_real/e29056_364_region_1_output_raw_srgan_no_style.png (PNG copy)> <./images_real/e29056_364_region_1_output_raw_sagan.png (PNG copy)> <./images_real/e29056_364_region_1_output_raw_sogan.png (PNG copy)> <./images_real/e29056_364_region_1_mask_raw.png (PNG copy)> <./images_real/e29056_364_region_1_output_raw_unetpp.png (PNG copy)> <./images_real/e29056_364_region_1_output_raw_unetpp_sharp.png (PNG copy)> <./images_real/e29056_364_region_1_ldm1000.png (PNG copy)> <./images_real/e29056_364_region_1_pred_ldm10.png (PNG copy)> <./images_real/e29056_364_region_1_pred_proposed.png (PNG copy)>] [9] [10]
+<images_mask/patient_24_100mA_2_slice_032_input_processed.png, id=169, 289.08pt x 289.08pt>
 File: images_mask/patient_24_100mA_2_slice_032_input_processed.png Graphic file (type png)
 <use images_mask/patient_24_100mA_2_slice_032_input_processed.png>
 Package pdftex.def Info: images_mask/patient_24_100mA_2_slice_032_input_processed.png  used on input line 639.
 (pdftex.def)             Requested size: 91.05649pt x 91.05626pt.
-<images_mask/patient_24_100mA_2_slice_032_mask_dilate.png, id=167, 289.08pt x 289.08pt>
+<images_mask/patient_24_100mA_2_slice_032_mask_dilate.png, id=170, 289.08pt x 289.08pt>
 File: images_mask/patient_24_100mA_2_slice_032_mask_dilate.png Graphic file (type png)
 <use images_mask/patient_24_100mA_2_slice_032_mask_dilate.png>
 Package pdftex.def Info: images_mask/patient_24_100mA_2_slice_032_mask_dilate.png  used on input line 640.
 (pdftex.def)             Requested size: 91.05649pt x 91.05626pt.
-<images_mask/patient_24_100mA_2_slice_032_gt.png, id=168, 289.08pt x 289.08pt>
+<images_mask/patient_24_100mA_2_slice_032_gt.png, id=171, 289.08pt x 289.08pt>
 File: images_mask/patient_24_100mA_2_slice_032_gt.png Graphic file (type png)
 <use images_mask/patient_24_100mA_2_slice_032_gt.png>
 Package pdftex.def Info: images_mask/patient_24_100mA_2_slice_032_gt.png  used on input line 641.
 (pdftex.def)             Requested size: 91.05649pt x 91.05626pt.
-<images_mask/patient_24_100mA_2_slice_032_pred.png, id=169, 289.08pt x 289.08pt>
+<images_mask/patient_24_100mA_2_slice_032_pred.png, id=172, 289.08pt x 289.08pt>
 File: images_mask/patient_24_100mA_2_slice_032_pred.png Graphic file (type png)
 <use images_mask/patient_24_100mA_2_slice_032_pred.png>
 Package pdftex.def Info: images_mask/patient_24_100mA_2_slice_032_pred.png  used on input line 642.
 (pdftex.def)             Requested size: 91.05649pt x 91.05626pt.
-<images_mask/patient_24_100mA_2_slice_032_pred_no_mask.png, id=170, 289.08pt x 289.08pt>
+<images_mask/patient_24_100mA_2_slice_032_pred_no_mask.png, id=173, 289.08pt x 289.08pt>
 File: images_mask/patient_24_100mA_2_slice_032_pred_no_mask.png Graphic file (type png)
 <use images_mask/patient_24_100mA_2_slice_032_pred_no_mask.png>
 Package pdftex.def Info: images_mask/patient_24_100mA_2_slice_032_pred_no_mask.png  used on input line 643.
 (pdftex.def)             Requested size: 91.05649pt x 91.05626pt.
- [10]
 <images_saba/03_CaP_50_minus_artery_100mA_10_slice32_input.png, id=174, 128.48pt x 128.48pt>
 File: images_saba/03_CaP_50_minus_artery_100mA_10_slice32_input.png Graphic file (type png)
 <use images_saba/03_CaP_50_minus_artery_100mA_10_slice32_input.png>
@@ -957,128 +953,128 @@ Package pdftex.def Info: images_saba/e29056_187_region_1_pred_swin.png  used on 
 LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 693.
  (E:\MikTex\tex/latex/psnfss\ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
-)
-<images_red/patient_12_vol_10_input.png, id=181, 267.399pt x 267.399pt>
+) [11 <./images_mask/patient_24_100mA_2_slice_032_input_processed.png> <./images_mask/patient_24_100mA_2_slice_032_mask_dilate.png> <./images_mask/patient_24_100mA_2_slice_032_gt.png> <./images_mask/patient_24_100mA_2_slice_032_pred.png> <./images_mask/patient_24_100mA_2_slice_032_pred_no_mask.png> <./images_saba/03_CaP_50_minus_artery_100mA_10_slice32_input.png (PNG copy)> <./images_saba/patient_03_100mA_10_slice_032_pred.png> <./images_saba/patient_03_100mA_10_slice_032_pred_swin.png> <./images_saba/03_CaP_50_minus_artery_100mA_10_slice32_gt.png (PNG copy)> <./images_saba/e29056_187_region_1_input_raw_sagan.png (PNG copy)> <./images_saba/e29056_187_region_1_output_resshift.png> <./images_saba/e29056_187_region_1_pred_swin.png>]
+<images_red/patient_12_vol_10_input.png, id=194, 267.399pt x 267.399pt>
 File: images_red/patient_12_vol_10_input.png Graphic file (type png)
 <use images_red/patient_12_vol_10_input.png>
 Package pdftex.def Info: images_red/patient_12_vol_10_input.png  used on input line 710.
 (pdftex.def)             Requested size: 57.01337pt x 57.01228pt.
-<images_red/patient_12_vol_10_gt.png, id=182, 267.399pt x 267.399pt>
+<images_red/patient_12_vol_10_gt.png, id=195, 267.399pt x 267.399pt>
 File: images_red/patient_12_vol_10_gt.png Graphic file (type png)
 <use images_red/patient_12_vol_10_gt.png>
 Package pdftex.def Info: images_red/patient_12_vol_10_gt.png  used on input line 711.
 (pdftex.def)             Requested size: 57.01337pt x 57.01228pt.
-<images_red/patient_12_vol_10_output_resshift.png, id=183, 289.08pt x 289.08pt>
+<images_red/patient_12_vol_10_output_resshift.png, id=196, 289.08pt x 289.08pt>
 File: images_red/patient_12_vol_10_output_resshift.png Graphic file (type png)
 <use images_red/patient_12_vol_10_output_resshift.png>
 Package pdftex.def Info: images_red/patient_12_vol_10_output_resshift.png  used on input line 712.
 (pdftex.def)             Requested size: 57.01337pt x 57.01216pt.
-<images_red/patient_12_vol_10_output_sogan.png, id=184, 267.399pt x 267.399pt>
+<images_red/patient_12_vol_10_output_sogan.png, id=197, 267.399pt x 267.399pt>
 File: images_red/patient_12_vol_10_output_sogan.png Graphic file (type png)
 <use images_red/patient_12_vol_10_output_sogan.png>
 Package pdftex.def Info: images_red/patient_12_vol_10_output_sogan.png  used on input line 713.
 (pdftex.def)             Requested size: 57.01337pt x 57.01228pt.
-<images_red/patient_12_vol_10_red_curve_resshift.png, id=185, 425.9112pt x 317.0244pt>
+<images_red/patient_12_vol_10_red_curve_resshift.png, id=198, 425.9112pt x 317.0244pt>
 File: images_red/patient_12_vol_10_red_curve_resshift.png Graphic file (type png)
 <use images_red/patient_12_vol_10_red_curve_resshift.png>
 Package pdftex.def Info: images_red/patient_12_vol_10_red_curve_resshift.png  used on input line 715.
 (pdftex.def)             Requested size: 111.54922pt x 83.02907pt.
-<images_red/patient_12_vol_10_red_curve_sogan.png, id=186, 425.9112pt x 317.0244pt>
+<images_red/patient_12_vol_10_red_curve_sogan.png, id=199, 425.9112pt x 317.0244pt>
 File: images_red/patient_12_vol_10_red_curve_sogan.png Graphic file (type png)
 <use images_red/patient_12_vol_10_red_curve_sogan.png>
 Package pdftex.def Info: images_red/patient_12_vol_10_red_curve_sogan.png  used on input line 716.
 (pdftex.def)             Requested size: 111.54922pt x 83.02907pt.
-<images_red/patient_12_vol_3_input.png, id=187, 267.399pt x 267.399pt>
+<images_red/patient_12_vol_3_input.png, id=200, 267.399pt x 267.399pt>
 File: images_red/patient_12_vol_3_input.png Graphic file (type png)
 <use images_red/patient_12_vol_3_input.png>
 Package pdftex.def Info: images_red/patient_12_vol_3_input.png  used on input line 725.
 (pdftex.def)             Requested size: 57.01337pt x 57.01228pt.
-<images_red/patient_12_vol_3_gt.png, id=188, 267.399pt x 267.399pt>
+<images_red/patient_12_vol_3_gt.png, id=201, 267.399pt x 267.399pt>
 File: images_red/patient_12_vol_3_gt.png Graphic file (type png)
 <use images_red/patient_12_vol_3_gt.png>
 Package pdftex.def Info: images_red/patient_12_vol_3_gt.png  used on input line 726.
 (pdftex.def)             Requested size: 57.01337pt x 57.01228pt.
-<images_red/patient_12_vol_3_output_resshift.png, id=189, 289.08pt x 289.08pt>
+<images_red/patient_12_vol_3_output_resshift.png, id=202, 289.08pt x 289.08pt>
 File: images_red/patient_12_vol_3_output_resshift.png Graphic file (type png)
 <use images_red/patient_12_vol_3_output_resshift.png>
 Package pdftex.def Info: images_red/patient_12_vol_3_output_resshift.png  used on input line 727.
 (pdftex.def)             Requested size: 57.01337pt x 57.01216pt.
-<images_red/patient_12_vol_3_output_sogan.png, id=190, 267.399pt x 267.399pt>
+<images_red/patient_12_vol_3_output_sogan.png, id=203, 267.399pt x 267.399pt>
 File: images_red/patient_12_vol_3_output_sogan.png Graphic file (type png)
 <use images_red/patient_12_vol_3_output_sogan.png>
 Package pdftex.def Info: images_red/patient_12_vol_3_output_sogan.png  used on input line 728.
 (pdftex.def)             Requested size: 57.01337pt x 57.01228pt.
-<images_red/patient_12_vol_3_red_curve_resshift.png, id=191, 425.9112pt x 317.0244pt>
+<images_red/patient_12_vol_3_red_curve_resshift.png, id=204, 425.9112pt x 317.0244pt>
 File: images_red/patient_12_vol_3_red_curve_resshift.png Graphic file (type png)
 <use images_red/patient_12_vol_3_red_curve_resshift.png>
 Package pdftex.def Info: images_red/patient_12_vol_3_red_curve_resshift.png  used on input line 730.
 (pdftex.def)             Requested size: 111.54922pt x 83.02907pt.
-<images_red/patient_12_vol_3_red_curve_sogan.png, id=192, 425.9112pt x 317.0244pt>
+<images_red/patient_12_vol_3_red_curve_sogan.png, id=205, 425.9112pt x 317.0244pt>
 File: images_red/patient_12_vol_3_red_curve_sogan.png Graphic file (type png)
 <use images_red/patient_12_vol_3_red_curve_sogan.png>
 Package pdftex.def Info: images_red/patient_12_vol_3_red_curve_sogan.png  used on input line 731.
 (pdftex.def)             Requested size: 111.54922pt x 83.02907pt.
-<images_red/patient_24_vol_2_input.png, id=193, 267.399pt x 267.399pt>
+<images_red/patient_24_vol_2_input.png, id=206, 267.399pt x 267.399pt>
 File: images_red/patient_24_vol_2_input.png Graphic file (type png)
 <use images_red/patient_24_vol_2_input.png>
 Package pdftex.def Info: images_red/patient_24_vol_2_input.png  used on input line 740.
 (pdftex.def)             Requested size: 57.01337pt x 57.01228pt.
-<images_red/patient_24_vol_2_gt.png, id=194, 267.399pt x 267.399pt>
+<images_red/patient_24_vol_2_gt.png, id=207, 267.399pt x 267.399pt>
 File: images_red/patient_24_vol_2_gt.png Graphic file (type png)
 <use images_red/patient_24_vol_2_gt.png>
 Package pdftex.def Info: images_red/patient_24_vol_2_gt.png  used on input line 741.
 (pdftex.def)             Requested size: 57.01337pt x 57.01228pt.
-<images_red/patient_24_vol_2_output_resshift.png, id=195, 289.08pt x 289.08pt>
+<images_red/patient_24_vol_2_output_resshift.png, id=208, 289.08pt x 289.08pt>
 File: images_red/patient_24_vol_2_output_resshift.png Graphic file (type png)
 <use images_red/patient_24_vol_2_output_resshift.png>
 Package pdftex.def Info: images_red/patient_24_vol_2_output_resshift.png  used on input line 742.
 (pdftex.def)             Requested size: 57.01337pt x 57.01216pt.
-<images_red/patient_24_vol_2_output_sogan.png, id=196, 267.399pt x 267.399pt>
+<images_red/patient_24_vol_2_output_sogan.png, id=209, 267.399pt x 267.399pt>
 File: images_red/patient_24_vol_2_output_sogan.png Graphic file (type png)
 <use images_red/patient_24_vol_2_output_sogan.png>
 Package pdftex.def Info: images_red/patient_24_vol_2_output_sogan.png  used on input line 743.
 (pdftex.def)             Requested size: 57.01337pt x 57.01228pt.
-<images_red/patient_24_vol_2_red_curve_resshift.png, id=197, 425.9112pt x 317.0244pt>
+<images_red/patient_24_vol_2_red_curve_resshift.png, id=210, 425.9112pt x 317.0244pt>
 File: images_red/patient_24_vol_2_red_curve_resshift.png Graphic file (type png)
 <use images_red/patient_24_vol_2_red_curve_resshift.png>
 Package pdftex.def Info: images_red/patient_24_vol_2_red_curve_resshift.png  used on input line 745.
 (pdftex.def)             Requested size: 111.54922pt x 83.02907pt.
-<images_red/patient_24_vol_2_red_curve_sogan.png, id=198, 425.9112pt x 317.0244pt>
+<images_red/patient_24_vol_2_red_curve_sogan.png, id=211, 425.9112pt x 317.0244pt>
 File: images_red/patient_24_vol_2_red_curve_sogan.png Graphic file (type png)
 <use images_red/patient_24_vol_2_red_curve_sogan.png>
 Package pdftex.def Info: images_red/patient_24_vol_2_red_curve_sogan.png  used on input line 746.
 (pdftex.def)             Requested size: 111.54922pt x 83.02907pt.
-<images_red/patient_61_vol_14_input.png, id=199, 267.399pt x 267.399pt>
+<images_red/patient_61_vol_14_input.png, id=212, 267.399pt x 267.399pt>
 File: images_red/patient_61_vol_14_input.png Graphic file (type png)
 <use images_red/patient_61_vol_14_input.png>
 Package pdftex.def Info: images_red/patient_61_vol_14_input.png  used on input line 755.
 (pdftex.def)             Requested size: 57.01337pt x 57.01228pt.
-<images_red/patient_61_vol_14_gt.png, id=200, 267.399pt x 267.399pt>
+<images_red/patient_61_vol_14_gt.png, id=213, 267.399pt x 267.399pt>
 File: images_red/patient_61_vol_14_gt.png Graphic file (type png)
 <use images_red/patient_61_vol_14_gt.png>
 Package pdftex.def Info: images_red/patient_61_vol_14_gt.png  used on input line 756.
 (pdftex.def)             Requested size: 57.01337pt x 57.01228pt.
-<images_red/patient_61_vol_14_output_resshift.png, id=201, 289.08pt x 289.08pt>
+<images_red/patient_61_vol_14_output_resshift.png, id=214, 289.08pt x 289.08pt>
 File: images_red/patient_61_vol_14_output_resshift.png Graphic file (type png)
 <use images_red/patient_61_vol_14_output_resshift.png>
 Package pdftex.def Info: images_red/patient_61_vol_14_output_resshift.png  used on input line 757.
 (pdftex.def)             Requested size: 57.01337pt x 57.01216pt.
-<images_red/patient_61_vol_14_output_sogan.png, id=202, 267.399pt x 267.399pt>
+<images_red/patient_61_vol_14_output_sogan.png, id=215, 267.399pt x 267.399pt>
 File: images_red/patient_61_vol_14_output_sogan.png Graphic file (type png)
 <use images_red/patient_61_vol_14_output_sogan.png>
 Package pdftex.def Info: images_red/patient_61_vol_14_output_sogan.png  used on input line 758.
 (pdftex.def)             Requested size: 57.01337pt x 57.01228pt.
-<images_red/patient_61_vol_14_red_curve_resshift.png, id=203, 425.9112pt x 317.0244pt>
+<images_red/patient_61_vol_14_red_curve_resshift.png, id=216, 425.9112pt x 317.0244pt>
 File: images_red/patient_61_vol_14_red_curve_resshift.png Graphic file (type png)
 <use images_red/patient_61_vol_14_red_curve_resshift.png>
 Package pdftex.def Info: images_red/patient_61_vol_14_red_curve_resshift.png  used on input line 760.
 (pdftex.def)             Requested size: 111.54922pt x 83.02907pt.
-<images_red/patient_61_vol_14_red_curve_sogan.png, id=204, 425.9112pt x 317.0244pt>
+<images_red/patient_61_vol_14_red_curve_sogan.png, id=217, 425.9112pt x 317.0244pt>
 File: images_red/patient_61_vol_14_red_curve_sogan.png Graphic file (type png)
 <use images_red/patient_61_vol_14_red_curve_sogan.png>
 Package pdftex.def Info: images_red/patient_61_vol_14_red_curve_sogan.png  used on input line 761.
 (pdftex.def)             Requested size: 111.54922pt x 83.02907pt.
- [11 <./images_mask/patient_24_100mA_2_slice_032_input_processed.png> <./images_mask/patient_24_100mA_2_slice_032_mask_dilate.png> <./images_mask/patient_24_100mA_2_slice_032_gt.png> <./images_mask/patient_24_100mA_2_slice_032_pred.png> <./images_mask/patient_24_100mA_2_slice_032_pred_no_mask.png> <./images_saba/03_CaP_50_minus_artery_100mA_10_slice32_input.png (PNG copy)> <./images_saba/patient_03_100mA_10_slice_032_pred.png> <./images_saba/patient_03_100mA_10_slice_032_pred_swin.png> <./images_saba/03_CaP_50_minus_artery_100mA_10_slice32_gt.png (PNG copy)> <./images_saba/e29056_187_region_1_input_raw_sagan.png (PNG copy)> <./images_saba/e29056_187_region_1_output_resshift.png> <./images_saba/e29056_187_region_1_pred_swin.png>] [12 <./images_red/patient_12_vol_10_input.png> <./images_red/patient_12_vol_10_gt.png> <./images_red/patient_12_vol_10_output_resshift.png> <./images_red/patient_12_vol_10_output_sogan.png> <./images_red/patient_12_vol_10_red_curve_resshift.png> <./images_red/patient_12_vol_10_red_curve_sogan.png> <./images_red/patient_12_vol_3_input.png> <./images_red/patient_12_vol_3_gt.png> <./images_red/patient_12_vol_3_output_resshift.png> <./images_red/patient_12_vol_3_output_sogan.png> <./images_red/patient_12_vol_3_red_curve_resshift.png> <./images_red/patient_12_vol_3_red_curve_sogan.png> <./images_red/patient_24_vol_2_input.png> <./images_red/patient_24_vol_2_gt.png> <./images_red/patient_24_vol_2_output_resshift.png> <./images_red/patient_24_vol_2_output_sogan.png> <./images_red/patient_24_vol_2_red_curve_resshift.png> <./images_red/patient_24_vol_2_red_curve_sogan.png> <./images_red/patient_61_vol_14_input.png> <./images_red/patient_61_vol_14_gt.png> <./images_red/patient_61_vol_14_output_resshift.png> <./images_red/patient_61_vol_14_output_sogan.png> <./images_red/patient_61_vol_14_red_curve_resshift.png> <./images_red/patient_61_vol_14_red_curve_sogan.png>] [13] [14] (Article.bbl
+ [12 <./images_red/patient_12_vol_10_input.png> <./images_red/patient_12_vol_10_gt.png> <./images_red/patient_12_vol_10_output_resshift.png> <./images_red/patient_12_vol_10_output_sogan.png> <./images_red/patient_12_vol_10_red_curve_resshift.png> <./images_red/patient_12_vol_10_red_curve_sogan.png> <./images_red/patient_12_vol_3_input.png> <./images_red/patient_12_vol_3_gt.png> <./images_red/patient_12_vol_3_output_resshift.png> <./images_red/patient_12_vol_3_output_sogan.png> <./images_red/patient_12_vol_3_red_curve_resshift.png> <./images_red/patient_12_vol_3_red_curve_sogan.png> <./images_red/patient_24_vol_2_input.png> <./images_red/patient_24_vol_2_gt.png> <./images_red/patient_24_vol_2_output_resshift.png> <./images_red/patient_24_vol_2_output_sogan.png> <./images_red/patient_24_vol_2_red_curve_resshift.png> <./images_red/patient_24_vol_2_red_curve_sogan.png> <./images_red/patient_61_vol_14_input.png> <./images_red/patient_61_vol_14_gt.png> <./images_red/patient_61_vol_14_output_resshift.png> <./images_red/patient_61_vol_14_output_sogan.png> <./images_red/patient_61_vol_14_red_curve_resshift.png> <./images_red/patient_61_vol_14_red_curve_sogan.png>] [13] [14] (Article.bbl
 Underfull \hbox (badness 10000) in paragraph at lines 46--54
 \OT1/pcr/m/n/11 https://ietresearch.onlinelibrary.wiley.com/doi/abs/10.1049/ipr2.12797\OT1/ptm/m/n/11 .
  []
@@ -1103,12 +1099,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 109--118
 \OT1/ptm/m/n/11 URL \OT1/pcr/m/n/11 https://aapm.onlinelibrary.wiley.com/doi/abs/10.1002/mp.17431\OT1/ptm/m/n/11 .
  []
 
-
+[16]
 Underfull \hbox (badness 10000) in paragraph at lines 225--234
 \OT1/ptm/m/n/11 URL \OT1/pcr/m/n/11 https://aapm.onlinelibrary.wiley.com/doi/abs/10.1118/1.1567271\OT1/ptm/m/n/11 .
  []
 
-[16]) [17] (Article.aux)
+) [17] (Article.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-03-20>
@@ -1125,7 +1121,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  72i,15n,79p,1474b,514s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <E:/MikTex/fonts/type1/public/amsfonts/cm/cmbx10.pfb><E:/MikTex/fonts/type1/public/amsfonts/cm/cmex10.pfb><E:/MikTex/fonts/type1/public/amsfonts/cm/cmmi10.pfb><E:/MikTex/fonts/type1/public/amsfonts/cm/cmmi8.pfb><E:/MikTex/fonts/type1/public/amsfonts/cm/cmmi9.pfb><E:/MikTex/fonts/type1/public/amsfonts/cm/cmr10.pfb><E:/MikTex/fonts/type1/public/amsfonts/cm/cmr6.pfb><E:/MikTex/fonts/type1/public/amsfonts/cm/cmr8.pfb><E:/MikTex/fonts/type1/public/amsfonts/cm/cmr9.pfb><E:/MikTex/fonts/type1/public/amsfonts/cm/cmsy10.pfb><E:/MikTex/fonts/type1/public/amsfonts/cm/cmsy8.pfb><E:/MikTex/fonts/type1/public/amsfonts/cm/cmsy9.pfb><E:/MikTex/fonts/type1/urw/courier/ucrr8a.pfb><E:/MikTex/fonts/type1/urw/helvetic/uhvb8a.pfb><E:/MikTex/fonts/type1/urw/helvetic/uhvr8a.pfb><E:/MikTex/fonts/type1/urw/helvetic/uhvro8a.pfb><E:/MikTex/fonts/type1/urw/times/utmb8a.pfb><E:/MikTex/fonts/type1/urw/times/utmr8a.pfb><E:/MikTex/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Article.pdf (17 pages, 3388437 bytes).
+Output written on Article.pdf (17 pages, 3388945 bytes).
 PDF statistics:
  341 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
