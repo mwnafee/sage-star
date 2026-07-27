@@ -22,7 +22,7 @@
 \email{wangg6@rpi.edu}
 
 \begin{abstract}
-\textbf{BACKGROUND:} Calcium blooming in coronary CT angiography (CCTA) enlarges calcified plaques, obscures the coronary lumen, and complicates stenosis assessment. \textbf{OBJECTIVE:} To develop an efficient restoration method that suppresses blooming while preserving calcium and recovering adjacent lumen structure. \textbf{METHODS:} We propose Short-Trajectory Artifact-Reversal (STAR) Diffusion, which progressively transforms a blooming-corrupted patch toward a debloomed target. Soft Annular Boundary Attention (SABA) reduces attention leakage from the blooming-prone annulus into the calcium core. \textbf{RESULTS:} On 232 held-out synthetic 3D test cases, each sampled from a distinct anatomical location and unique plaque, background, calcium concentration, and exposure/noise configuration, STAR Diffusion achieved Dice 0.9250, Core RMSE 134.50 HU, and Annulus RMSE 90.24 HU. Metrics were computed after slice-wise inference and volumetric reassembly, with one matched case-level measurement per test volume for direct comparison across methods. The method improved calcium-region agreement and annular error relative to classical, GAN-based, and latent diffusion baselines, while ablations showed complementary contributions from spatial-prior conditioning and SABA. STAR Diffusion also reduced inference time compared with long-trajectory latent diffusion. \textbf{CONCLUSIONS:} Short-trajectory, spatially guided diffusion with boundary-aware attention provides effective CCTA calcium deblooming, preserving plaque morphology, reducing blooming, and improving lumen visibility. These results support efficient case-level restoration for coronary stenosis assessment.
+\textbf{BACKGROUND:} Calcium blooming in coronary CT angiography (CCTA) enlarges calcified plaques, obscures the coronary lumen, and complicates stenosis assessment. \textbf{OBJECTIVE:} To develop an efficient restoration method that suppresses blooming while preserving calcium and recovering adjacent lumen structure. \textbf{METHODS:} We propose Short-Trajectory Artifact-Reversal (STAR) Diffusion, which progressively transforms a blooming-corrupted patch toward a debloomed target. Soft Annular Boundary Attention (SABA) reduces attention leakage from the blooming-prone annulus into the calcium core. \textbf{RESULTS:} On 232 held-out synthetic 3D test cases, each sampled from a distinct anatomical location and unique plaque, background, calcium concentration, and exposure/noise configuration, STAR Diffusion achieved Dice 0.9248, Core RMSE 134.99 HU, and Annulus RMSE 90.05 HU. Metrics were computed after slice-wise inference and volumetric reassembly, with one matched case-level measurement per test volume for direct comparison across methods. The method improved calcium-region agreement and annular error relative to classical, GAN-based, and latent diffusion baselines, while ablations showed complementary contributions from spatial-prior conditioning and SABA. STAR Diffusion also reduced inference time compared with long-trajectory latent diffusion. \textbf{CONCLUSIONS:} In synthetic paired-data experiments, short-trajectory, spatially guided diffusion with boundary-aware attention reduced blooming while preserving plaque morphology and apparent lumen visibility. Clinical examples showed qualitatively similar behavior across plaque shapes and backgrounds.
 \end{abstract}
 
 \keywords{Diffusion models, coronary CT angiography, calcium blooming, image restoration, reconstruction artifacts}
@@ -286,7 +286,7 @@ B_{ij}
 =
 -\lambda S_i^{(l)} A_{\mathrm{ring},j}^{(l)},
 \]
-where $S_i^{(l)}=1$ indicates that query token $i$ belongs to the calcium core, $A_{\mathrm{ring},j}^{(l)}=1$ indicates that key token $j$ belongs to the annular ring, and $\lambda>0$ controls the strength of boundary suppression.
+where $S_i^{(l)}=1$ indicates that query token $i$ belongs to the calcium core, $A_{\mathrm{ring},j}^{(l)}=1$ indicates that key token $j$ belongs to the annular ring, and $\lambda>0$ controls the strength of boundary suppression. We use $\lambda=2.0$ in the SABA implementation.
 
 The modified Swin attention becomes
 \[
@@ -563,18 +563,18 @@ SABA is applied on the decoder side near the bottleneck, while the encoder keeps
 \begin{tabular}[c]{@{}c@{}}\textbf{Core}\\\textbf{RMSE $\downarrow$}\end{tabular} &
 \begin{tabular}[c]{@{}c@{}}\textbf{Annulus}\\\textbf{RMSE $\downarrow$}\end{tabular} \\
 \hline
-Blooming-corrupted input & $0.3842 \pm 0.3366$ & $341.4590 \pm 34.8052$ & $176.1679 \pm 14.7582$ \\
+Blooming-corrupted input & $0.3864 \pm 0.3394$ & $341.4590 \pm 34.8805$ & $176.1679 \pm 14.7901$ \\
 Morphological Shrinking & $0.3842 \pm 0.2590$ & $746.4000 \pm 103.8000$ & $508.0000 \pm 99.2000$ \\
 Wiener Deconvolution & $0.7082 \pm 0.1381$ & $225.5000 \pm 51.6000$ & $231.0000 \pm 60.2000$ \\
 SRGAN & $0.7405 \pm 0.1046$ & $215.3337 \pm 46.8714$ & $212.0082 \pm 41.3469$ \\
 SRGAN-no-style & $0.6766 \pm 0.1446$ & $245.6082 \pm 55.6651$ & $215.4069 \pm 45.3816$ \\
 SAGAN & $0.6792 \pm 0.1372$ & $249.6572 \pm 56.2867$ & $225.5519 \pm 45.2428$ \\
-SOGAN & $\underline{0.8922} \pm 0.0587$ & $\textbf{131.4178} \pm 19.5148$ & $155.5562 \pm 32.3092$ \\
+SOGAN & $\underline{0.8903} \pm 0.0617$ & $\textbf{131.2565} \pm 9.5796$ & $156.0697 \pm 22.5101$ \\
 U-Net++ & $0.8870 \pm 0.0284$ & $187.1475 \pm 27.7500$ & $\underline{144.0696} \pm 23.3815$ \\
 U-Net++ Sharp & $0.8171 \pm 0.0412$ & $153.7231 \pm 17.5009$ & $235.9129 \pm 35.7622$ \\
 LDM-1000 & $0.7205 \pm 0.1807$ & $278.3594 \pm 33.2693$ & $168.9410 \pm 16.1816$ \\
 LDM-10 & $0.7071 \pm 0.1342$ & $311.0971 \pm 32.5633$ & $176.0186 \pm 22.4940$ \\
-Proposed & $\textbf{0.9250} \pm 0.0781$ & $\underline{134.4998} \pm 32.2103$ & $\textbf{90.2365} \pm 9.7464$ \\
+Proposed & $\textbf{0.9248} \pm 0.0870$ & $\underline{134.9915} \pm 31.6090$ & $\textbf{90.0532} \pm 12.2174$ \\
 \hline
 \end{tabular*}
 \end{table}
@@ -610,15 +610,15 @@ For the LDM baseline, we train a conditional latent diffusion model to generate 
 \subsection{Results}
 
 \subsubsection{Quantitative Evaluation}
-For quantitative evaluation, we use the simulated subset of the dataset from Shao et al.~\cite{shao2026deblooming}, which provides paired blooming-corrupted inputs, ground-truth debloomed targets, and calcium-region annotations. All methods are evaluated against the same ground-truth target using Dice score for calcium-region agreement, Core RMSE within the calcium core, and Annulus RMSE within the surrounding annular region. The original blooming-corrupted input provides a baseline measure of artifact severity prior to correction, showing poor calcium-region agreement with a Dice score of 0.3842 and large intensity errors in both evaluated regions. The remaining rows in Table~\ref{tab:deblooming_results} compare the deblooming methods, including the proposed STAR Diffusion approach.
+For quantitative evaluation, we use the simulated subset of the dataset from Shao et al.~\cite{shao2026deblooming}, which provides paired blooming-corrupted inputs, ground-truth debloomed targets, and calcium-region annotations. All methods are evaluated against the same ground-truth target using Dice score for calcium-region agreement, Core RMSE within the calcium core, and Annulus RMSE within the surrounding annular region. The original blooming-corrupted input provides a baseline measure of artifact severity prior to correction, showing poor calcium-region agreement with a Dice score of 0.3864 and large intensity errors in both evaluated regions. The remaining rows in Table~\ref{tab:deblooming_results} compare the deblooming methods, including the proposed STAR Diffusion approach.
 
-At significance level 0.05, using an approximate Welch's two-sample $t$-test on the 232 independent case-level measurements per method, the proposed method was significantly better than SOGAN in Dice ($p=2.39\times10^{-7}$) and Annulus RMSE ($p=4.39\times10^{-87}$), while Core RMSE was not significantly different from SOGAN ($p\approx0.21$). The very small Annulus RMSE $p$-value is primarily explained by the large separation between the method means relative to their within-case variability, rather than by sample count alone. These tests use the uniquely configured 3D cases, rather than treating individual slices from a volume as separate samples.
+Using two-sided paired Wilcoxon signed-rank tests on the 232 matched per-volume measurements, the proposed method was significantly better than SOGAN in Dice (W=2711, $p=4.79\times10^{-26}$) and Annulus RMSE (W=0, $p=8.25\times10^{-40}$), while Core RMSE was not significantly different (W=12531, $p=0.3370$). No exact zero differences occurred in these comparisons, so $n_{\mathrm{eff}}=232$ for each test. The very small Annulus RMSE $p$-value reflects the large separation between the method means relative to their within-case variability. The tests were performed on paired per-volume differences, with absolute differences ranked and tie and continuity corrections applied in the normal approximation.
 The main observations from Table~\ref{tab:deblooming_results} are as follows. i) The classical baselines are insufficient for this task: morphological shrinking substantially degrades both calcium morphology and HU fidelity, while Wiener deconvolution improves over simple shrinking but remains behind the learning-based methods. ii) Methods without spatial-prior guidance, including SRGAN, SRGAN-no-style, and SAGAN, show weaker deblooming performance; compared with the strongest method in this no-prior group, the proposed method improves Dice by at least 24.9\%, reduces Core RMSE by at least 37.5\%, and reduces Annulus RMSE by at least 57.4\%. iii) Adding spatial guidance improves performance, as seen from SOGAN and U-Net++, which are stronger than the unconstrained GAN baselines because they better preserve local calcium structure. iv) The LDM variants lag behind the leading spatially guided methods, suggesting that long-trajectory generation from noise is less effective for this localized restoration problem. Overall, the proposed method performs best because it combines spatial prior conditioning with a short-trajectory restoration process, allowing better calcium-core preservation and stronger suppression of the blooming halo.
 
 \subsubsection{Qualitative Evaluation}
 As shown in Fig.~\ref{fig:synthetic_qualitative}, the classical baselines are insufficient for calcium deblooming: morphological shrinking overcorrects the plaque and introduces discontinuities, while Wiener deconvolution leaves residual blooming. Among single-step learning baselines, spatial-prior-guided methods such as SOGAN and U-Net++ better preserve plaque shape, whereas SRGAN, SRGAN-no-style, and SAGAN mainly improve sharpness without reliably matching ground-truth morphology. The LDM variants are also unreliable for this localized restoration task; LDM-10 shows strong shape mismatch, and LDM-1000 improves over LDM-10 but still leaves the calcium region enlarged relative to the ground truth. Overall, the proposed method gives the closest synthetic result, preserving calcium volume and edge fidelity while reducing the surrounding blooming halo.
 
-For clinical CCTA patches, where paired ground truth is unavailable, Fig.~\ref{fig:real_patient_qualitative} presents four cases spanning different plaque shapes and anatomical backgrounds. Despite the absence of paired references, the qualitative ranking is consistent with the synthetic results, while the failure modes are more apparent in these realistic examples. The classical and LDM baselines exhibit either overcorrection or residual blooming. The GAN variants without a spatial prior sometimes fail to separate the calcium core from the surrounding blooming annulus, applying similar corrections to both regions and consequently leaving residual halo or eroding the plaque unnecessarily. Among the spatial-prior-guided methods, U-Net++ and SOGAN remain more plausible, although U-Net++ can undercorrect the blooming region and SOGAN may produce boundary bleeding near the calcium edge. The proposed method provides the most balanced restoration: it suppresses the blooming halo while preserving the calcium core, improves recovery of the lumen, and maintains lumen visibility by preventing the residual annular signal from obscuring the lumen.
+For clinical CCTA patches, where paired ground truth is unavailable, Fig.~\ref{fig:real_patient_qualitative} presents four cases spanning different plaque shapes and anatomical backgrounds. The qualitative ordering is broadly consistent with the synthetic results, although these examples cannot guarantee clinical effectiveness or stenosis-assessment benefit, they suggest potential for improved plaque and lumen visualization. The classical and LDM baselines exhibit either overcorrection or residual blooming. The GAN variants without a spatial prior sometimes fail to separate the calcium core from the surrounding blooming annulus, applying similar corrections to both regions and consequently leaving residual halo or eroding the plaque unnecessarily. Among the spatial-prior-guided methods, U-Net++ and SOGAN remain more plausible, although U-Net++ can undercorrect the blooming region and SOGAN may produce boundary bleeding near the calcium edge. In these examples, the proposed method shows a favorable qualitative balance: it suppresses the blooming halo while preserving the calcium core and maintaining apparent lumen visibility.
 
 \begin{figure}[t]
     \centering
@@ -773,18 +773,18 @@ The first ablation evaluates the role of spatial prior conditioning in the propo
 \textbf{Core RMSE (HU) $\downarrow$} &
 \textbf{Annulus RMSE (HU) $\downarrow$} \\
 \hline
-Blooming-corrupted input & $0.3842 \pm 0.3366$ & $341.4590 \pm 34.8052$ & $176.1679 \pm 14.7582$ \\
+Blooming-corrupted input & $0.3864 \pm 0.3394$ & $341.4590 \pm 34.8805$ & $176.1679 \pm 14.7901$ \\
 \hline
 \multicolumn{4}{l}{\textbf{U-Net++}} \\
 With spatial prior & $0.8870 \pm 0.0284$ & $187.1475 \pm 27.7500$ & $144.0696 \pm 23.3815$ \\
 Without spatial prior & $0.6796 \pm 0.0850$ & $299.7722 \pm 65.0760$ & $289.9809 \pm 68.8215$ \\
 \hline
 \multicolumn{4}{l}{\textbf{SOGAN}} \\
-With spatial prior & $0.8922 \pm 0.0587$ & $131.4178 \pm 19.5148$ & $155.5562 \pm 32.3092$ \\
+With spatial prior & $0.8903 \pm 0.0617$ & $131.2565 \pm 9.5796$ & $156.0697 \pm 22.5101$ \\
 Without spatial prior & $0.7409 \pm 0.1065$ & $194.8697 \pm 38.0475$ & $232.5836 \pm 32.3222$ \\
 \hline
 \multicolumn{4}{l}{\textbf{Proposed}} \\
-With spatial prior & $0.9250 \pm 0.0781$ & $134.4998 \pm 32.2103$ & $90.2365 \pm 9.7464$ \\
+With spatial prior & $0.9248 \pm 0.0870$ & $134.9915 \pm 31.6090$ & $90.0532 \pm 12.2174$ \\
 Without spatial prior & $0.8052 \pm 0.2086$ & $236.5011 \pm 49.1845$ & $153.6387 \pm 7.5412$ \\
 \hline
 \end{tabular}
@@ -796,7 +796,7 @@ Without spatial prior & $0.8052 \pm 0.2086$ & $236.5011 \pm 49.1845$ & $153.6387
 The second ablation evaluates the effect of Soft Annular Boundary Attention (SABA). We compare the localized ResShift baseline with standard Swin attention in all layers against the proposed version, which uses the same backbone but replaces selected deeper attention blocks with SABA. 
 This isolates the effect of the annular boundary penalty beyond the standard Swin-based inversion backbone.
 
-Using an approximate Welch's two-sample $t$-test at $\alpha=0.05$ on the independent case-level measurements, the proposed version significantly improves Dice ($p=7.12\times10^{-3}$), Core RMSE ($p=6.17\times10^{-24}$), and Annulus RMSE ($p=5.16\times10^{-22}$) over the Swin-only baseline. The qualitative example in Fig.~\ref{fig:saba_ablation} shows the same trend: the Swin-only version recovers a calcium volume close to the ground truth, but the core appears smoother and shows more spreading into the annular region. In contrast, the proposed version better preserves the irregular plaque shape and maintains a cleaner calcium boundary, indicating improved core morphology and calcium-annulus separation.
+Using two-sided paired Wilcoxon signed-rank tests on the matched per-volume measurements, the proposed version significantly improves Dice (W=8111, $p=2.00\times10^{-7}$), Core RMSE (W=1358, $p=1.55\times10^{-32}$), and Annulus RMSE (W=2288, $p=5.39\times10^{-28}$) over the version without SABA. Exact zero differences were excluded; $n_{\mathrm{eff}}=231$ for the Dice-core comparison and $n_{\mathrm{eff}}=232$ for the Core RMSE and Annulus RMSE comparisons. The qualitative example in Fig.~\ref{fig:saba_ablation} shows the same trend: the Swin-only version recovers a calcium volume close to the ground truth, but the core appears smoother and shows more spreading into the annular region. In contrast, the proposed version better preserves the irregular plaque shape and maintains a cleaner calcium boundary, indicating improved core morphology and calcium-annulus separation.
 
 \begin{table}[t]
 \centering
@@ -810,9 +810,9 @@ Using an approximate Welch's two-sample $t$-test at $\alpha=0.05$ on the indepen
 \textbf{Core RMSE (HU) $\downarrow$} &
 \textbf{Annulus RMSE (HU) $\downarrow$} \\
 \hline
-Blooming-corrupted input & $0.3842 \pm 0.3366$ & $341.4590 \pm 34.8052$ & $176.1679 \pm 14.7582$ \\
-Baseline version with Swin only & $0.9037 \pm 0.1062$ & $165.0378 \pm 29.9030$ & $100.2458 \pm 11.5473$ \\
-Proposed version & $0.9250 \pm 0.0781$ & $134.4998 \pm 32.2103$ & $90.2365 \pm 9.7464$ \\
+Blooming-corrupted input & $0.3864 \pm 0.3394$ & $341.4590 \pm 34.8805$ & $176.1679 \pm 14.7901$ \\
+Baseline version with Swin only & $0.8979 \pm 0.1179$ & $165.9418 \pm 29.1964$ & $99.2814 \pm 10.4951$ \\
+Proposed version & $0.9248 \pm 0.0870$ & $134.9915 \pm 31.6090$ & $90.0532 \pm 12.2174$ \\
 \hline
 \end{tabular}
 }
@@ -832,8 +832,8 @@ Proposed version & $0.9250 \pm 0.0781$ & $134.4998 \pm 32.2103$ & $90.2365 \pm 9
 \textbf{Core RMSE (HU) $\downarrow$} &
 \textbf{Annulus RMSE (HU) $\downarrow$} \\
 \hline
-Proposed & $0.9250 \pm 0.0781$ & $134.4998 \pm 32.2103$ & $90.2365 \pm 9.7464$ \\
-Without SABA & $0.9037 \pm 0.1062$ & $165.0378 \pm 29.9030$ & $100.2458 \pm 11.5473$ \\
+Proposed & $0.9248 \pm 0.0870$ & $134.9915 \pm 31.6090$ & $90.0532 \pm 12.2174$ \\
+Without SABA & $0.8979 \pm 0.1179$ & $165.9418 \pm 29.1964$ & $99.2814 \pm 10.4951$ \\
 Without spatial prior & $0.8052 \pm 0.2086$ & $236.5011 \pm 49.1845$ & $153.6387 \pm 7.5412$ \\
 Without spatial prior or SABA & $0.7951 \pm 0.2161$ & $255.2451 \pm 44.8662$ & $160.1108 \pm 14.0153$ \\
 \hline
@@ -872,15 +872,15 @@ GT       & 34.5010 & 37.0275 & 71.2921 & 73.7158 & 27.2605 & 69.7661 & 31.8255 &
 
 The results support three main observations. 
 First, the baseline comparisons in Table~\ref{tab:deblooming_results} and Figs.~\ref{fig:synthetic_qualitative}--\ref{fig:real_patient_qualitative} indicate that calcium deblooming is not well addressed by generic restoration objectives alone. SRGAN and SAGAN improve apparent sharpness, but remain poorly matched to the calcium-lumen interface, suggesting that visually enhanced boundaries are not sufficient for faithful plaque recovery.  
-Second, the results also suggest that deblooming is better modeled as progressive localized restoration than as either single-step correction or long-trajectory diffusion generation. Compared with U-Net++, SOGAN, and the LDM baselines, the proposed method more consistently preserves calcium morphology while suppressing the blooming halo, indicating that a short input-conditioned trajectory is better matched to localized artifact reversal than direct one-step prediction or noise-to-image generation. 
+Second, the synthetic results suggest that deblooming is better modeled as progressive localized restoration than as either single-step correction or long-trajectory diffusion generation. Compared with U-Net++, SOGAN, and the LDM baselines, the proposed method more consistently preserves calcium morphology while suppressing the blooming halo, indicating that a short input-conditioned trajectory is well matched to localized artifact reversal in the simulated setting. 
 Third, the ablation studies clarify why the full framework is effective. Table~\ref{tab:spatial_prior_ablation} and Fig.~\ref{fig:mask_ablation} indicate that spatial prior conditioning is important for localizing restoration to the blooming-affected region, while Table~\ref{tab:saba_ablation} and Fig.~\ref{fig:saba_ablation} show that SABA improves control at the calcium-lumen boundary beyond the Swin-based backbone alone. Together, these ablations suggest that the proposed method benefits from combining explicit ROI localization with boundary-aware feature control, rather than relying on a single generic restoration mechanism.
 Overall, the quantitative metric pattern supports a coherent interpretation of the proposed method. The improved Dice and annulus RMSE indicate stronger plaque-shape recovery and better halo suppression, while the comparable core RMSE suggests that these gains are not achieved by simply eroding the calcium core. Instead, the method appears to better separate true calcium from the surrounding blooming-affected annulus.
 
-This study has several limitations. First, quantitative evaluation is restricted to synthetic paired CCTA data because paired clinical blooming-corrupted and debloomed references are unavailable. Although this allows controlled comparison across methods, it may not fully capture clinical variability in scanner settings, reconstruction kernels, motion, contrast timing, and patient anatomy. Second, the proposed model is trained slice-wise in 2D even though calcium blooming and coronary anatomy are inherently three-dimensional; a fully 3D framework may improve inter-slice consistency and through-plane edge fidelity. Third, clinical CCTA examples are assessed qualitatively only, again due to the lack of paired clinical references. Finally, the current method depends on the availability and quality of the calcium spatial prior. Future work should therefore include larger multi-center clinical studies, reader-based and downstream stenosis-assessment evaluation, and extensions toward jointly learned localization, uncertainty-aware priors, and fully 3D boundary-aware restoration.
+This study has several limitations. First, all quantitative validation uses CatSim-generated paired CCTA data, so the reported Dice and RMSE values measure performance on a controlled simulated corruption and may not transfer directly to clinical scans with different scanner settings, reconstruction kernels, motion, contrast timing, and patient anatomy. Second, the clinical evaluation consists of qualitative examples without paired references, blinded reader assessment, or a downstream stenosis-quantification endpoint; therefore, the clinical results should be interpreted as an initial feasibility assessment rather than evidence of improved clinical decision-making. Third, the proposed model is trained slice-wise in 2D even though calcium blooming and coronary anatomy are inherently three-dimensional; a fully 3D framework may improve inter-slice consistency and through-plane edge fidelity. Finally, the current method depends on the availability and quality of the calcium spatial prior. Future work should include larger multi-center clinical studies, reader-based and downstream stenosis-assessment evaluation, and extensions toward jointly learned localization, uncertainty-aware priors, and fully 3D boundary-aware restoration.
 
 \section{Conclusion}
 
-In this paper, we present STAR Diffusion, a short-trajectory diffusion framework for CCTA calcium deblooming. By formulating deblooming as a localized residual-shifting restoration process, the proposed method progressively reduces blooming artifact while preserving calcium structure and supporting lumen recovery. Spatial prior conditioning focuses the restoration on the artifact-affected region, and Soft Annular Boundary Attention (SABA) improves control at the calcium-lumen boundary by reducing interaction with the surrounding blooming annulus. Experiments on synthetic and clinical CCTA data show that this combination produces stronger calcium-region recovery and more consistent blooming suppression than the compared baselines. These results support short-trajectory, spatially guided diffusion as a promising direction for calcium blooming artifact reduction in coronary CT angiography.
+In this paper, we present STAR Diffusion, a short-trajectory diffusion framework for CCTA calcium deblooming. By formulating deblooming as a localized residual-shifting restoration process, the proposed method progressively reduces blooming artifact while preserving calcium structure and supporting lumen recovery. Spatial prior conditioning focuses the restoration on the artifact-affected region, and Soft Annular Boundary Attention (SABA) improves control at the calcium-lumen boundary by reducing interaction with the surrounding blooming annulus. On the synthetic paired benchmark, the proposed method produced stronger calcium-region recovery and more consistent blooming suppression than the compared baselines. Clinical examples showed qualitatively consistent behavior, motivating future reader-based and outcome-oriented studies to assess clinical utility. These results support further evaluation of short-trajectory, spatially guided diffusion for calcium blooming artifact reduction in coronary CT angiography.
 
 \appendix
 \section{Reverse Sampling Details}
