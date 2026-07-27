@@ -1,0 +1,1595 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.5.18)  27 JUL 2026 15:51
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**./Article_review.tex
+(Article_review.tex
+LaTeX2e <2025-11-01>
+L3 programming layer <2026-03-20>
+(Article.tex (sagej.cls
+Document Class: sagej 2017/01/17 v1.20\ sagej.cls
+(E:\MikTex\tex/latex/base\article.cls
+Document Class: article 2025/01/22 v1.4n Standard LaTeX document class
+(E:\MikTex\tex/latex/base\size10.clo
+File: size10.clo 2025/01/22 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count275
+\c@section=\count276
+\c@subsection=\count277
+\c@subsubsection=\count278
+\c@paragraph=\count279
+\c@subparagraph=\count280
+\c@figure=\count281
+\c@table=\count282
+\abovecaptionskip=\skip49
+\belowcaptionskip=\skip50
+\bibindent=\dimen150
+) (E:\MikTex\tex/latex/psnfss\times.sty
+Package: times 2020/03/25 PSNFSS-v9.3 (SPQR) 
+)
+(E:\MikTex\tex/latex/psnfss\helvet.sty
+Package: helvet 2020/03/25 PSNFSS-v9.3 (WaS) 
+ (E:\MikTex\tex/latex/graphics\keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks17
+)) (E:\MikTex\tex/latex/graphics\graphicx.sty
+Package: graphicx 2024/12/31 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
+
+(E:\MikTex\tex/latex/graphics\graphics.sty
+Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
+
+(E:\MikTex\tex/latex/graphics\trig.sty
+Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
+)
+(E:\MikTex\tex/latex/graphics-cfg\graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 106.
+
+(E:\MikTex\tex/latex/graphics-def\pdftex.def
+File: pdftex.def 2025/09/29 v1.2d Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen151
+\Gin@req@width=\dimen152
+)
+(E:\MikTex\tex/latex/base\latexsym.sty
+Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
+\symlasy=\mathgroup4
+LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
+(Font)                  U/lasy/m/n --> U/lasy/b/n on input line 52.
+) (E:\MikTex\tex/latex/base\ifthen.sty
+Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
+)
+(E:\MikTex\tex/latex/graphics\rotating.sty
+Package: rotating 2025/01/14 v2.16e rotated objects in LaTeX
+\c@r@tfl@t=\count283
+\rotFPtop=\skip51
+\rotFPbot=\skip52
+\rot@float@box=\box53
+\rot@mess@toks=\toks18
+) (E:\MikTex\tex/latex/tools\calc.sty
+Package: calc 2025/03/01 v4.3b Infix arithmetic (KKT,FJ)
+\calc@Acount=\count284
+\calc@Bcount=\count285
+\calc@Adimen=\dimen153
+\calc@Bdimen=\dimen154
+\calc@Askip=\skip53
+\calc@Bskip=\skip54
+LaTeX Info: Redefining \setlength on input line 86.
+LaTeX Info: Redefining \addtolength on input line 87.
+\calc@Ccount=\count286
+\calc@Cskip=\skip55
+) (E:\MikTex\tex/latex/textcase\textcase.sty
+Package: textcase 2025/02/16 v1.05 Text only upper/lower case changing (DPC)
+Package textcase Info: Defining Legacy names on input line 20.
+)
+(E:\MikTex\tex/latex/booktabs\booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen155
+\lightrulewidth=\dimen156
+\cmidrulewidth=\dimen157
+\belowrulesep=\dimen158
+\belowbottomsep=\dimen159
+\aboverulesep=\dimen160
+\abovetopsep=\dimen161
+\cmidrulesep=\dimen162
+\cmidrulekern=\dimen163
+\defaultaddspace=\dimen164
+\@cmidla=\count287
+\@cmidlb=\count288
+\@aboverulesep=\dimen165
+\@belowrulesep=\dimen166
+\@thisruleclass=\count289
+\@lastruleclass=\count290
+\@thisrulewidth=\dimen167
+)
+(E:\MikTex\tex/latex/graphics\color.sty
+Package: color 2025/01/14 v1.3e Standard LaTeX Color (DPC)
+
+(E:\MikTex\tex/latex/graphics-cfg\color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: pdftex.def on input line 149.
+
+(E:\MikTex\tex/latex/graphics\mathcolor.ltx))
+(E:\MikTex\tex/latex/endnotes\endnotes.sty
+Package: endnotes 2020-01-02 endnotes package
+\c@endnote=\count291
+\endnotesep=\dimen168
+\@enotes=\write3
+)
+(E:\MikTex\tex/latex/amsfonts\amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks19
+\symAMSa=\mathgroup5
+\symAMSb=\mathgroup6
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)
+(E:\MikTex\tex/latex/amsfonts\amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+)
+(E:\MikTex\tex/latex/amsmath\amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+ (E:\MikTex\tex/latex/amsmath\amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks20
+\ex@=\dimen169
+)
+\pmbraise@=\dimen170
+) (E:\MikTex\tex/latex/amsmath\amsmath.sty
+Package: amsmath 2025/07/09 v2.17z AMS math features
+\@mathmargin=\skip56
+
+For additional information on amsmath, use the `?' option.
+(E:\MikTex\tex/latex/amsmath\amstext.sty
+Package: amstext 2024/11/17 v2.01 AMS text
+)
+(E:\MikTex\tex/latex/amsmath\amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count292
+LaTeX Info: Redefining \frac on input line 233.
+\uproot@=\count293
+\leftroot@=\count294
+LaTeX Info: Redefining \overline on input line 398.
+LaTeX Info: Redefining \colon on input line 409.
+\classnum@=\count295
+\DOTSCASE@=\count296
+LaTeX Info: Redefining \ldots on input line 495.
+LaTeX Info: Redefining \dots on input line 498.
+LaTeX Info: Redefining \cdots on input line 619.
+\Mathstrutbox@=\box54
+\strutbox@=\box55
+LaTeX Info: Redefining \big on input line 721.
+LaTeX Info: Redefining \Big on input line 722.
+LaTeX Info: Redefining \bigg on input line 723.
+LaTeX Info: Redefining \Bigg on input line 724.
+\big@size=\dimen171
+LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
+\macc@depth=\count297
+LaTeX Info: Redefining \bmod on input line 904.
+LaTeX Info: Redefining \pmod on input line 909.
+LaTeX Info: Redefining \smash on input line 939.
+LaTeX Info: Redefining \relbar on input line 969.
+LaTeX Info: Redefining \Relbar on input line 970.
+\c@MaxMatrixCols=\count298
+\dotsspace@=\muskip17
+\c@parentequation=\count299
+\dspbrk@lvl=\count300
+\tag@help=\toks21
+\row@=\count301
+\column@=\count302
+\maxfields@=\count303
+\andhelp@=\toks22
+\eqnshift@=\dimen172
+\alignsep@=\dimen173
+\tagshift@=\dimen174
+\tagwidth@=\dimen175
+\totwidth@=\dimen176
+\lineht@=\dimen177
+\@envbody=\toks23
+\multlinegap=\skip57
+\multlinetaggap=\skip58
+\mathdisplay@stack=\toks24
+LaTeX Info: Redefining \[ on input line 2950.
+LaTeX Info: Redefining \] on input line 2951.
+)
+(E:\MikTex\tex/latex/amscls\amsthm.sty
+Package: amsthm 2020/05/29 v2.20.6
+\thm@style=\toks25
+\thm@bodyfont=\toks26
+\thm@headfont=\toks27
+\thm@notefont=\toks28
+\thm@headpunct=\toks29
+\thm@preskip=\skip59
+\thm@postskip=\skip60
+\thm@headsep=\skip61
+\dth@everypar=\toks30
+) (E:\MikTex\tex/latex/base\tracefnt.sty
+Package: tracefnt 2020/12/22 v3.0n Standard LaTeX package (font tracing)
+\tracingfonts=\count304
+LaTeX Info: Redefining \selectfont on input line 107.
+Applying: [2021/06/01] Add hook to \selectfont  on input line 142.
+Already applied: [0000/00/00] Add hook to \selectfont  on input line 145.
+) (E:\MikTex\tex/latex/geometry\geometry.sty
+Package: geometry 2026/03/07 v6.0 Page Geometry
+
+(E:\MikTex\tex/generic/iftex\ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+ (E:\MikTex\tex/generic/iftex\iftex.sty
+Package: iftex 2024/12/12 v1.0g TeX engine tests
+))
+\Gm@cnth=\count305
+\Gm@cntv=\count306
+\c@Gm@tempcnt=\count307
+\Gm@bindingoffset=\dimen178
+\Gm@wd@mp=\dimen179
+\Gm@odd@mp=\dimen180
+\Gm@even@mp=\dimen181
+\Gm@layoutwidth=\dimen182
+\Gm@layoutheight=\dimen183
+\Gm@layouthoffset=\dimen184
+\Gm@layoutvoffset=\dimen185
+\Gm@dimlist=\toks31
+ (E:\MikTex\tex/latex/geometry\geometry.cfg))
+\absbox=\box56
+\@bls=\dimen186
+
+(E:\MikTex\tex/latex/caption\caption.sty
+Package: caption 2023/08/05 v3.6o Customizing captions (AR)
+
+(E:\MikTex\tex/latex/caption\caption3.sty
+Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
+\caption@tempdima=\dimen187
+\captionmargin=\dimen188
+\caption@leftmargin=\dimen189
+\caption@rightmargin=\dimen190
+\caption@width=\dimen191
+\caption@indent=\dimen192
+\caption@parindent=\dimen193
+\caption@hangindent=\dimen194
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count308
+\c@continuedfloat=\count309
+Package caption Info: rotating package is loaded.
+)
+LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <11> not available
+(Font)              size <10.95> substituted on input line 652.
+) (generic.sty
+\firstpagerule=\skip62
+\logowidth=\skip63
+)
+(E:\MikTex\tex/latex/cite\cite.sty
+LaTeX Info: Redefining \cite on input line 302.
+LaTeX Info: Redefining \nocite on input line 332.
+Package: cite 2015/02/27  v 5.5
+) (E:\MikTex\tex/latex/base\textcomp.sty
+Package: textcomp 2024/04/24 v2.1b Standard LaTeX package
+)
+(E:\MikTex\tex/latex/float\float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count310
+\float@exts=\toks32
+\float@box=\box57
+\@float@everytoks=\toks33
+\@floatcapt=\box58
+)
+
+Package geometry Warning: Over-specification in `h'-direction.
+    `width' (397.48499pt) is ignored.
+
+
+Package geometry Warning: Over-specification in `v'-direction.
+    `height' (643.20255pt) is ignored.
+
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 1
+3.
+(E:\MikTex\tex/latex/psnfss\ot1ptm.fd
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)
+(E:\MikTex\tex/latex/l3backend\l3backend-pdftex.def
+File: l3backend-pdftex.def 2026-02-18 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count311
+) (Article_review.aux)
+\openout1 = `Article_review.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+
+(E:\MikTex\tex/context/base/mkii\supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count312
+\scratchdimen=\dimen195
+\scratchbox=\box59
+\nofMPsegments=\count313
+\nofMParguments=\count314
+\everyMPshowfont=\toks34
+\MPscratchCnt=\count315
+\MPscratchDim=\dimen196
+\MPnumerator=\count316
+\makeMPintoPDFobject=\count317
+\everyMPtoPDFconversion=\toks35
+) (E:\MikTex\tex/latex/epstopdf-pkg\epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(E:\MikTex\tex/latex/00miktex\epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
+))
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: custom
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* hratio: 1:1
+* vratio: 1:1
+* modes: twoside asymmetric 
+* h-part:(L,W,R)=(54.2025pt, 505.89pt, 54.2025pt)
+* v-part:(T,H,B)=(54.2025pt, 686.56499pt, 54.2025pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=505.89pt
+* \textheight=686.56499pt
+* \oddsidemargin=-18.06749pt
+* \evensidemargin=-18.06749pt
+* \topmargin=-48.06749pt
+* \headheight=12.0pt
+* \headsep=18.0pt
+* \topskip=10.0pt
+* \footskip=30.0pt
+* \marginparwidth=65.0pt
+* \marginparsep=11.0pt
+* \columnsep=12.0pt
+* \skip\footins=20.0pt plus 8.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
+Package caption Info: End \AtBeginDocument code.
+LaTeX Font Info:    Trying to load font information for OT1+phv on input line 2
+7.
+(E:\MikTex\tex/latex/psnfss\ot1phv.fd
+File: ot1phv.fd 2020/03/25 scalable font definitions for OT1/phv.
+)
+LaTeX Font Info:    Font shape `OT1/phv/m/n' will be
+(Font)              scaled to size 10.44997pt on input line 27.
+LaTeX Font Info:    Font shape `OT1/phv/b/n' will be
+(Font)              scaled to size 10.44997pt on input line 27.
+LaTeX Font Info:    Calculating math sizes for size <11> on input line 29.
+LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <7.69997> not available
+(Font)              size <8> substituted on input line 29.
+LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <5.5> not available
+(Font)              size <5> substituted on input line 29.
+LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <11> not available
+(Font)              size <10.95> substituted on input line 29.
+LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <7.69997> not available
+(Font)              size <8> substituted on input line 29.
+LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <5.5> not available
+(Font)              size <5> substituted on input line 29.
+LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <11> not available
+(Font)              size <10.95> substituted on input line 29.
+LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <7.69997> not available
+(Font)              size <8> substituted on input line 29.
+LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <5.5> not available
+(Font)              size <5> substituted on input line 29.
+LaTeX Font Info:    Trying to load font information for U+lasy on input line 29
+.
+ (E:\MikTex\tex/latex/base\ulasy.fd
+File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
+)
+LaTeX Font Warning: Font shape `U/lasy/m/n' in size <11> not available
+(Font)              size <10.95> substituted on input line 29.
+LaTeX Font Warning: Font shape `U/lasy/m/n' in size <7.69997> not available
+(Font)              size <8> substituted on input line 29.
+LaTeX Font Warning: Font shape `U/lasy/m/n' in size <5.5> not available
+(Font)              size <5> substituted on input line 29.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 29.
+
+
+(E:\MikTex\tex/latex/amsfonts\umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 29.
+
+ (E:\MikTex\tex/latex/amsfonts\umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Font shape `OT1/phv/m/n' will be
+(Font)              scaled to size 14.24995pt on input line 33.
+LaTeX Font Info:    Font shape `OT1/phv/b/n' will be
+(Font)              scaled to size 14.24995pt on input line 33.
+<images_1/03_ordinary_CaP_40_minus_artery_100mA_10_42_bloom.png, id=1, 361.35pt
+ x 361.35pt>
+File: images_1/03_ordinary_CaP_40_minus_artery_100mA_10_42_bloom.png Graphic fi
+le (type png)
+<use images_1/03_ordinary_CaP_40_minus_artery_100mA_10_42_bloom.png>
+Package pdftex.def Info: images_1/03_ordinary_CaP_40_minus_artery_100mA_10_42_b
+loom.png  used on input line 48.
+(pdftex.def)             Requested size: 86.00037pt x 85.99796pt.
+<images_1/32_ordinary_CaP_50_minus_artery_300mA_12_37_bloom.png, id=3, 361.35pt
+ x 361.35pt>
+File: images_1/32_ordinary_CaP_50_minus_artery_300mA_12_37_bloom.png Graphic fi
+le (type png)
+<use images_1/32_ordinary_CaP_50_minus_artery_300mA_12_37_bloom.png>
+Package pdftex.def Info: images_1/32_ordinary_CaP_50_minus_artery_300mA_12_37_b
+loom.png  used on input line 49.
+(pdftex.def)             Requested size: 86.00037pt x 85.99796pt.
+<images_1/35_ordinary_CaP_50_minus_artery_100mA_13_43_bloom.png, id=4, 361.35pt
+ x 361.35pt>
+File: images_1/35_ordinary_CaP_50_minus_artery_100mA_13_43_bloom.png Graphic fi
+le (type png)
+<use images_1/35_ordinary_CaP_50_minus_artery_100mA_13_43_bloom.png>
+Package pdftex.def Info: images_1/35_ordinary_CaP_50_minus_artery_100mA_13_43_b
+loom.png  used on input line 50.
+(pdftex.def)             Requested size: 86.00037pt x 85.99796pt.
+<images_1/72_ordinary_CaP_40_minus_artery_50mA_5_29_bloom.png, id=5, 361.35pt x
+ 361.35pt>
+File: images_1/72_ordinary_CaP_40_minus_artery_50mA_5_29_bloom.png Graphic file
+ (type png)
+<use images_1/72_ordinary_CaP_40_minus_artery_50mA_5_29_bloom.png>
+Package pdftex.def Info: images_1/72_ordinary_CaP_40_minus_artery_50mA_5_29_blo
+om.png  used on input line 51.
+(pdftex.def)             Requested size: 86.00037pt x 85.99796pt.
+<images_1/03_ordinary_CaP_40_minus_artery_100mA_10_42_debloom.png, id=6, 361.35
+pt x 361.35pt>
+File: images_1/03_ordinary_CaP_40_minus_artery_100mA_10_42_debloom.png Graphic 
+file (type png)
+<use images_1/03_ordinary_CaP_40_minus_artery_100mA_10_42_debloom.png>
+Package pdftex.def Info: images_1/03_ordinary_CaP_40_minus_artery_100mA_10_42_d
+ebloom.png  used on input line 54.
+(pdftex.def)             Requested size: 86.00037pt x 85.99796pt.
+<images_1/32_ordinary_CaP_50_minus_artery_300mA_12_37_debloom.png, id=7, 361.35
+pt x 361.35pt>
+File: images_1/32_ordinary_CaP_50_minus_artery_300mA_12_37_debloom.png Graphic 
+file (type png)
+<use images_1/32_ordinary_CaP_50_minus_artery_300mA_12_37_debloom.png>
+Package pdftex.def Info: images_1/32_ordinary_CaP_50_minus_artery_300mA_12_37_d
+ebloom.png  used on input line 55.
+(pdftex.def)             Requested size: 86.00037pt x 85.99796pt.
+<images_1/35_ordinary_CaP_50_minus_artery_100mA_13_43_debloom.png, id=8, 361.35
+pt x 361.35pt>
+File: images_1/35_ordinary_CaP_50_minus_artery_100mA_13_43_debloom.png Graphic 
+file (type png)
+<use images_1/35_ordinary_CaP_50_minus_artery_100mA_13_43_debloom.png>
+Package pdftex.def Info: images_1/35_ordinary_CaP_50_minus_artery_100mA_13_43_d
+ebloom.png  used on input line 56.
+(pdftex.def)             Requested size: 86.00037pt x 85.99796pt.
+<images_1/72_ordinary_CaP_40_minus_artery_50mA_5_29_debloom.png, id=9, 361.35pt
+ x 361.35pt>
+File: images_1/72_ordinary_CaP_40_minus_artery_50mA_5_29_debloom.png Graphic fi
+le (type png)
+<use images_1/72_ordinary_CaP_40_minus_artery_50mA_5_29_debloom.png>
+Package pdftex.def Info: images_1/72_ordinary_CaP_40_minus_artery_50mA_5_29_deb
+loom.png  used on input line 57.
+(pdftex.def)             Requested size: 86.00037pt x 85.99796pt.
+LaTeX Font Info:    Font shape `OT1/phv/m/n' will be
+(Font)              scaled to size 8.54997pt on input line 60.
+LaTeX Font Info:    Font shape `OT1/phv/b/n' will be
+(Font)              scaled to size 8.54997pt on input line 60.
+LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <7> not available
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 67.
+LaTeX Font Info:    Font shape `OT1/phv/m/sl' will be
+(Font)              scaled to size 6.64998pt on input line 67.
+
+[1
+
+
+{C:/Users/nafeem/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{E:/MikTex/fo
+nts/enc/dvips/base/8r.enc}]
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 7
+1.
+ (E:\MikTex\tex/latex/psnfss\ts1ptm.fd
+File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
+) [2 <./images_1/03_ordinary_CaP_40_minus_artery_100mA_10_42_bloom.png> <./imag
+es_1/32_ordinary_CaP_50_minus_artery_300mA_12_37_bloom.png> <./images_1/35_ordi
+nary_CaP_50_minus_artery_100mA_13_43_bloom.png> <./images_1/72_ordinary_CaP_40_
+minus_artery_50mA_5_29_bloom.png> <./images_1/03_ordinary_CaP_40_minus_artery_1
+00mA_10_42_debloom.png> <./images_1/32_ordinary_CaP_50_minus_artery_300mA_12_37
+_debloom.png> <./images_1/35_ordinary_CaP_50_minus_artery_100mA_13_43_debloom.p
+ng> <./images_1/72_ordinary_CaP_40_minus_artery_50mA_5_29_debloom.png>]
+<images/Slide1.PNG, id=33, 722.7pt x 542.025pt>
+File: images/Slide1.PNG Graphic file (type png)
+<use images/Slide1.PNG>
+Package pdftex.def Info: images/Slide1.PNG  used on input line 87.
+(pdftex.def)             Requested size: 480.59395pt x 360.45036pt.
+LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <11> not available
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 118.
+LaTeX Font Info:    Font shape `OT1/phv/m/sl' will be
+(Font)              scaled to size 10.44997pt on input line 118.
+ [3] [4 <./images/Slide1.PNG>]
+LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <11> not available
+(Font)              size <10.95> substituted on input line 199.
+LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <7.69997> not available
+(Font)              size <8> substituted on input line 199.
+LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <5.5> not available
+(Font)              size <5> substituted on input line 199.
+<images/Slide2.PNG, id=45, 722.7pt x 542.025pt>
+File: images/Slide2.PNG Graphic file (type png)
+<use images/Slide2.PNG>
+Package pdftex.def Info: images/Slide2.PNG  used on input line 238.
+(pdftex.def)             Requested size: 480.59395pt x 360.45036pt.
+ [5] [6 <./images/Slide2.PNG>]
+<images_sim/03_CaP_50_minus_artery_100mA_2_slice32_input.png, id=53, 128.48pt x
+ 128.48pt>
+File: images_sim/03_CaP_50_minus_artery_100mA_2_slice32_input.png Graphic file 
+(type png)
+<use images_sim/03_CaP_50_minus_artery_100mA_2_slice32_input.png>
+Package pdftex.def Info: images_sim/03_CaP_50_minus_artery_100mA_2_slice32_inpu
+t.png  used on input line 330.
+(pdftex.def)             Requested size: 60.70432pt x 60.70515pt.
+<images_sim/03_CaP_50_minus_artery_100mA_2_slice32_HU_Shrink.png, id=54, 289.08
+pt x 289.08pt>
+File: images_sim/03_CaP_50_minus_artery_100mA_2_slice32_HU_Shrink.png Graphic f
+ile (type png)
+<use images_sim/03_CaP_50_minus_artery_100mA_2_slice32_HU_Shrink.png>
+Package pdftex.def Info: images_sim/03_CaP_50_minus_artery_100mA_2_slice32_HU_S
+hrink.png  used on input line 331.
+(pdftex.def)             Requested size: 60.70432pt x 60.70418pt.
+<images_sim/03_CaP_50_minus_artery_100mA_2_slice32_Wiener.png, id=55, 289.08pt 
+x 289.08pt>
+File: images_sim/03_CaP_50_minus_artery_100mA_2_slice32_Wiener.png Graphic file
+ (type png)
+<use images_sim/03_CaP_50_minus_artery_100mA_2_slice32_Wiener.png>
+Package pdftex.def Info: images_sim/03_CaP_50_minus_artery_100mA_2_slice32_Wien
+er.png  used on input line 332.
+(pdftex.def)             Requested size: 60.70432pt x 60.70418pt.
+<images_sim/03_CaP_50_minus_artery_100mA_2_slice32_pred_output_srgan.png, id=56
+, 128.48pt x 128.48pt>
+File: images_sim/03_CaP_50_minus_artery_100mA_2_slice32_pred_output_srgan.png G
+raphic file (type png)
+<use images_sim/03_CaP_50_minus_artery_100mA_2_slice32_pred_output_srgan.png>
+Package pdftex.def Info: images_sim/03_CaP_50_minus_artery_100mA_2_slice32_pred
+_output_srgan.png  used on input line 333.
+(pdftex.def)             Requested size: 60.70432pt x 60.70515pt.
+<images_sim/03_CaP_50_minus_artery_100mA_2_slice32_pred_output_srgan-no_style.p
+ng, id=57, 128.48pt x 128.48pt>
+File: images_sim/03_CaP_50_minus_artery_100mA_2_slice32_pred_output_srgan-no_st
+yle.png Graphic file (type png)
+<use images_sim/03_CaP_50_minus_artery_100mA_2_slice32_pred_output_srgan-no_sty
+le.png>
+Package pdftex.def Info: images_sim/03_CaP_50_minus_artery_100mA_2_slice32_pred
+_output_srgan-no_style.png  used on input line 334.
+(pdftex.def)             Requested size: 60.70432pt x 60.70515pt.
+<images_sim/03_CaP_50_minus_artery_100mA_2_slice32_pred_output_sagan.png, id=58
+, 128.48pt x 128.48pt>
+File: images_sim/03_CaP_50_minus_artery_100mA_2_slice32_pred_output_sagan.png G
+raphic file (type png)
+<use images_sim/03_CaP_50_minus_artery_100mA_2_slice32_pred_output_sagan.png>
+Package pdftex.def Info: images_sim/03_CaP_50_minus_artery_100mA_2_slice32_pred
+_output_sagan.png  used on input line 335.
+(pdftex.def)             Requested size: 60.70432pt x 60.70515pt.
+<images_sim/03_CaP_50_minus_artery_100mA_2_slice32_pred_output_sogan.png, id=59
+, 128.48pt x 128.48pt>
+File: images_sim/03_CaP_50_minus_artery_100mA_2_slice32_pred_output_sogan.png G
+raphic file (type png)
+<use images_sim/03_CaP_50_minus_artery_100mA_2_slice32_pred_output_sogan.png>
+Package pdftex.def Info: images_sim/03_CaP_50_minus_artery_100mA_2_slice32_pred
+_output_sogan.png  used on input line 336.
+(pdftex.def)             Requested size: 60.70432pt x 60.70515pt.
+<images_sim/03_CaP_50_minus_artery_100mA_2_slice32_mask.png, id=60, 128.48pt x 
+128.48pt>
+File: images_sim/03_CaP_50_minus_artery_100mA_2_slice32_mask.png Graphic file (
+type png)
+<use images_sim/03_CaP_50_minus_artery_100mA_2_slice32_mask.png>
+Package pdftex.def Info: images_sim/03_CaP_50_minus_artery_100mA_2_slice32_mask
+.png  used on input line 346.
+(pdftex.def)             Requested size: 60.70432pt x 60.70515pt.
+<images_sim/03_CaP_50_minus_artery_100mA_2_slice32_pred_output_unetpp_amp.png, 
+id=61, 128.48pt x 128.48pt>
+File: images_sim/03_CaP_50_minus_artery_100mA_2_slice32_pred_output_unetpp_amp.
+png Graphic file (type png)
+<use images_sim/03_CaP_50_minus_artery_100mA_2_slice32_pred_output_unetpp_amp.p
+ng>
+Package pdftex.def Info: images_sim/03_CaP_50_minus_artery_100mA_2_slice32_pred
+_output_unetpp_amp.png  used on input line 347.
+(pdftex.def)             Requested size: 60.70432pt x 60.70515pt.
+<images_sim/03_CaP_50_minus_artery_100mA_2_slice32_pred_output_unetpp_sharp_pat
+ient.png, id=62, 128.48pt x 128.48pt>
+File: images_sim/03_CaP_50_minus_artery_100mA_2_slice32_pred_output_unetpp_shar
+p_patient.png Graphic file (type png)
+<use images_sim/03_CaP_50_minus_artery_100mA_2_slice32_pred_output_unetpp_sharp
+_patient.png>
+Package pdftex.def Info: images_sim/03_CaP_50_minus_artery_100mA_2_slice32_pred
+_output_unetpp_sharp_patient.png  used on input line 348.
+(pdftex.def)             Requested size: 60.70432pt x 60.70515pt.
+<images_sim/03_CaP_50_minus_artery_100mA_2_slice32_pred_ldm_output_resshift.png
+, id=63, 289.08pt x 289.08pt>
+File: images_sim/03_CaP_50_minus_artery_100mA_2_slice32_pred_ldm_output_resshif
+t.png Graphic file (type png)
+<use images_sim/03_CaP_50_minus_artery_100mA_2_slice32_pred_ldm_output_resshift
+.png>
+Package pdftex.def Info: images_sim/03_CaP_50_minus_artery_100mA_2_slice32_pred
+_ldm_output_resshift.png  used on input line 349.
+(pdftex.def)             Requested size: 60.70432pt x 60.70418pt.
+<images_sim/03_CaP_50_minus_artery_100mA_2_slice32_pred_ldm10_output_resshift.p
+ng, id=64, 289.08pt x 289.08pt>
+File: images_sim/03_CaP_50_minus_artery_100mA_2_slice32_pred_ldm10_output_ressh
+ift.png Graphic file (type png)
+<use images_sim/03_CaP_50_minus_artery_100mA_2_slice32_pred_ldm10_output_resshi
+ft.png>
+Package pdftex.def Info: images_sim/03_CaP_50_minus_artery_100mA_2_slice32_pred
+_ldm10_output_resshift.png  used on input line 350.
+(pdftex.def)             Requested size: 60.70432pt x 60.70418pt.
+<images_sim/03_CaP_50_minus_artery_100mA_2_slice32_pred_output_resshift.png, id
+=65, 289.08pt x 289.08pt>
+File: images_sim/03_CaP_50_minus_artery_100mA_2_slice32_pred_output_resshift.pn
+g Graphic file (type png)
+<use images_sim/03_CaP_50_minus_artery_100mA_2_slice32_pred_output_resshift.png
+>
+Package pdftex.def Info: images_sim/03_CaP_50_minus_artery_100mA_2_slice32_pred
+_output_resshift.png  used on input line 351.
+(pdftex.def)             Requested size: 60.70432pt x 60.70418pt.
+<images_sim/03_CaP_50_minus_artery_100mA_2_slice32_gt.png, id=66, 128.48pt x 12
+8.48pt>
+File: images_sim/03_CaP_50_minus_artery_100mA_2_slice32_gt.png Graphic file (ty
+pe png)
+<use images_sim/03_CaP_50_minus_artery_100mA_2_slice32_gt.png>
+Package pdftex.def Info: images_sim/03_CaP_50_minus_artery_100mA_2_slice32_gt.p
+ng  used on input line 352.
+(pdftex.def)             Requested size: 60.70432pt x 60.70515pt.
+<images_sim/03_CaP_50_minus_artery_100mA_10_slice32_input.png, id=67, 128.48pt 
+x 128.48pt>
+File: images_sim/03_CaP_50_minus_artery_100mA_10_slice32_input.png Graphic file
+ (type png)
+<use images_sim/03_CaP_50_minus_artery_100mA_10_slice32_input.png>
+Package pdftex.def Info: images_sim/03_CaP_50_minus_artery_100mA_10_slice32_inp
+ut.png  used on input line 367.
+(pdftex.def)             Requested size: 60.70432pt x 60.70515pt.
+<images_sim/03_CaP_50_minus_artery_100mA_10_slice32_HU_Shrink.png, id=68, 289.0
+8pt x 289.08pt>
+File: images_sim/03_CaP_50_minus_artery_100mA_10_slice32_HU_Shrink.png Graphic 
+file (type png)
+<use images_sim/03_CaP_50_minus_artery_100mA_10_slice32_HU_Shrink.png>
+Package pdftex.def Info: images_sim/03_CaP_50_minus_artery_100mA_10_slice32_HU_
+Shrink.png  used on input line 368.
+(pdftex.def)             Requested size: 60.70432pt x 60.70418pt.
+<images_sim/03_CaP_50_minus_artery_100mA_10_slice32_Wiener.png, id=69, 289.08pt
+ x 289.08pt>
+File: images_sim/03_CaP_50_minus_artery_100mA_10_slice32_Wiener.png Graphic fil
+e (type png)
+<use images_sim/03_CaP_50_minus_artery_100mA_10_slice32_Wiener.png>
+Package pdftex.def Info: images_sim/03_CaP_50_minus_artery_100mA_10_slice32_Wie
+ner.png  used on input line 369.
+(pdftex.def)             Requested size: 60.70432pt x 60.70418pt.
+<images_sim/03_CaP_50_minus_artery_100mA_10_slice32_pred_output_srgan.png, id=7
+0, 128.48pt x 128.48pt>
+File: images_sim/03_CaP_50_minus_artery_100mA_10_slice32_pred_output_srgan.png 
+Graphic file (type png)
+<use images_sim/03_CaP_50_minus_artery_100mA_10_slice32_pred_output_srgan.png>
+Package pdftex.def Info: images_sim/03_CaP_50_minus_artery_100mA_10_slice32_pre
+d_output_srgan.png  used on input line 370.
+(pdftex.def)             Requested size: 60.70432pt x 60.70515pt.
+<images_sim/03_CaP_50_minus_artery_100mA_10_slice32_pred_output_srgan-no_style.
+png, id=71, 128.48pt x 128.48pt>
+File: images_sim/03_CaP_50_minus_artery_100mA_10_slice32_pred_output_srgan-no_s
+tyle.png Graphic file (type png)
+<use images_sim/03_CaP_50_minus_artery_100mA_10_slice32_pred_output_srgan-no_st
+yle.png>
+Package pdftex.def Info: images_sim/03_CaP_50_minus_artery_100mA_10_slice32_pre
+d_output_srgan-no_style.png  used on input line 371.
+(pdftex.def)             Requested size: 60.70432pt x 60.70515pt.
+<images_sim/03_CaP_50_minus_artery_100mA_10_slice32_pred_output_sagan.png, id=7
+2, 128.48pt x 128.48pt>
+File: images_sim/03_CaP_50_minus_artery_100mA_10_slice32_pred_output_sagan.png 
+Graphic file (type png)
+<use images_sim/03_CaP_50_minus_artery_100mA_10_slice32_pred_output_sagan.png>
+Package pdftex.def Info: images_sim/03_CaP_50_minus_artery_100mA_10_slice32_pre
+d_output_sagan.png  used on input line 372.
+(pdftex.def)             Requested size: 60.70432pt x 60.70515pt.
+<images_sim/03_CaP_50_minus_artery_100mA_10_slice32_pred_output_sogan.png, id=7
+3, 128.48pt x 128.48pt>
+File: images_sim/03_CaP_50_minus_artery_100mA_10_slice32_pred_output_sogan.png 
+Graphic file (type png)
+<use images_sim/03_CaP_50_minus_artery_100mA_10_slice32_pred_output_sogan.png>
+Package pdftex.def Info: images_sim/03_CaP_50_minus_artery_100mA_10_slice32_pre
+d_output_sogan.png  used on input line 373.
+(pdftex.def)             Requested size: 60.70432pt x 60.70515pt.
+<images_sim/03_CaP_50_minus_artery_100mA_10_slice32_mask.png, id=74, 128.48pt x
+ 128.48pt>
+File: images_sim/03_CaP_50_minus_artery_100mA_10_slice32_mask.png Graphic file 
+(type png)
+<use images_sim/03_CaP_50_minus_artery_100mA_10_slice32_mask.png>
+Package pdftex.def Info: images_sim/03_CaP_50_minus_artery_100mA_10_slice32_mas
+k.png  used on input line 383.
+(pdftex.def)             Requested size: 60.70432pt x 60.70515pt.
+<images_sim/03_CaP_50_minus_artery_100mA_10_slice32_pred_output_unetpp_amp.png,
+ id=75, 128.48pt x 128.48pt>
+File: images_sim/03_CaP_50_minus_artery_100mA_10_slice32_pred_output_unetpp_amp
+.png Graphic file (type png)
+<use images_sim/03_CaP_50_minus_artery_100mA_10_slice32_pred_output_unetpp_amp.
+png>
+Package pdftex.def Info: images_sim/03_CaP_50_minus_artery_100mA_10_slice32_pre
+d_output_unetpp_amp.png  used on input line 384.
+(pdftex.def)             Requested size: 60.70432pt x 60.70515pt.
+<images_sim/03_CaP_50_minus_artery_100mA_10_slice32_pred_output_unetpp_sharp_pa
+tient.png, id=76, 128.48pt x 128.48pt>
+File: images_sim/03_CaP_50_minus_artery_100mA_10_slice32_pred_output_unetpp_sha
+rp_patient.png Graphic file (type png)
+<use images_sim/03_CaP_50_minus_artery_100mA_10_slice32_pred_output_unetpp_shar
+p_patient.png>
+Package pdftex.def Info: images_sim/03_CaP_50_minus_artery_100mA_10_slice32_pre
+d_output_unetpp_sharp_patient.png  used on input line 385.
+(pdftex.def)             Requested size: 60.70432pt x 60.70515pt.
+<images_sim/03_CaP_50_minus_artery_100mA_10_slice32_pred_ldm_output_resshift.pn
+g, id=77, 289.08pt x 289.08pt>
+File: images_sim/03_CaP_50_minus_artery_100mA_10_slice32_pred_ldm_output_resshi
+ft.png Graphic file (type png)
+<use images_sim/03_CaP_50_minus_artery_100mA_10_slice32_pred_ldm_output_resshif
+t.png>
+Package pdftex.def Info: images_sim/03_CaP_50_minus_artery_100mA_10_slice32_pre
+d_ldm_output_resshift.png  used on input line 386.
+(pdftex.def)             Requested size: 60.70432pt x 60.70418pt.
+<images_sim/03_CaP_50_minus_artery_100mA_10_slice32_pred_ldm10_output_resshift.
+png, id=78, 289.08pt x 289.08pt>
+File: images_sim/03_CaP_50_minus_artery_100mA_10_slice32_pred_ldm10_output_ress
+hift.png Graphic file (type png)
+<use images_sim/03_CaP_50_minus_artery_100mA_10_slice32_pred_ldm10_output_ressh
+ift.png>
+Package pdftex.def Info: images_sim/03_CaP_50_minus_artery_100mA_10_slice32_pre
+d_ldm10_output_resshift.png  used on input line 387.
+(pdftex.def)             Requested size: 60.70432pt x 60.70418pt.
+<images_sim/03_CaP_50_minus_artery_100mA_10_slice32_pred_output_resshift.png, i
+d=79, 289.08pt x 289.08pt>
+File: images_sim/03_CaP_50_minus_artery_100mA_10_slice32_pred_output_resshift.p
+ng Graphic file (type png)
+<use images_sim/03_CaP_50_minus_artery_100mA_10_slice32_pred_output_resshift.pn
+g>
+Package pdftex.def Info: images_sim/03_CaP_50_minus_artery_100mA_10_slice32_pre
+d_output_resshift.png  used on input line 388.
+(pdftex.def)             Requested size: 60.70432pt x 60.70418pt.
+<images_sim/03_CaP_50_minus_artery_100mA_10_slice32_gt.png, id=80, 128.48pt x 1
+28.48pt>
+File: images_sim/03_CaP_50_minus_artery_100mA_10_slice32_gt.png Graphic file (t
+ype png)
+<use images_sim/03_CaP_50_minus_artery_100mA_10_slice32_gt.png>
+Package pdftex.def Info: images_sim/03_CaP_50_minus_artery_100mA_10_slice32_gt.
+png  used on input line 389.
+(pdftex.def)             Requested size: 60.70432pt x 60.70515pt.
+ [7 <./images_sim/03_CaP_50_minus_artery_100mA_2_slice32_input.png (PNG copy)> 
+<./images_sim/03_CaP_50_minus_artery_100mA_2_slice32_HU_Shrink.png> <./images_s
+im/03_CaP_50_minus_artery_100mA_2_slice32_Wiener.png> <./images_sim/03_CaP_50_m
+inus_artery_100mA_2_slice32_pred_output_srgan.png (PNG copy)> <./images_sim/03_
+CaP_50_minus_artery_100mA_2_slice32_pred_output_srgan-no_style.png (PNG copy)> 
+<./images_sim/03_CaP_50_minus_artery_100mA_2_slice32_pred_output_sagan.png (PNG
+ copy)> <./images_sim/03_CaP_50_minus_artery_100mA_2_slice32_pred_output_sogan.
+png (PNG copy)> <./images_sim/03_CaP_50_minus_artery_100mA_2_slice32_mask.png (
+PNG copy)> <./images_sim/03_CaP_50_minus_artery_100mA_2_slice32_pred_output_une
+tpp_amp.png (PNG copy)> <./images_sim/03_CaP_50_minus_artery_100mA_2_slice32_pr
+ed_output_unetpp_sharp_patient.png (PNG copy)> <./images_sim/03_CaP_50_minus_ar
+tery_100mA_2_slice32_pred_ldm_output_resshift.png> <./images_sim/03_CaP_50_minu
+s_artery_100mA_2_slice32_pred_ldm10_output_resshift.png> <./images_sim/03_CaP_5
+0_minus_artery_100mA_2_slice32_pred_output_resshift.png> <./images_sim/03_CaP_5
+0_minus_artery_100mA_2_slice32_gt.png (PNG copy)> <./images_sim/03_CaP_50_minus
+_artery_100mA_10_slice32_input.png (PNG copy)> <./images_sim/03_CaP_50_minus_ar
+tery_100mA_10_slice32_HU_Shrink.png> <./images_sim/03_CaP_50_minus_artery_100mA
+_10_slice32_Wiener.png> <./images_sim/03_CaP_50_minus_artery_100mA_10_slice32_p
+red_output_srgan.png (PNG copy)> <./images_sim/03_CaP_50_minus_artery_100mA_10_
+slice32_pred_output_srgan-no_style.png (PNG copy)> <./images_sim/03_CaP_50_minu
+s_artery_100mA_10_slice32_pred_output_sagan.png (PNG copy)> <./images_sim/03_Ca
+P_50_minus_artery_100mA_10_slice32_pred_output_sogan.png (PNG copy)> <./images_
+sim/03_CaP_50_minus_artery_100mA_10_slice32_mask.png (PNG copy)> <./images_sim/
+03_CaP_50_minus_artery_100mA_10_slice32_pred_output_unetpp_amp.png (PNG copy)> 
+<./images_sim/03_CaP_50_minus_artery_100mA_10_slice32_pred_output_unetpp_sharp_
+patient.png (PNG copy)> <./images_sim/03_CaP_50_minus_artery_100mA_10_slice32_p
+red_ldm_output_resshift.png> <./images_sim/03_CaP_50_minus_artery_100mA_10_slic
+e32_pred_ldm10_output_resshift.png> <./images_sim/03_CaP_50_minus_artery_100mA_
+10_slice32_pred_output_resshift.png> <./images_sim/03_CaP_50_minus_artery_100mA
+_10_slice32_gt.png (PNG copy)>]
+<images_real/e29056_187_region_1_input_raw_sagan.png, id=95, 128.48pt x 128.48p
+t>
+File: images_real/e29056_187_region_1_input_raw_sagan.png Graphic file (type pn
+g)
+<use images_real/e29056_187_region_1_input_raw_sagan.png>
+Package pdftex.def Info: images_real/e29056_187_region_1_input_raw_sagan.png  u
+sed on input line 416.
+(pdftex.def)             Requested size: 60.70432pt x 60.70515pt.
+<images_real/e29056_187_region_1_HU_Shrink.png, id=96, 289.08pt x 289.08pt>
+File: images_real/e29056_187_region_1_HU_Shrink.png Graphic file (type png)
+<use images_real/e29056_187_region_1_HU_Shrink.png>
+Package pdftex.def Info: images_real/e29056_187_region_1_HU_Shrink.png  used on
+ input line 417.
+(pdftex.def)             Requested size: 60.70432pt x 60.70418pt.
+<images_real/e29056_187_region_1_Wiener_Unsharp.png, id=97, 289.08pt x 289.08pt
+>
+File: images_real/e29056_187_region_1_Wiener_Unsharp.png Graphic file (type png
+)
+<use images_real/e29056_187_region_1_Wiener_Unsharp.png>
+Package pdftex.def Info: images_real/e29056_187_region_1_Wiener_Unsharp.png  us
+ed on input line 418.
+(pdftex.def)             Requested size: 60.70432pt x 60.70418pt.
+<images_real/e29056_187_region_1_output_raw_srgan.png, id=98, 128.48pt x 128.48
+pt>
+File: images_real/e29056_187_region_1_output_raw_srgan.png Graphic file (type p
+ng)
+<use images_real/e29056_187_region_1_output_raw_srgan.png>
+Package pdftex.def Info: images_real/e29056_187_region_1_output_raw_srgan.png  
+used on input line 419.
+(pdftex.def)             Requested size: 60.70432pt x 60.70515pt.
+<images_real/e29056_187_region_1_output_raw_srgan_no_style.png, id=99, 128.48pt
+ x 128.48pt>
+File: images_real/e29056_187_region_1_output_raw_srgan_no_style.png Graphic fil
+e (type png)
+<use images_real/e29056_187_region_1_output_raw_srgan_no_style.png>
+Package pdftex.def Info: images_real/e29056_187_region_1_output_raw_srgan_no_st
+yle.png  used on input line 420.
+(pdftex.def)             Requested size: 60.70432pt x 60.70515pt.
+<images_real/e29056_187_region_1_output_raw_sagan.png, id=100, 128.48pt x 128.4
+8pt>
+File: images_real/e29056_187_region_1_output_raw_sagan.png Graphic file (type p
+ng)
+<use images_real/e29056_187_region_1_output_raw_sagan.png>
+Package pdftex.def Info: images_real/e29056_187_region_1_output_raw_sagan.png  
+used on input line 421.
+(pdftex.def)             Requested size: 60.70432pt x 60.70515pt.
+<images_real/e29056_187_region_1_output_raw_sogan_mask_undilate.png, id=101, 12
+8.48pt x 128.48pt>
+File: images_real/e29056_187_region_1_output_raw_sogan_mask_undilate.png Graphi
+c file (type png)
+<use images_real/e29056_187_region_1_output_raw_sogan_mask_undilate.png>
+Package pdftex.def Info: images_real/e29056_187_region_1_output_raw_sogan_mask_
+undilate.png  used on input line 422.
+(pdftex.def)             Requested size: 60.70432pt x 60.70515pt.
+<images_real/e29056_187_region_1_mask_raw.png, id=102, 128.48pt x 128.48pt>
+File: images_real/e29056_187_region_1_mask_raw.png Graphic file (type png)
+<use images_real/e29056_187_region_1_mask_raw.png>
+Package pdftex.def Info: images_real/e29056_187_region_1_mask_raw.png  used on 
+input line 432.
+(pdftex.def)             Requested size: 60.70432pt x 60.70515pt.
+<images_real/e29056_187_region_1_output_unetpp_amp.png, id=103, 128.48pt x 128.
+48pt>
+File: images_real/e29056_187_region_1_output_unetpp_amp.png Graphic file (type 
+png)
+<use images_real/e29056_187_region_1_output_unetpp_amp.png>
+Package pdftex.def Info: images_real/e29056_187_region_1_output_unetpp_amp.png 
+ used on input line 433.
+(pdftex.def)             Requested size: 60.70432pt x 60.70515pt.
+<images_real/e29056_187_region_1_output_unetpp_sharp_patient.png, id=104, 128.4
+8pt x 128.48pt>
+File: images_real/e29056_187_region_1_output_unetpp_sharp_patient.png Graphic f
+ile (type png)
+<use images_real/e29056_187_region_1_output_unetpp_sharp_patient.png>
+Package pdftex.def Info: images_real/e29056_187_region_1_output_unetpp_sharp_pa
+tient.png  used on input line 434.
+(pdftex.def)             Requested size: 60.70432pt x 60.70515pt.
+<images_real/e29056_187_region_1_pred_ldm_output_resshift.png, id=105, 289.08pt
+ x 289.08pt>
+File: images_real/e29056_187_region_1_pred_ldm_output_resshift.png Graphic file
+ (type png)
+<use images_real/e29056_187_region_1_pred_ldm_output_resshift.png>
+Package pdftex.def Info: images_real/e29056_187_region_1_pred_ldm_output_resshi
+ft.png  used on input line 435.
+(pdftex.def)             Requested size: 60.70432pt x 60.70418pt.
+<images_real/e29056_187_region_1_pred_ldm10_output_resshift.png, id=106, 289.08
+pt x 289.08pt>
+File: images_real/e29056_187_region_1_pred_ldm10_output_resshift.png Graphic fi
+le (type png)
+<use images_real/e29056_187_region_1_pred_ldm10_output_resshift.png>
+Package pdftex.def Info: images_real/e29056_187_region_1_pred_ldm10_output_ress
+hift.png  used on input line 436.
+(pdftex.def)             Requested size: 60.70432pt x 60.70418pt.
+<images_real/e29056_187_region_1_output_resshift.png, id=107, 289.08pt x 289.08
+pt>
+File: images_real/e29056_187_region_1_output_resshift.png Graphic file (type pn
+g)
+<use images_real/e29056_187_region_1_output_resshift.png>
+Package pdftex.def Info: images_real/e29056_187_region_1_output_resshift.png  u
+sed on input line 437.
+(pdftex.def)             Requested size: 60.70432pt x 60.70418pt.
+<images_real/e35127_147_region_1_input_raw_sagan.png, id=108, 128.48pt x 128.48
+pt>
+File: images_real/e35127_147_region_1_input_raw_sagan.png Graphic file (type pn
+g)
+<use images_real/e35127_147_region_1_input_raw_sagan.png>
+Package pdftex.def Info: images_real/e35127_147_region_1_input_raw_sagan.png  u
+sed on input line 453.
+(pdftex.def)             Requested size: 60.70432pt x 60.70515pt.
+<images_real/e35127_147_region_1_HU_Shrink.png, id=109, 289.08pt x 289.08pt>
+File: images_real/e35127_147_region_1_HU_Shrink.png Graphic file (type png)
+<use images_real/e35127_147_region_1_HU_Shrink.png>
+Package pdftex.def Info: images_real/e35127_147_region_1_HU_Shrink.png  used on
+ input line 454.
+(pdftex.def)             Requested size: 60.70432pt x 60.70418pt.
+<images_real/e35127_147_region_1_Wiener_Unsharp.png, id=110, 289.08pt x 289.08p
+t>
+File: images_real/e35127_147_region_1_Wiener_Unsharp.png Graphic file (type png
+)
+<use images_real/e35127_147_region_1_Wiener_Unsharp.png>
+Package pdftex.def Info: images_real/e35127_147_region_1_Wiener_Unsharp.png  us
+ed on input line 455.
+(pdftex.def)             Requested size: 60.70432pt x 60.70418pt.
+<images_real/e35127_147_region_1_output_raw_srgan.png, id=111, 128.48pt x 128.4
+8pt>
+File: images_real/e35127_147_region_1_output_raw_srgan.png Graphic file (type p
+ng)
+<use images_real/e35127_147_region_1_output_raw_srgan.png>
+Package pdftex.def Info: images_real/e35127_147_region_1_output_raw_srgan.png  
+used on input line 456.
+(pdftex.def)             Requested size: 60.70432pt x 60.70515pt.
+<images_real/e35127_147_region_1_output_raw_srgan_no_style.png, id=112, 128.48p
+t x 128.48pt>
+File: images_real/e35127_147_region_1_output_raw_srgan_no_style.png Graphic fil
+e (type png)
+<use images_real/e35127_147_region_1_output_raw_srgan_no_style.png>
+Package pdftex.def Info: images_real/e35127_147_region_1_output_raw_srgan_no_st
+yle.png  used on input line 457.
+(pdftex.def)             Requested size: 60.70432pt x 60.70515pt.
+<images_real/e35127_147_region_1_output_raw_sagan.png, id=113, 128.48pt x 128.4
+8pt>
+File: images_real/e35127_147_region_1_output_raw_sagan.png Graphic file (type p
+ng)
+<use images_real/e35127_147_region_1_output_raw_sagan.png>
+Package pdftex.def Info: images_real/e35127_147_region_1_output_raw_sagan.png  
+used on input line 458.
+(pdftex.def)             Requested size: 60.70432pt x 60.70515pt.
+<images_real/e35127_147_region_1_output_sogan_mask_undilate.png, id=114, 128.48
+pt x 128.48pt>
+File: images_real/e35127_147_region_1_output_sogan_mask_undilate.png Graphic fi
+le (type png)
+<use images_real/e35127_147_region_1_output_sogan_mask_undilate.png>
+Package pdftex.def Info: images_real/e35127_147_region_1_output_sogan_mask_undi
+late.png  used on input line 459.
+(pdftex.def)             Requested size: 60.70432pt x 60.70515pt.
+<images_real/e35127_147_region_1_mask_raw.png, id=115, 128.48pt x 128.48pt>
+File: images_real/e35127_147_region_1_mask_raw.png Graphic file (type png)
+<use images_real/e35127_147_region_1_mask_raw.png>
+Package pdftex.def Info: images_real/e35127_147_region_1_mask_raw.png  used on 
+input line 469.
+(pdftex.def)             Requested size: 60.70432pt x 60.70515pt.
+<images_real/e35127_147_region_1_output_unetpp_amp.png, id=116, 128.48pt x 128.
+48pt>
+File: images_real/e35127_147_region_1_output_unetpp_amp.png Graphic file (type 
+png)
+<use images_real/e35127_147_region_1_output_unetpp_amp.png>
+Package pdftex.def Info: images_real/e35127_147_region_1_output_unetpp_amp.png 
+ used on input line 470.
+(pdftex.def)             Requested size: 60.70432pt x 60.70515pt.
+<images_real/e35127_147_region_1_output_unetpp_sharp_patient.png, id=117, 128.4
+8pt x 128.48pt>
+File: images_real/e35127_147_region_1_output_unetpp_sharp_patient.png Graphic f
+ile (type png)
+<use images_real/e35127_147_region_1_output_unetpp_sharp_patient.png>
+Package pdftex.def Info: images_real/e35127_147_region_1_output_unetpp_sharp_pa
+tient.png  used on input line 471.
+(pdftex.def)             Requested size: 60.70432pt x 60.70515pt.
+<images_real/e35127_147_region_1_pred_ldm_output_resshift.png, id=118, 289.08pt
+ x 289.08pt>
+File: images_real/e35127_147_region_1_pred_ldm_output_resshift.png Graphic file
+ (type png)
+<use images_real/e35127_147_region_1_pred_ldm_output_resshift.png>
+Package pdftex.def Info: images_real/e35127_147_region_1_pred_ldm_output_resshi
+ft.png  used on input line 472.
+(pdftex.def)             Requested size: 60.70432pt x 60.70418pt.
+<images_real/e35127_147_region_1_pred_ldm10_output_resshift.png, id=119, 289.08
+pt x 289.08pt>
+File: images_real/e35127_147_region_1_pred_ldm10_output_resshift.png Graphic fi
+le (type png)
+<use images_real/e35127_147_region_1_pred_ldm10_output_resshift.png>
+Package pdftex.def Info: images_real/e35127_147_region_1_pred_ldm10_output_ress
+hift.png  used on input line 473.
+(pdftex.def)             Requested size: 60.70432pt x 60.70418pt.
+<images_real/e35127_147_region_1_output_resshift.png, id=120, 289.08pt x 289.08
+pt>
+File: images_real/e35127_147_region_1_output_resshift.png Graphic file (type pn
+g)
+<use images_real/e35127_147_region_1_output_resshift.png>
+Package pdftex.def Info: images_real/e35127_147_region_1_output_resshift.png  u
+sed on input line 474.
+(pdftex.def)             Requested size: 60.70432pt x 60.70418pt.
+<images_real/e29056_336_region_1_input.png, id=121, 128.48pt x 128.48pt>
+File: images_real/e29056_336_region_1_input.png Graphic file (type png)
+<use images_real/e29056_336_region_1_input.png>
+Package pdftex.def Info: images_real/e29056_336_region_1_input.png  used on inp
+ut line 490.
+(pdftex.def)             Requested size: 60.70432pt x 60.70515pt.
+<images_real/e29056_336_region_1_HU_Shrink.png, id=122, 128.48pt x 128.48pt>
+File: images_real/e29056_336_region_1_HU_Shrink.png Graphic file (type png)
+<use images_real/e29056_336_region_1_HU_Shrink.png>
+Package pdftex.def Info: images_real/e29056_336_region_1_HU_Shrink.png  used on
+ input line 491.
+(pdftex.def)             Requested size: 60.70432pt x 60.70515pt.
+<images_real/e29056_336_region_1_Wiener_Unsharp.png, id=123, 128.48pt x 128.48p
+t>
+File: images_real/e29056_336_region_1_Wiener_Unsharp.png Graphic file (type png
+)
+<use images_real/e29056_336_region_1_Wiener_Unsharp.png>
+Package pdftex.def Info: images_real/e29056_336_region_1_Wiener_Unsharp.png  us
+ed on input line 492.
+(pdftex.def)             Requested size: 60.70432pt x 60.70515pt.
+<images_real/e29056_336_region_1_output_raw_srgan.png, id=124, 128.48pt x 128.4
+8pt>
+File: images_real/e29056_336_region_1_output_raw_srgan.png Graphic file (type p
+ng)
+<use images_real/e29056_336_region_1_output_raw_srgan.png>
+Package pdftex.def Info: images_real/e29056_336_region_1_output_raw_srgan.png  
+used on input line 493.
+(pdftex.def)             Requested size: 60.70432pt x 60.70515pt.
+<images_real/e29056_336_region_1_output_raw_srgan_no_style.png, id=125, 128.48p
+t x 128.48pt>
+File: images_real/e29056_336_region_1_output_raw_srgan_no_style.png Graphic fil
+e (type png)
+<use images_real/e29056_336_region_1_output_raw_srgan_no_style.png>
+Package pdftex.def Info: images_real/e29056_336_region_1_output_raw_srgan_no_st
+yle.png  used on input line 494.
+(pdftex.def)             Requested size: 60.70432pt x 60.70515pt.
+<images_real/e29056_336_region_1_output_raw_sagan.png, id=126, 128.48pt x 128.4
+8pt>
+File: images_real/e29056_336_region_1_output_raw_sagan.png Graphic file (type p
+ng)
+<use images_real/e29056_336_region_1_output_raw_sagan.png>
+Package pdftex.def Info: images_real/e29056_336_region_1_output_raw_sagan.png  
+used on input line 495.
+(pdftex.def)             Requested size: 60.70432pt x 60.70515pt.
+<images_real/e29056_336_region_1_output_raw_sogan.png, id=127, 128.48pt x 128.4
+8pt>
+File: images_real/e29056_336_region_1_output_raw_sogan.png Graphic file (type p
+ng)
+<use images_real/e29056_336_region_1_output_raw_sogan.png>
+Package pdftex.def Info: images_real/e29056_336_region_1_output_raw_sogan.png  
+used on input line 496.
+(pdftex.def)             Requested size: 60.70432pt x 60.70515pt.
+<images_real/e29056_336_region_1_mask_raw.png, id=128, 128.48pt x 128.48pt>
+File: images_real/e29056_336_region_1_mask_raw.png Graphic file (type png)
+<use images_real/e29056_336_region_1_mask_raw.png>
+Package pdftex.def Info: images_real/e29056_336_region_1_mask_raw.png  used on 
+input line 506.
+(pdftex.def)             Requested size: 60.70432pt x 60.70515pt.
+<images_real/e29056_336_region_1_output_raw_unetpp.png, id=129, 128.48pt x 128.
+48pt>
+File: images_real/e29056_336_region_1_output_raw_unetpp.png Graphic file (type 
+png)
+<use images_real/e29056_336_region_1_output_raw_unetpp.png>
+Package pdftex.def Info: images_real/e29056_336_region_1_output_raw_unetpp.png 
+ used on input line 507.
+(pdftex.def)             Requested size: 60.70432pt x 60.70515pt.
+<images_real/e29056_336_region_1_output_raw_unetpp_sharp.png, id=130, 128.48pt 
+x 128.48pt>
+File: images_real/e29056_336_region_1_output_raw_unetpp_sharp.png Graphic file 
+(type png)
+<use images_real/e29056_336_region_1_output_raw_unetpp_sharp.png>
+Package pdftex.def Info: images_real/e29056_336_region_1_output_raw_unetpp_shar
+p.png  used on input line 508.
+(pdftex.def)             Requested size: 60.70432pt x 60.70515pt.
+<images_real/e29056_336_region_1_pred_ldm1000.png, id=131, 128.48pt x 128.48pt>
+
+File: images_real/e29056_336_region_1_pred_ldm1000.png Graphic file (type png)
+<use images_real/e29056_336_region_1_pred_ldm1000.png>
+Package pdftex.def Info: images_real/e29056_336_region_1_pred_ldm1000.png  used
+ on input line 509.
+(pdftex.def)             Requested size: 60.70432pt x 60.70515pt.
+<images_real/e29056_336_region_1_pred_ldm10.png, id=132, 128.48pt x 128.48pt>
+File: images_real/e29056_336_region_1_pred_ldm10.png Graphic file (type png)
+<use images_real/e29056_336_region_1_pred_ldm10.png>
+Package pdftex.def Info: images_real/e29056_336_region_1_pred_ldm10.png  used o
+n input line 510.
+(pdftex.def)             Requested size: 60.70432pt x 60.70515pt.
+<images_real/e29056_336_region_1_pred_proposed.png, id=133, 128.48pt x 128.48pt
+>
+File: images_real/e29056_336_region_1_pred_proposed.png Graphic file (type png)
+
+<use images_real/e29056_336_region_1_pred_proposed.png>
+Package pdftex.def Info: images_real/e29056_336_region_1_pred_proposed.png  use
+d on input line 511.
+(pdftex.def)             Requested size: 60.70432pt x 60.70515pt.
+<images_real/e29056_364_region_1_input.png, id=134, 128.48pt x 128.48pt>
+File: images_real/e29056_364_region_1_input.png Graphic file (type png)
+<use images_real/e29056_364_region_1_input.png>
+Package pdftex.def Info: images_real/e29056_364_region_1_input.png  used on inp
+ut line 527.
+(pdftex.def)             Requested size: 60.70432pt x 60.70515pt.
+<images_real/e29056_364_region_1_HU_Shrink.png, id=135, 128.48pt x 128.48pt>
+File: images_real/e29056_364_region_1_HU_Shrink.png Graphic file (type png)
+<use images_real/e29056_364_region_1_HU_Shrink.png>
+Package pdftex.def Info: images_real/e29056_364_region_1_HU_Shrink.png  used on
+ input line 528.
+(pdftex.def)             Requested size: 60.70432pt x 60.70515pt.
+<images_real/e29056_364_region_1_Wiener_Unsharp.png, id=136, 128.48pt x 128.48p
+t>
+File: images_real/e29056_364_region_1_Wiener_Unsharp.png Graphic file (type png
+)
+<use images_real/e29056_364_region_1_Wiener_Unsharp.png>
+Package pdftex.def Info: images_real/e29056_364_region_1_Wiener_Unsharp.png  us
+ed on input line 529.
+(pdftex.def)             Requested size: 60.70432pt x 60.70515pt.
+<images_real/e29056_364_region_1_output_raw_srgan.png, id=137, 128.48pt x 128.4
+8pt>
+File: images_real/e29056_364_region_1_output_raw_srgan.png Graphic file (type p
+ng)
+<use images_real/e29056_364_region_1_output_raw_srgan.png>
+Package pdftex.def Info: images_real/e29056_364_region_1_output_raw_srgan.png  
+used on input line 530.
+(pdftex.def)             Requested size: 60.70432pt x 60.70515pt.
+<images_real/e29056_364_region_1_output_raw_srgan_no_style.png, id=138, 128.48p
+t x 128.48pt>
+File: images_real/e29056_364_region_1_output_raw_srgan_no_style.png Graphic fil
+e (type png)
+<use images_real/e29056_364_region_1_output_raw_srgan_no_style.png>
+Package pdftex.def Info: images_real/e29056_364_region_1_output_raw_srgan_no_st
+yle.png  used on input line 531.
+(pdftex.def)             Requested size: 60.70432pt x 60.70515pt.
+<images_real/e29056_364_region_1_output_raw_sagan.png, id=139, 128.48pt x 128.4
+8pt>
+File: images_real/e29056_364_region_1_output_raw_sagan.png Graphic file (type p
+ng)
+<use images_real/e29056_364_region_1_output_raw_sagan.png>
+Package pdftex.def Info: images_real/e29056_364_region_1_output_raw_sagan.png  
+used on input line 532.
+(pdftex.def)             Requested size: 60.70432pt x 60.70515pt.
+<images_real/e29056_364_region_1_output_raw_sogan.png, id=140, 128.48pt x 128.4
+8pt>
+File: images_real/e29056_364_region_1_output_raw_sogan.png Graphic file (type p
+ng)
+<use images_real/e29056_364_region_1_output_raw_sogan.png>
+Package pdftex.def Info: images_real/e29056_364_region_1_output_raw_sogan.png  
+used on input line 533.
+(pdftex.def)             Requested size: 60.70432pt x 60.70515pt.
+<images_real/e29056_364_region_1_mask_raw.png, id=141, 128.48pt x 128.48pt>
+File: images_real/e29056_364_region_1_mask_raw.png Graphic file (type png)
+<use images_real/e29056_364_region_1_mask_raw.png>
+Package pdftex.def Info: images_real/e29056_364_region_1_mask_raw.png  used on 
+input line 543.
+(pdftex.def)             Requested size: 60.70432pt x 60.70515pt.
+<images_real/e29056_364_region_1_output_raw_unetpp.png, id=142, 128.48pt x 128.
+48pt>
+File: images_real/e29056_364_region_1_output_raw_unetpp.png Graphic file (type 
+png)
+<use images_real/e29056_364_region_1_output_raw_unetpp.png>
+Package pdftex.def Info: images_real/e29056_364_region_1_output_raw_unetpp.png 
+ used on input line 544.
+(pdftex.def)             Requested size: 60.70432pt x 60.70515pt.
+<images_real/e29056_364_region_1_output_raw_unetpp_sharp.png, id=143, 128.48pt 
+x 128.48pt>
+File: images_real/e29056_364_region_1_output_raw_unetpp_sharp.png Graphic file 
+(type png)
+<use images_real/e29056_364_region_1_output_raw_unetpp_sharp.png>
+Package pdftex.def Info: images_real/e29056_364_region_1_output_raw_unetpp_shar
+p.png  used on input line 545.
+(pdftex.def)             Requested size: 60.70432pt x 60.70515pt.
+<images_real/e29056_364_region_1_ldm1000.png, id=144, 128.48pt x 128.48pt>
+File: images_real/e29056_364_region_1_ldm1000.png Graphic file (type png)
+<use images_real/e29056_364_region_1_ldm1000.png>
+Package pdftex.def Info: images_real/e29056_364_region_1_ldm1000.png  used on i
+nput line 546.
+(pdftex.def)             Requested size: 60.70432pt x 60.70515pt.
+<images_real/e29056_364_region_1_pred_ldm10.png, id=145, 128.48pt x 128.48pt>
+File: images_real/e29056_364_region_1_pred_ldm10.png Graphic file (type png)
+<use images_real/e29056_364_region_1_pred_ldm10.png>
+Package pdftex.def Info: images_real/e29056_364_region_1_pred_ldm10.png  used o
+n input line 547.
+(pdftex.def)             Requested size: 60.70432pt x 60.70515pt.
+<images_real/e29056_364_region_1_pred_proposed.png, id=146, 128.48pt x 128.48pt
+>
+File: images_real/e29056_364_region_1_pred_proposed.png Graphic file (type png)
+
+<use images_real/e29056_364_region_1_pred_proposed.png>
+Package pdftex.def Info: images_real/e29056_364_region_1_pred_proposed.png  use
+d on input line 548.
+(pdftex.def)             Requested size: 60.70432pt x 60.70515pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [8
+
+ <./images_real/e29056_187_region_1_input_raw_sagan.png (PNG copy)> <./images_r
+eal/e29056_187_region_1_HU_Shrink.png> <./images_real/e29056_187_region_1_Wiene
+r_Unsharp.png> <./images_real/e29056_187_region_1_output_raw_srgan.png (PNG cop
+y)> <./images_real/e29056_187_region_1_output_raw_srgan_no_style.png (PNG copy)
+> <./images_real/e29056_187_region_1_output_raw_sagan.png (PNG copy)> <./images
+_real/e29056_187_region_1_output_raw_sogan_mask_undilate.png (PNG copy)> <./ima
+ges_real/e29056_187_region_1_mask_raw.png (PNG copy)> <./images_real/e29056_187
+_region_1_output_unetpp_amp.png (PNG copy)> <./images_real/e29056_187_region_1_
+output_unetpp_sharp_patient.png (PNG copy)> <./images_real/e29056_187_region_1_
+pred_ldm_output_resshift.png> <./images_real/e29056_187_region_1_pred_ldm10_out
+put_resshift.png> <./images_real/e29056_187_region_1_output_resshift.png> <./im
+ages_real/e35127_147_region_1_input_raw_sagan.png (PNG copy)> <./images_real/e3
+5127_147_region_1_HU_Shrink.png> <./images_real/e35127_147_region_1_Wiener_Unsh
+arp.png> <./images_real/e35127_147_region_1_output_raw_srgan.png (PNG copy)> <.
+/images_real/e35127_147_region_1_output_raw_srgan_no_style.png (PNG copy)> <./i
+mages_real/e35127_147_region_1_output_raw_sagan.png (PNG copy)> <./images_real/
+e35127_147_region_1_output_sogan_mask_undilate.png (PNG copy)> <./images_real/e
+35127_147_region_1_mask_raw.png (PNG copy)> <./images_real/e35127_147_region_1_
+output_unetpp_amp.png (PNG copy)> <./images_real/e35127_147_region_1_output_une
+tpp_sharp_patient.png (PNG copy)> <./images_real/e35127_147_region_1_pred_ldm_o
+utput_resshift.png> <./images_real/e35127_147_region_1_pred_ldm10_output_resshi
+ft.png> <./images_real/e35127_147_region_1_output_resshift.png> <./images_real/
+e29056_336_region_1_input.png (PNG copy)> <./images_real/e29056_336_region_1_HU
+_Shrink.png (PNG copy)> <./images_real/e29056_336_region_1_Wiener_Unsharp.png (
+PNG copy)> <./images_real/e29056_336_region_1_output_raw_srgan.png (PNG copy)> 
+<./images_real/e29056_336_region_1_output_raw_srgan_no_style.png (PNG copy)> <.
+/images_real/e29056_336_region_1_output_raw_sagan.png (PNG copy)> <./images_rea
+l/e29056_336_region_1_output_raw_sogan.png (PNG copy)> <./images_real/e29056_33
+6_region_1_mask_raw.png (PNG copy)> <./images_real/e29056_336_region_1_output_r
+aw_unetpp.png (PNG copy)> <./images_real/e29056_336_region_1_output_raw_unetpp_
+sharp.png (PNG copy)> <./images_real/e29056_336_region_1_pred_ldm1000.png (PNG 
+copy)> <./images_real/e29056_336_region_1_pred_ldm10.png (PNG copy)> <./images_
+real/e29056_336_region_1_pred_proposed.png (PNG copy)> <./images_real/e29056_36
+4_region_1_input.png (PNG copy)> <./images_real/e29056_364_region_1_HU_Shrink.p
+ng (PNG copy)> <./images_real/e29056_364_region_1_Wiener_Unsharp.png (PNG copy)
+> <./images_real/e29056_364_region_1_output_raw_srgan.png (PNG copy)> <./images
+_real/e29056_364_region_1_output_raw_srgan_no_style.png (PNG copy)> <./images_r
+eal/e29056_364_region_1_output_raw_sagan.png (PNG copy)> <./images_real/e29056_
+364_region_1_output_raw_sogan.png (PNG copy)> <./images_real/e29056_364_region_
+1_mask_raw.png (PNG copy)> <./images_real/e29056_364_region_1_output_raw_unetpp
+.png (PNG copy)> <./images_real/e29056_364_region_1_output_raw_unetpp_sharp.png
+ (PNG copy)> <./images_real/e29056_364_region_1_ldm1000.png (PNG copy)> <./imag
+es_real/e29056_364_region_1_pred_ldm10.png (PNG copy)> <./images_real/e29056_36
+4_region_1_pred_proposed.png (PNG copy)>] [9] [10]
+<images_mask/patient_24_100mA_2_slice_032_input_processed.png, id=169, 289.08pt
+ x 289.08pt>
+File: images_mask/patient_24_100mA_2_slice_032_input_processed.png Graphic file
+ (type png)
+<use images_mask/patient_24_100mA_2_slice_032_input_processed.png>
+Package pdftex.def Info: images_mask/patient_24_100mA_2_slice_032_input_process
+ed.png  used on input line 634.
+(pdftex.def)             Requested size: 91.05649pt x 91.05626pt.
+<images_mask/patient_24_100mA_2_slice_032_mask_dilate.png, id=170, 289.08pt x 2
+89.08pt>
+File: images_mask/patient_24_100mA_2_slice_032_mask_dilate.png Graphic file (ty
+pe png)
+<use images_mask/patient_24_100mA_2_slice_032_mask_dilate.png>
+Package pdftex.def Info: images_mask/patient_24_100mA_2_slice_032_mask_dilate.p
+ng  used on input line 635.
+(pdftex.def)             Requested size: 91.05649pt x 91.05626pt.
+<images_mask/patient_24_100mA_2_slice_032_gt.png, id=171, 289.08pt x 289.08pt>
+File: images_mask/patient_24_100mA_2_slice_032_gt.png Graphic file (type png)
+<use images_mask/patient_24_100mA_2_slice_032_gt.png>
+Package pdftex.def Info: images_mask/patient_24_100mA_2_slice_032_gt.png  used 
+on input line 636.
+(pdftex.def)             Requested size: 91.05649pt x 91.05626pt.
+<images_mask/patient_24_100mA_2_slice_032_pred.png, id=172, 289.08pt x 289.08pt
+>
+File: images_mask/patient_24_100mA_2_slice_032_pred.png Graphic file (type png)
+
+<use images_mask/patient_24_100mA_2_slice_032_pred.png>
+Package pdftex.def Info: images_mask/patient_24_100mA_2_slice_032_pred.png  use
+d on input line 637.
+(pdftex.def)             Requested size: 91.05649pt x 91.05626pt.
+<images_mask/patient_24_100mA_2_slice_032_pred_no_mask.png, id=173, 289.08pt x 
+289.08pt>
+File: images_mask/patient_24_100mA_2_slice_032_pred_no_mask.png Graphic file (t
+ype png)
+<use images_mask/patient_24_100mA_2_slice_032_pred_no_mask.png>
+Package pdftex.def Info: images_mask/patient_24_100mA_2_slice_032_pred_no_mask.
+png  used on input line 638.
+(pdftex.def)             Requested size: 91.05649pt x 91.05626pt.
+<images_saba/03_CaP_50_minus_artery_100mA_10_slice32_input.png, id=174, 128.48p
+t x 128.48pt>
+File: images_saba/03_CaP_50_minus_artery_100mA_10_slice32_input.png Graphic fil
+e (type png)
+<use images_saba/03_CaP_50_minus_artery_100mA_10_slice32_input.png>
+Package pdftex.def Info: images_saba/03_CaP_50_minus_artery_100mA_10_slice32_in
+put.png  used on input line 654.
+(pdftex.def)             Requested size: 91.05649pt x 91.05675pt.
+<images_saba/patient_03_100mA_10_slice_032_pred.png, id=175, 289.08pt x 289.08p
+t>
+File: images_saba/patient_03_100mA_10_slice_032_pred.png Graphic file (type png
+)
+<use images_saba/patient_03_100mA_10_slice_032_pred.png>
+Package pdftex.def Info: images_saba/patient_03_100mA_10_slice_032_pred.png  us
+ed on input line 655.
+(pdftex.def)             Requested size: 91.05649pt x 91.05626pt.
+<images_saba/patient_03_100mA_10_slice_032_pred_swin.png, id=176, 289.08pt x 28
+9.08pt>
+File: images_saba/patient_03_100mA_10_slice_032_pred_swin.png Graphic file (typ
+e png)
+<use images_saba/patient_03_100mA_10_slice_032_pred_swin.png>
+Package pdftex.def Info: images_saba/patient_03_100mA_10_slice_032_pred_swin.pn
+g  used on input line 656.
+(pdftex.def)             Requested size: 91.05649pt x 91.05626pt.
+<images_saba/03_CaP_50_minus_artery_100mA_10_slice32_gt.png, id=177, 128.48pt x
+ 128.48pt>
+File: images_saba/03_CaP_50_minus_artery_100mA_10_slice32_gt.png Graphic file (
+type png)
+<use images_saba/03_CaP_50_minus_artery_100mA_10_slice32_gt.png>
+Package pdftex.def Info: images_saba/03_CaP_50_minus_artery_100mA_10_slice32_gt
+.png  used on input line 657.
+(pdftex.def)             Requested size: 91.05649pt x 91.05675pt.
+<images_saba/e29056_187_region_1_input_raw_sagan.png, id=178, 128.48pt x 128.48
+pt>
+File: images_saba/e29056_187_region_1_input_raw_sagan.png Graphic file (type pn
+g)
+<use images_saba/e29056_187_region_1_input_raw_sagan.png>
+Package pdftex.def Info: images_saba/e29056_187_region_1_input_raw_sagan.png  u
+sed on input line 660.
+(pdftex.def)             Requested size: 91.05649pt x 91.05675pt.
+<images_saba/e29056_187_region_1_output_resshift.png, id=179, 289.08pt x 289.08
+pt>
+File: images_saba/e29056_187_region_1_output_resshift.png Graphic file (type pn
+g)
+<use images_saba/e29056_187_region_1_output_resshift.png>
+Package pdftex.def Info: images_saba/e29056_187_region_1_output_resshift.png  u
+sed on input line 661.
+(pdftex.def)             Requested size: 91.05649pt x 91.05626pt.
+<images_saba/e29056_187_region_1_pred_swin.png, id=180, 289.08pt x 289.08pt>
+File: images_saba/e29056_187_region_1_pred_swin.png Graphic file (type png)
+<use images_saba/e29056_187_region_1_pred_swin.png>
+Package pdftex.def Info: images_saba/e29056_187_region_1_pred_swin.png  used on
+ input line 662.
+(pdftex.def)             Requested size: 91.05649pt x 91.05626pt.
+LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 6
+88.
+
+(E:\MikTex\tex/latex/psnfss\ot1pcr.fd
+File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
+) [11 <./images_mask/patient_24_100mA_2_slice_032_input_processed.png> <./image
+s_mask/patient_24_100mA_2_slice_032_mask_dilate.png> <./images_mask/patient_24_
+100mA_2_slice_032_gt.png> <./images_mask/patient_24_100mA_2_slice_032_pred.png>
+ <./images_mask/patient_24_100mA_2_slice_032_pred_no_mask.png> <./images_saba/0
+3_CaP_50_minus_artery_100mA_10_slice32_input.png (PNG copy)> <./images_saba/pat
+ient_03_100mA_10_slice_032_pred.png> <./images_saba/patient_03_100mA_10_slice_0
+32_pred_swin.png> <./images_saba/03_CaP_50_minus_artery_100mA_10_slice32_gt.png
+ (PNG copy)> <./images_saba/e29056_187_region_1_input_raw_sagan.png (PNG copy)>
+ <./images_saba/e29056_187_region_1_output_resshift.png> <./images_saba/e29056_
+187_region_1_pred_swin.png>]
+<images_red/patient_12_vol_10_input.png, id=194, 267.399pt x 267.399pt>
+File: images_red/patient_12_vol_10_input.png Graphic file (type png)
+<use images_red/patient_12_vol_10_input.png>
+Package pdftex.def Info: images_red/patient_12_vol_10_input.png  used on input 
+line 705.
+(pdftex.def)             Requested size: 57.01337pt x 57.01228pt.
+<images_red/patient_12_vol_10_gt.png, id=195, 267.399pt x 267.399pt>
+File: images_red/patient_12_vol_10_gt.png Graphic file (type png)
+<use images_red/patient_12_vol_10_gt.png>
+Package pdftex.def Info: images_red/patient_12_vol_10_gt.png  used on input lin
+e 706.
+(pdftex.def)             Requested size: 57.01337pt x 57.01228pt.
+<images_red/patient_12_vol_10_output_resshift.png, id=196, 289.08pt x 289.08pt>
+
+File: images_red/patient_12_vol_10_output_resshift.png Graphic file (type png)
+<use images_red/patient_12_vol_10_output_resshift.png>
+Package pdftex.def Info: images_red/patient_12_vol_10_output_resshift.png  used
+ on input line 707.
+(pdftex.def)             Requested size: 57.01337pt x 57.01216pt.
+<images_red/patient_12_vol_10_output_sogan.png, id=197, 267.399pt x 267.399pt>
+File: images_red/patient_12_vol_10_output_sogan.png Graphic file (type png)
+<use images_red/patient_12_vol_10_output_sogan.png>
+Package pdftex.def Info: images_red/patient_12_vol_10_output_sogan.png  used on
+ input line 708.
+(pdftex.def)             Requested size: 57.01337pt x 57.01228pt.
+<images_red/patient_12_vol_10_red_curve_resshift.png, id=198, 425.9112pt x 317.
+0244pt>
+File: images_red/patient_12_vol_10_red_curve_resshift.png Graphic file (type pn
+g)
+<use images_red/patient_12_vol_10_red_curve_resshift.png>
+Package pdftex.def Info: images_red/patient_12_vol_10_red_curve_resshift.png  u
+sed on input line 710.
+(pdftex.def)             Requested size: 111.54922pt x 83.02907pt.
+<images_red/patient_12_vol_10_red_curve_sogan.png, id=199, 425.9112pt x 317.024
+4pt>
+File: images_red/patient_12_vol_10_red_curve_sogan.png Graphic file (type png)
+<use images_red/patient_12_vol_10_red_curve_sogan.png>
+Package pdftex.def Info: images_red/patient_12_vol_10_red_curve_sogan.png  used
+ on input line 711.
+(pdftex.def)             Requested size: 111.54922pt x 83.02907pt.
+<images_red/patient_12_vol_3_input.png, id=200, 267.399pt x 267.399pt>
+File: images_red/patient_12_vol_3_input.png Graphic file (type png)
+<use images_red/patient_12_vol_3_input.png>
+Package pdftex.def Info: images_red/patient_12_vol_3_input.png  used on input l
+ine 720.
+(pdftex.def)             Requested size: 57.01337pt x 57.01228pt.
+<images_red/patient_12_vol_3_gt.png, id=201, 267.399pt x 267.399pt>
+File: images_red/patient_12_vol_3_gt.png Graphic file (type png)
+<use images_red/patient_12_vol_3_gt.png>
+Package pdftex.def Info: images_red/patient_12_vol_3_gt.png  used on input line
+ 721.
+(pdftex.def)             Requested size: 57.01337pt x 57.01228pt.
+<images_red/patient_12_vol_3_output_resshift.png, id=202, 289.08pt x 289.08pt>
+File: images_red/patient_12_vol_3_output_resshift.png Graphic file (type png)
+<use images_red/patient_12_vol_3_output_resshift.png>
+Package pdftex.def Info: images_red/patient_12_vol_3_output_resshift.png  used 
+on input line 722.
+(pdftex.def)             Requested size: 57.01337pt x 57.01216pt.
+<images_red/patient_12_vol_3_output_sogan.png, id=203, 267.399pt x 267.399pt>
+File: images_red/patient_12_vol_3_output_sogan.png Graphic file (type png)
+<use images_red/patient_12_vol_3_output_sogan.png>
+Package pdftex.def Info: images_red/patient_12_vol_3_output_sogan.png  used on 
+input line 723.
+(pdftex.def)             Requested size: 57.01337pt x 57.01228pt.
+<images_red/patient_12_vol_3_red_curve_resshift.png, id=204, 425.9112pt x 317.0
+244pt>
+File: images_red/patient_12_vol_3_red_curve_resshift.png Graphic file (type png
+)
+<use images_red/patient_12_vol_3_red_curve_resshift.png>
+Package pdftex.def Info: images_red/patient_12_vol_3_red_curve_resshift.png  us
+ed on input line 725.
+(pdftex.def)             Requested size: 111.54922pt x 83.02907pt.
+<images_red/patient_12_vol_3_red_curve_sogan.png, id=205, 425.9112pt x 317.0244
+pt>
+File: images_red/patient_12_vol_3_red_curve_sogan.png Graphic file (type png)
+<use images_red/patient_12_vol_3_red_curve_sogan.png>
+Package pdftex.def Info: images_red/patient_12_vol_3_red_curve_sogan.png  used 
+on input line 726.
+(pdftex.def)             Requested size: 111.54922pt x 83.02907pt.
+<images_red/patient_24_vol_2_input.png, id=206, 267.399pt x 267.399pt>
+File: images_red/patient_24_vol_2_input.png Graphic file (type png)
+<use images_red/patient_24_vol_2_input.png>
+Package pdftex.def Info: images_red/patient_24_vol_2_input.png  used on input l
+ine 735.
+(pdftex.def)             Requested size: 57.01337pt x 57.01228pt.
+<images_red/patient_24_vol_2_gt.png, id=207, 267.399pt x 267.399pt>
+File: images_red/patient_24_vol_2_gt.png Graphic file (type png)
+<use images_red/patient_24_vol_2_gt.png>
+Package pdftex.def Info: images_red/patient_24_vol_2_gt.png  used on input line
+ 736.
+(pdftex.def)             Requested size: 57.01337pt x 57.01228pt.
+<images_red/patient_24_vol_2_output_resshift.png, id=208, 289.08pt x 289.08pt>
+File: images_red/patient_24_vol_2_output_resshift.png Graphic file (type png)
+<use images_red/patient_24_vol_2_output_resshift.png>
+Package pdftex.def Info: images_red/patient_24_vol_2_output_resshift.png  used 
+on input line 737.
+(pdftex.def)             Requested size: 57.01337pt x 57.01216pt.
+<images_red/patient_24_vol_2_output_sogan.png, id=209, 267.399pt x 267.399pt>
+File: images_red/patient_24_vol_2_output_sogan.png Graphic file (type png)
+<use images_red/patient_24_vol_2_output_sogan.png>
+Package pdftex.def Info: images_red/patient_24_vol_2_output_sogan.png  used on 
+input line 738.
+(pdftex.def)             Requested size: 57.01337pt x 57.01228pt.
+<images_red/patient_24_vol_2_red_curve_resshift.png, id=210, 425.9112pt x 317.0
+244pt>
+File: images_red/patient_24_vol_2_red_curve_resshift.png Graphic file (type png
+)
+<use images_red/patient_24_vol_2_red_curve_resshift.png>
+Package pdftex.def Info: images_red/patient_24_vol_2_red_curve_resshift.png  us
+ed on input line 740.
+(pdftex.def)             Requested size: 111.54922pt x 83.02907pt.
+<images_red/patient_24_vol_2_red_curve_sogan.png, id=211, 425.9112pt x 317.0244
+pt>
+File: images_red/patient_24_vol_2_red_curve_sogan.png Graphic file (type png)
+<use images_red/patient_24_vol_2_red_curve_sogan.png>
+Package pdftex.def Info: images_red/patient_24_vol_2_red_curve_sogan.png  used 
+on input line 741.
+(pdftex.def)             Requested size: 111.54922pt x 83.02907pt.
+<images_red/patient_61_vol_14_input.png, id=212, 267.399pt x 267.399pt>
+File: images_red/patient_61_vol_14_input.png Graphic file (type png)
+<use images_red/patient_61_vol_14_input.png>
+Package pdftex.def Info: images_red/patient_61_vol_14_input.png  used on input 
+line 750.
+(pdftex.def)             Requested size: 57.01337pt x 57.01228pt.
+<images_red/patient_61_vol_14_gt.png, id=213, 267.399pt x 267.399pt>
+File: images_red/patient_61_vol_14_gt.png Graphic file (type png)
+<use images_red/patient_61_vol_14_gt.png>
+Package pdftex.def Info: images_red/patient_61_vol_14_gt.png  used on input lin
+e 751.
+(pdftex.def)             Requested size: 57.01337pt x 57.01228pt.
+<images_red/patient_61_vol_14_output_resshift.png, id=214, 289.08pt x 289.08pt>
+
+File: images_red/patient_61_vol_14_output_resshift.png Graphic file (type png)
+<use images_red/patient_61_vol_14_output_resshift.png>
+Package pdftex.def Info: images_red/patient_61_vol_14_output_resshift.png  used
+ on input line 752.
+(pdftex.def)             Requested size: 57.01337pt x 57.01216pt.
+<images_red/patient_61_vol_14_output_sogan.png, id=215, 267.399pt x 267.399pt>
+File: images_red/patient_61_vol_14_output_sogan.png Graphic file (type png)
+<use images_red/patient_61_vol_14_output_sogan.png>
+Package pdftex.def Info: images_red/patient_61_vol_14_output_sogan.png  used on
+ input line 753.
+(pdftex.def)             Requested size: 57.01337pt x 57.01228pt.
+<images_red/patient_61_vol_14_red_curve_resshift.png, id=216, 425.9112pt x 317.
+0244pt>
+File: images_red/patient_61_vol_14_red_curve_resshift.png Graphic file (type pn
+g)
+<use images_red/patient_61_vol_14_red_curve_resshift.png>
+Package pdftex.def Info: images_red/patient_61_vol_14_red_curve_resshift.png  u
+sed on input line 755.
+(pdftex.def)             Requested size: 111.54922pt x 83.02907pt.
+<images_red/patient_61_vol_14_red_curve_sogan.png, id=217, 425.9112pt x 317.024
+4pt>
+File: images_red/patient_61_vol_14_red_curve_sogan.png Graphic file (type png)
+<use images_red/patient_61_vol_14_red_curve_sogan.png>
+Package pdftex.def Info: images_red/patient_61_vol_14_red_curve_sogan.png  used
+ on input line 756.
+(pdftex.def)             Requested size: 111.54922pt x 83.02907pt.
+ [12 <./images_red/patient_12_vol_10_input.png> <./images_red/patient_12_vol_10
+_gt.png> <./images_red/patient_12_vol_10_output_resshift.png> <./images_red/pat
+ient_12_vol_10_output_sogan.png> <./images_red/patient_12_vol_10_red_curve_ress
+hift.png> <./images_red/patient_12_vol_10_red_curve_sogan.png> <./images_red/pa
+tient_12_vol_3_input.png> <./images_red/patient_12_vol_3_gt.png> <./images_red/
+patient_12_vol_3_output_resshift.png> <./images_red/patient_12_vol_3_output_sog
+an.png> <./images_red/patient_12_vol_3_red_curve_resshift.png> <./images_red/pa
+tient_12_vol_3_red_curve_sogan.png> <./images_red/patient_24_vol_2_input.png> <
+./images_red/patient_24_vol_2_gt.png> <./images_red/patient_24_vol_2_output_res
+shift.png> <./images_red/patient_24_vol_2_output_sogan.png> <./images_red/patie
+nt_24_vol_2_red_curve_resshift.png> <./images_red/patient_24_vol_2_red_curve_so
+gan.png> <./images_red/patient_61_vol_14_input.png> <./images_red/patient_61_vo
+l_14_gt.png> <./images_red/patient_61_vol_14_output_resshift.png> <./images_red
+/patient_61_vol_14_output_sogan.png> <./images_red/patient_61_vol_14_red_curve_
+resshift.png> <./images_red/patient_61_vol_14_red_curve_sogan.png>] [13]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [14]
+(Article_review.bbl
+Underfull \hbox (badness 10000) in paragraph at lines 46--54
+\OT1/pcr/m/n/11 https://ietresearch.onlinelibrary.wiley.com/doi/abs/10.1049/ipr
+2.12797\OT1/ptm/m/n/11 .
+ []
+
+[15]
+Underfull \hbox (badness 10000) in paragraph at lines 77--84
+[]\OT1/ptm/m/n/11 Cheng L and Kerse-mans M.  Dual-irt-gan: A defect-aware deep 
+adver-sar-ial net-work to
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 77--84
+\OT1/ptm/m/n/11 per-form super-resolution tasks in infrared ther-mo-graphic ins
+pec-tion.  \OT1/ptm/m/it/11 Com-pos-ites Part B:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 109--118
+\OT1/ptm/m/n/11 denois-ing.  \OT1/ptm/m/it/11 Med-i-cal Physics \OT1/ptm/m/n/11
+ 2025; 52(1): 329--345.  DOI:https://doi.org/10.1002/mp.17431.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 109--118
+\OT1/ptm/m/n/11 URL \OT1/pcr/m/n/11 https://aapm.onlinelibrary.wiley.com/doi/ab
+s/10.1002/mp.17431\OT1/ptm/m/n/11 .
+ []
+
+[16]
+Underfull \hbox (badness 10000) in paragraph at lines 225--234
+\OT1/ptm/m/n/11 URL \OT1/pcr/m/n/11 https://aapm.onlinelibrary.wiley.com/doi/ab
+s/10.1118/1.1567271\OT1/ptm/m/n/11 .
+ []
+
+) [17] (Article_review.aux)
+ ***********
+LaTeX2e <2025-11-01>
+L3 programming layer <2026-03-20>
+ ***********
+LaTeX Font Warning: Size substitutions with differences
+(Font)              up to 0.5pt have occurred.
+ ) ) 
+Here is how much of TeX's memory you used:
+ 6657 strings out of 467691
+ 145082 string characters out of 5431819
+ 521060 words of memory out of 5000000
+ 35580 multiletter control sequences out of 15000+600000
+ 666829 words of font info for 124 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 77i,15n,82p,1753b,514s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<E:/MikTex/fonts/type1/public/amsfonts/cm/cmbx10.pfb><E:/MikTex/fonts/type1
+/public/amsfonts/cm/cmex10.pfb><E:/MikTex/fonts/type1/public/amsfonts/cm/cmmi10
+.pfb><E:/MikTex/fonts/type1/public/amsfonts/cm/cmmi8.pfb><E:/MikTex/fonts/type1
+/public/amsfonts/cm/cmmi9.pfb><E:/MikTex/fonts/type1/public/amsfonts/cm/cmr10.p
+fb><E:/MikTex/fonts/type1/public/amsfonts/cm/cmr6.pfb><E:/MikTex/fonts/type1/pu
+blic/amsfonts/cm/cmr8.pfb><E:/MikTex/fonts/type1/public/amsfonts/cm/cmr9.pfb><E
+:/MikTex/fonts/type1/public/amsfonts/cm/cmsy10.pfb><E:/MikTex/fonts/type1/publi
+c/amsfonts/cm/cmsy8.pfb><E:/MikTex/fonts/type1/public/amsfonts/cm/cmsy9.pfb><E:
+/MikTex/fonts/type1/urw/courier/ucrr8a.pfb><E:/MikTex/fonts/type1/urw/helvetic/
+uhvb8a.pfb><E:/MikTex/fonts/type1/urw/helvetic/uhvr8a.pfb><E:/MikTex/fonts/type
+1/urw/helvetic/uhvro8a.pfb><E:/MikTex/fonts/type1/urw/times/utmb8a.pfb><E:/MikT
+ex/fonts/type1/urw/times/utmr8a.pfb><E:/MikTex/fonts/type1/urw/times/utmri8a.pf
+b>
+Output written on Article_review.pdf (17 pages, 3388424 bytes).
+PDF statistics:
+ 341 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 631 words of extra memory for PDF output out of 10000 (max. 10000000)
+

@@ -14,12 +14,15 @@
 
 \title{Short-Trajectory Artifact-Reversal Diffusion for CCTA Calcium Deblooming}
 
+\ifdefined\blinded
+\author{Anonymous Authors}
+\else
 \author{Mahmud Wasif Nafee\affil{1}, Muhan Shao\affil{2}, Christopher Wiedeman\affil{2}, Lin Fu\affil{2}, Bruno De Man\affil{2}, and Ge Wang\affil{1}}
 \affiliation{\affilnum{1}Biomedical Imaging Center, Center for Computational Innovations, Center for Biotechnology and Interdisciplinary Studies, Department of Biomedical Engineering, School of Engineering, Rensselaer Polytechnic Institute, Troy, NY, USA\\
 \affilnum{2}GE HealthCare, Technology and Innovation Center, Niskayuna, NY, USA}
-
 \corrauth{Ge Wang, Biomedical Imaging Center, Center for Computational Innovations, Center for Biotechnology and Interdisciplinary Studies, Department of Biomedical Engineering, School of Engineering, Rensselaer Polytechnic Institute, Troy, NY, USA}
 \email{wangg6@rpi.edu}
+\fi
 
 \begin{abstract}
 \textbf{BACKGROUND:} Calcium blooming in coronary CT angiography (CCTA) enlarges calcified plaques, obscures the coronary lumen, and complicates stenosis assessment. \textbf{OBJECTIVE:} To develop an efficient restoration method that suppresses blooming while preserving calcium and recovering adjacent lumen structure. \textbf{METHODS:} We propose Short-Trajectory Artifact-Reversal (STAR) Diffusion, which progressively transforms a blooming-corrupted patch toward a debloomed target. Soft Annular Boundary Attention (SABA) reduces attention leakage from the blooming-prone annulus into the calcium core. \textbf{RESULTS:} On 232 held-out synthetic 3D test cases, each sampled from a distinct anatomical location and unique plaque, background, calcium concentration, and exposure/noise configuration, STAR Diffusion achieved Dice 0.9248, Core RMSE 134.99 HU, and Annulus RMSE 90.05 HU. Metrics were computed after slice-wise inference and volumetric reassembly, with one matched case-level measurement per test volume for direct comparison across methods. The method improved calcium-region agreement and annular error relative to classical, GAN-based, and latent diffusion baselines, while ablations showed complementary contributions from spatial-prior conditioning and SABA. STAR Diffusion also reduced inference time compared with long-trajectory latent diffusion. \textbf{CONCLUSIONS:} In synthetic paired-data experiments, short-trajectory, spatially guided diffusion with boundary-aware attention reduced blooming while preserving plaque morphology and apparent lumen visibility. Clinical examples showed qualitatively similar behavior across plaque shapes and backgrounds.
@@ -915,9 +918,13 @@ E(p)=\max(HU(p)-550,0),
 \]
 where 550 HU is the baseline so that only elevated attenuation contributing to blooming is accumulated. The cumulative energy is then summed outward as radius increases and normalized by the total energy to produce the RED curve. Summary radii such as $R_{80}$ and $R_{90}$ are used to compare the input, debloomed output, and ground truth; closer agreement with the ground-truth curve indicates better recovery of the radial calcium distribution.
 
+\ifdefined\blinded
+% Acknowledgements are omitted from the blinded manuscript.
+\else
 \begin{acks}
 This work was supported in part by the National Institutes of Health under Grants EB032716 and HL151561. We thank GE HealthCare Technology and Innovation Center for their support.
 \end{acks}
+\fi
 
 \begin{dci}
 The authors declare no conflicts of interest.
